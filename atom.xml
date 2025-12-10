@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Joyboy</title>
   
-  
+  <subtitle>天地不仁，以万物为刍狗；圣人不仁，以百姓为刍狗。——《道德经》</subtitle>
   <link href="http://zhiwenhu471.github.io/atom.xml" rel="self"/>
   
   <link href="http://zhiwenhu471.github.io/"/>
@@ -10,7 +10,7 @@
   <id>http://zhiwenhu471.github.io/</id>
   
   <author>
-    <name>John Doe</name>
+    <name>Joyboy</name>
     
   </author>
   
@@ -254,26 +254,6 @@
     
     
     <category term="nature" scheme="http://zhiwenhu471.github.io/tags/nature/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Welcome to the NexT Organization!</title>
-    <link href="http://zhiwenhu471.github.io/hexo-theme-next/"/>
-    <id>http://zhiwenhu471.github.io/hexo-theme-next/</id>
-    <published>2020-03-01T04:00:00.000Z</published>
-    <updated>2025-12-10T14:41:38.007Z</updated>
-    
-    <content type="html"><![CDATA[<p>Welcome to the <a href="/docs/">NexT</a> documentation site! NexT is a high quality elegant theme for <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlvLw==">Hexo<i class="fa fa-external-link-alt"></i></span>. It is crafted from scratch, with love.</p><h3 id="User-Guide"><a href="#User-Guide" class="headerlink" title="User Guide"></a>User Guide</h3><p>It&#39;s easy to set up NexT theme. Just follow <a href="/docs/getting-started/">documentation</a> and create your personal website!</p><h2 id="Community"><a href="#Community" class="headerlink" title="Community"></a>Community</h2><p>Connect with us and be part of our growing community!</p><ul><li><strong>Telegram Group (Chinese Language)</strong>: <span class="exturl" data-url="aHR0cHM6Ly90Lm1lL3RoZW1lX25leHRfY24=">Click here to join!<i class="fa fa-external-link-alt"></i></span></li><li><strong>Discord Server</strong>: <span class="exturl" data-url="aHR0cHM6Ly9kaXNjb3JkLmdnL3Fta2drWTNqYUc=">Join our Discord!<i class="fa fa-external-link-alt"></i></span></li><li><strong>Gitter</strong>: <span class="exturl" data-url="aHR0cHM6Ly9hcHAuZ2l0dGVyLmltLyMvcm9vbS8jbmV4dDpnaXR0ZXIuaW0=">Join our Gitter chats!<i class="fa fa-external-link-alt"></i></span></li></ul><h3 id="Feedback"><a href="#Feedback" class="headerlink" title="Feedback"></a>Feedback</h3><ul><li>Visit the <span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL25leHQtdGhlbWUvYXdlc29tZS1uZXh0">Awesome NexT<i class="fa fa-external-link-alt"></i></span> list to share plugins and tutorials with other users.</li><li>Join our <span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL25leHQtdGhlbWUvaGV4by10aGVtZS1uZXh0L2Rpc2N1c3Npb25z">GitHub discussions<i class="fa fa-external-link-alt"></i></span>.</li><li><span class="exturl" data-url="aHR0cHM6Ly9jcm93ZGluLmNvbS9wcm9qZWN0L2hleG8tdGhlbWUtbmV4dA==">Add or improve translation<i class="fa fa-external-link-alt"></i></span> in few seconds.</li><li>Report a bug in <span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL25leHQtdGhlbWUvaGV4by10aGVtZS1uZXh0L2lzc3Vlcy9uZXc/YXNzaWduZWVzPSZsYWJlbHM9QnVnJnRlbXBsYXRlPWJ1Zy1yZXBvcnQubWQ=">GitHub Issues<i class="fa fa-external-link-alt"></i></span>.</li><li>Request a new feature on <span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL25leHQtdGhlbWUvaGV4by10aGVtZS1uZXh0L2lzc3Vlcy9uZXc/YXNzaWduZWVzPSZsYWJlbHM9RmVhdHVyZStSZXF1ZXN0JnRlbXBsYXRlPWZlYXR1cmUtcmVxdWVzdC5tZA==">GitHub<i class="fa fa-external-link-alt"></i></span>.</li><li>Vote for <span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL25leHQtdGhlbWUvaGV4by10aGVtZS1uZXh0L2lzc3Vlcz9xPWlzOm9wZW4raXM6aXNzdWUrbGFiZWw6JTIyRmVhdHVyZStSZXF1ZXN0JTIy">popular feature requests<i class="fa fa-external-link-alt"></i></span>.</li></ul>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;p&gt;Welcome to the &lt;a href=&quot;/docs/&quot;&gt;NexT&lt;/a&gt; documentation site! NexT is a high quality elegant theme for &lt;span class=&quot;exturl&quot; data-url=&quot;aHR0</summary>
-      
-    
-    
-    
     
   </entry>
   
