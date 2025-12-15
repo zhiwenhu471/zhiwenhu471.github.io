@@ -6,7 +6,7 @@
   <link href="http://zhiwenhu471.github.io/atom.xml" rel="self"/>
   
   <link href="http://zhiwenhu471.github.io/"/>
-  <updated>2025-12-15T10:06:58.029Z</updated>
+  <updated>2025-12-15T14:13:13.647Z</updated>
   <id>http://zhiwenhu471.github.io/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Linus Benedict Torvalds</title>
+    <link href="http://zhiwenhu471.github.io/Linus-Benedict-Torvalds/"/>
+    <id>http://zhiwenhu471.github.io/Linus-Benedict-Torvalds/</id>
+    <published>2025-12-15T13:49:23.000Z</published>
+    <updated>2025-12-15T14:13:13.647Z</updated>
+    
+    <content type="html"><![CDATA[<p>林纳斯·托瓦兹（Linus Benedict Torvalds）</p><blockquote><p>&quot;Talk is cheap. Show me the code.&quot;</p></blockquote><ol><li>Linux 内核的创建者</li><li>Git 版本控制系统的发明者</li></ol><p>This ted talk was unlike any other</p><ol><li>Not a man with vision</li><li>Not a man with big dreams</li><li>Not a man who is successful by selling products.</li></ol><p>One of the things I really like about open source is it allows different people to work together. We don&#39;t have to like each other, and sometimes we really don’t like each other. There are very, very heated arguments. You don&#39;t even agree to disagree – it&#39;s just that you&#39;re interested in different things.</p><p>Coming back to the point that I said earlier, that I was afraid of commercial people taking advantage of your work – It very quickly turned out that those commercial people were lovely people. And they did all the things that I was not at all interested in doing and they had completely different goals. And they used open source in ways that I just did not want to go. But because it was open source they could do it and it actually works really beautifully together.</p><p>In the debate about who was the better inventor, Thomas Edison or Nikola Tesla, Tovalds sees himself in the category of Edison, who is sometimes seen as the more plodding genius. Edison famously said, &quot;Genius is 1 percent inspiration and 99 percent perspiration,&quot; and this appeals to Tovalds. &quot;Edison may not have been a nice person, he did a lot of things—he was maybe not so intellectual, not so visionary. But I think I&#39;m more of an Edison than a Tesla.&quot;</p><p>我并非计算机专业，今年暑假才开始学习 Python，而后了解到 github，以及 git 分布式版本控制系统，进而了解到 Linux，并且利用 wsl 安装了 Ubuntu，今天晚上打开Youtube， 出于好奇点开了这个视频，才认识到这位伟大人物。</p><p>原来 Git 的发明者正是 Linux 内核的创建者 Linus Torvalds，刚开始接触 git，感觉它就像是一种魔法，后面觉得 Linux也是一种魔法，没想到他们的创造者竟然是同一个人。</p><p>看完这场采访，我觉得 Linus Torvalds 不像是一个格格不入的天才，反而是是一个非常有趣的人，他并不追求名利，他只是单纯地想要创造一些东西，并且通过开源的方式让更多人参与进来，一起完善它们。</p><p>&#96;&#96;open source&#96; 让我想起了我之前读过的一句话：</p><blockquote><p>&quot;If you want to go fast, go alone. If you want to go far, go together.&quot;</p></blockquote><p>这是编程特别吸引我的地方——它不仅仅是技术，更是一种协作的艺术。</p><p>上一个让我深受震撼的人，还是特斯拉，而这一次，是 Linus Torvalds。</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;林纳斯·托瓦兹（Linus Benedict Torvalds）&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&amp;quot;Talk is cheap. Show me the code.&amp;quot;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ol&gt;
+&lt;li&gt;Linux 内核的创建者</summary>
+      
+    
+    
+    
+    
+    <category term="Linux git open-source" scheme="http://zhiwenhu471.github.io/tags/Linux-git-open-source/"/>
+    
+  </entry>
   
   <entry>
     <title>浮生若梦</title>
