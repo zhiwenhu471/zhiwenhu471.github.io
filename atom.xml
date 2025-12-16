@@ -6,7 +6,7 @@
   <link href="http://zhiwenhu471.github.io/atom.xml" rel="self"/>
   
   <link href="http://zhiwenhu471.github.io/"/>
-  <updated>2025-12-15T14:24:14.679Z</updated>
+  <updated>2025-12-16T16:10:08.878Z</updated>
   <id>http://zhiwenhu471.github.io/</id>
   
   <author>
@@ -15,6 +15,28 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>mix</title>
+    <link href="http://zhiwenhu471.github.io/mix/"/>
+    <id>http://zhiwenhu471.github.io/mix/</id>
+    <published>2025-12-16T16:07:54.000Z</published>
+    <updated>2025-12-16T16:10:08.878Z</updated>
+    
+    <content type="html"><![CDATA[<p>最近是一边学 Ubuntu，一边学 python，一边学 java，一边学 r。</p><p>如果说是在修仙，那么同时修炼这么多功法，怕是要走火入魔了。</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;最近是一边学 Ubuntu，一边学 python，一边学 java，一边学 r。&lt;/p&gt;
+&lt;p&gt;如果说是在修仙，那么同时修炼这么多功法，怕是要走火入魔了。&lt;/p&gt;
+</summary>
+      
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>Linus Benedict Torvalds</title>
