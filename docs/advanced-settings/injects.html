@@ -345,20 +345,20 @@ you use <code>custom_file_path</code>, please not use
 <p><strong>Two:</strong> add a custom <code>my-favourite-food.njk</code>
 to sidebar.</p>
 <p>Step1: you should create <code>my-favourite-food.njk</code> in any
-path(e.g. <code>source/_data/</code>) as below. You can get variable
+path(e.g. <code>source/_data/</code>) as below. You can get variable
 from <code>hexo</code> or <code>local</code> defined in filter.</p>
 <figure class="highlight jinja"><table><tr><td class="code"><pre><span class="line"><span class="template-tag">&#123;% <span class="name"><span class="name">for</span></span> food <span class="keyword">in</span> foods %&#125;</span><span class="language-xml"></span></span><br><span class="line"><span class="language-xml">  <span class="tag">&lt;<span class="name">div</span>&gt;</span></span><span class="template-variable">&#123;&#123; food &#125;&#125;</span><span class="language-xml"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span></span><br><span class="line"><span class="language-xml"></span><span class="template-tag">&#123;% <span class="name"><span class="name">endfor</span></span> %&#125;</span></span><br></pre></td></tr></table></figure>
 <p>Step2: add filter to load it.</p>
 <figure class="highlight js"><table><tr><td class="code"><pre><span class="line">hexo.<span class="property">extend</span>.<span class="property">filter</span>.<span class="title function_">register</span>(<span class="string">&#x27;theme_inject&#x27;</span>, <span class="keyword">function</span>(<span class="params">injects</span>) &#123;</span><br><span class="line">  injects.<span class="property">sidebar</span>.<span class="title function_">file</span>(<span class="string">&#x27;my-favourite-food&#x27;</span>, <span class="string">&#x27;source/_data/my-favourite-food.njk&#x27;</span>, &#123;</span><br><span class="line">    <span class="attr">foods</span>: [<span class="string">&#x27;apple&#x27;</span>, <span class="string">&#x27;orange&#x27;</span>]</span><br><span class="line">  &#125;);</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
 <p><strong>Three:</strong> want to have big header, put
 <code>big-header.styl</code> to NexT.</p>
-<p>Of course, you need to create this file
-first(e.g. <code>source/_data/big-header.styl</code>).</p>
+<p>Of course, you need to create this file first(e.g.
+<code>source/_data/big-header.styl</code>).</p>
 <figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-tag">h1</span> &#123;</span><br><span class="line">  <span class="attribute">font-size</span>: <span class="number">2rem</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p>And then add it in filter.</p>
 <figure class="highlight js"><table><tr><td class="code"><pre><span class="line">hexo.<span class="property">extend</span>.<span class="property">filter</span>.<span class="title function_">register</span>(<span class="string">&#x27;theme_inject&#x27;</span>, <span class="keyword">function</span>(<span class="params">injects</span>) &#123;</span><br><span class="line">  injects.<span class="property">style</span>.<span class="title function_">push</span>(<span class="string">&#x27;source/_data/big-header.styl&#x27;</span>);</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
 <h4 id="plugin">Plugin</h4>
-<p>We also support hexo’s plugin system, which makes it easy to extend
+<p>We also support hexo's plugin system, which makes it easy to extend
 functions without modifying the source code of the core module. You can
 see <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlvL2RvY3MvcGx1Z2lucy5odG1sI1BsdWdpbg==">https://hexo.io/docs/plugins.html#Plugin<i class="fa fa-external-link-alt"></i></span> to learn how to
 create a plugin.</p>

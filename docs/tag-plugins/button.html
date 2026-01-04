@@ -177,7 +177,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
-            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#usage"><span class="nav-number">1.</span> <span class="nav-text">Usage</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#examples"><span class="nav-number">2.</span> <span class="nav-text">Examples</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#button-with-text-title"><span class="nav-number">2.1.</span> <span class="nav-text">Button with text &amp; title</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#button-with-icon"><span class="nav-number">2.2.</span> <span class="nav-text">Button with icon</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#button-with-text-icon"><span class="nav-number">2.3.</span> <span class="nav-text">Button with text &amp; icon</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#button-inside-text"><span class="nav-number">2.4.</span> <span class="nav-text">Button inside text</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#button-inside-other-tag"><span class="nav-number">2.5.</span> <span class="nav-text">Button inside other tag</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#button-margin"><span class="nav-number">2.6.</span> <span class="nav-text">Button margin</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#button-with-relative-url"><span class="nav-number">2.7.</span> <span class="nav-text">Button with relative URL</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#button-with-absolute-url"><span class="nav-number">2.8.</span> <span class="nav-text">Button with absolute URL</span></a></li></ol></li></ol></div>
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#usage"><span class="nav-number">1.</span> <span class="nav-text">Usage</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#examples"><span class="nav-number">2.</span> <span class="nav-text">Examples</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#button-with-text--title"><span class="nav-number">2.1.</span> <span class="nav-text">Button with text &amp; title</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#button-with-icon"><span class="nav-number">2.2.</span> <span class="nav-text">Button with icon</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#button-with-text--icon"><span class="nav-number">2.3.</span> <span class="nav-text">Button with text &amp; icon</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#button-inside-text"><span class="nav-number">2.4.</span> <span class="nav-text">Button inside text</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#button-inside-other-tag"><span class="nav-number">2.5.</span> <span class="nav-text">Button inside other tag</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#button-margin"><span class="nav-number">2.6.</span> <span class="nav-text">Button margin</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#button-with-relative-url"><span class="nav-number">2.7.</span> <span class="nav-text">Button with relative URL</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#button-with-absolute-url"><span class="nav-number">2.8.</span> <span class="nav-text">Button with absolute URL</span></a></li></ol></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -358,7 +358,7 @@ mouseover.</li>
 <h3 id="examples">Examples</h3>
 <figure class="highlight jinja"><table><tr><td class="code"><pre><span class="line"><span class="template-tag">&#123;% <span class="name">button</span> #, Text %&#125;</span></span><br></pre></td></tr></table></figure>
 <a class="btn" href="#">Text</a>
-<h4 id="button-with-text-title">Button with text &amp; title</h4>
+<h4 id="button-with-text--title">Button with text &amp; title</h4>
 <figure class="highlight jinja"><table><tr><td class="code"><pre><span class="line"><span class="template-tag">&#123;% <span class="name">btn</span> #, Text %&#125;</span><span class="template-tag">&#123;% <span class="name">btn</span> #, Text &amp; Title,, Title %&#125;</span></span><br></pre></td></tr></table></figure>
 <a class="btn" href="#">Text</a>
 <a class="btn" href="#" title="Title">Text & Title</a>
@@ -376,7 +376,7 @@ mouseover.</li>
 <a class="btn" href="#"><i class="fa fa-home fa-2x"></i></a>
 <a class="btn" href="#"><i class="fa fa-home fa-lg"></i></a>
 <a class="btn" href="#"><i class="fa fa-home"></i></a>
-<h4 id="button-with-text-icon">Button with text &amp; icon</h4>
+<h4 id="button-with-text--icon">Button with text &amp; icon</h4>
 <figure class="highlight jinja"><table><tr><td class="code"><pre><span class="line"><span class="template-tag">&#123;% <span class="name">btn</span> #, Text &amp; Icon (buggy), home %&#125;</span><span class="language-xml"></span></span><br><span class="line"><span class="language-xml"></span><span class="template-tag">&#123;% <span class="name">btn</span> #, Text &amp; Icon (fixed width), home fa-fw %&#125;</span></span><br></pre></td></tr></table></figure>
 <a class="btn" href="#"><i class="fa fa-home"></i>Text & Icon (buggy)</a>
 <a class="btn" href="#"><i class="fa fa-home fa-fw"></i>Text & Icon (fixed width)</a>
@@ -391,20 +391,21 @@ ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
 aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
 in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
 Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet,
-consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-Duis aute irure <a class="btn" href="#"><i class="fa fa-home fa-fw fa-lg"></i>dolor</a> in reprehenderit in voluptate velit esse
-cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-cupidatat non proident, sunt in culpa qui officia deserunt mollit anim
-id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
-in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-Excepteur sint occaecat cupidatat non <a class="btn" href="#"><i class="fa fa-home fa-fw fa-lg"></i>proident</a>, sunt in culpa qui
-officia deserunt mollit anim id est laborum.</p>
+officia deserunt mollit anim id est laborum.<br />
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+commodo consequat. Duis aute irure <a class="btn" href="#"><i class="fa fa-home fa-fw fa-lg"></i>dolor</a> in reprehenderit in
+voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
+sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+mollit anim id est laborum.<br />
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+occaecat cupidatat non <a class="btn" href="#"><i class="fa fa-home fa-fw fa-lg"></i>proident</a>, sunt in culpa qui officia
+deserunt mollit anim id est laborum.</p>
 <h4 id="button-inside-other-tag">Button inside other tag</h4>
 <figure class="highlight jinja"><table><tr><td class="code"><pre><span class="line"><span class="template-tag">&#123;% <span class="name">note</span> info %&#125;</span><span class="language-xml"></span></span><br><span class="line"><span class="language-xml"></span><span class="template-tag">&#123;% <span class="name">btn</span> #, Text &amp; Icon, home fa-fw %&#125;</span><span class="language-xml"></span></span><br><span class="line"><span class="language-xml"></span></span><br><span class="line"><span class="language-xml"></span><span class="template-tag">&#123;% <span class="name">btn</span> #,, home, Title %&#125;</span><span class="template-tag">&#123;% <span class="name">btn</span> #, Text %&#125;</span><span class="language-xml"></span></span><br><span class="line"><span class="language-xml"></span></span><br><span class="line"><span class="language-xml">[Link](#)</span></span><br><span class="line"><span class="language-xml"></span><span class="template-tag">&#123;% <span class="name">endnote</span> %&#125;</span></span><br></pre></td></tr></table></figure>
 <div class="note info"><p><a class="btn" href="#"><i class="fa fa-home fa-fw fa-lg"></i>Text

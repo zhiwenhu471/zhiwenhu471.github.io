@@ -381,7 +381,8 @@ following:</p>
 including the insertion of Viglink redirect links into web pages. This
 may cause inconvenience to visitors. In the Disqus settings, this
 behavior can be stopped by unchecking the <code>Affiliate links</code>
-option. Other advertising and tracking options can also be customized.
+option. Other advertising and tracking options can also be
+customized.<br />
 <img src="/images/disqus.png" alt="Algolia API Keys" /></p>
 </div>
 <h3 id="disqusjs">DisqusJS</h3>
@@ -400,7 +401,7 @@ obtained Disqus API Key (<code>apikey</code>) and Shortname
 <p><figure class="highlight yml"><figcaption><span>NexT config file</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="comment"># DisqusJS</span></span><br><span class="line"><span class="comment"># Demo: https://disqusjs.skk.moe</span></span><br><span class="line"><span class="attr">disqusjs:</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">false</span></span><br><span class="line">  <span class="comment"># API Endpoint of Disqus API (https://disqus.com/api/docs/)</span></span><br><span class="line">  <span class="comment"># leave api empty if you are able to connect to Disqus API</span></span><br><span class="line">  <span class="comment"># otherwise you need a reverse proxy for Disqus API</span></span><br><span class="line">  <span class="comment"># For example:</span></span><br><span class="line">  <span class="comment"># api: https://disqus.skk.moe/disqus/</span></span><br><span class="line">  <span class="attr">api:</span></span><br><span class="line">  <span class="attr">apikey:</span> <span class="comment"># register new application from https://disqus.com/api/applications/</span></span><br><span class="line">  <span class="attr">shortname:</span> <span class="comment"># See: https://disqus.com/admin/settings/general/</span></span><br></pre></td></tr></table></figure></p></li>
 </ol>
 <h3 id="changyan-china">Changyan (China)</h3>
-<p>Changyan is the industry’s leading social commenting system,
+<p>Changyan is the industry's leading social commenting system,
 supporting both PC and mobile access methods, providing a new way of
 commenting on websites. Changyan has a variety of common account login,
 triple filtering mechanism, real-time data statistics, fast data export,
@@ -414,8 +415,9 @@ to get APP ID and APP KEY.</p></li>
 the obtained APP ID (<code>appid</code>) and APP KEY
 (<code>appkey</code>) to the <code>changyan</code> section in the
 <mark class="label primary">NexT config file</mark> as following:</p>
-<p><figure class="highlight yml"><figcaption><span>NexT config file</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="comment"># changyan</span></span><br><span class="line"><span class="attr">changyan:</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">false</span></span><br><span class="line">  <span class="attr">appid:</span></span><br><span class="line">  <span class="attr">appkey:</span></span><br><span class="line">  <span class="attr">count:</span> <span class="literal">true</span></span><br></pre></td></tr></table></figure> Note: after you comment, it will take some time for
-you to see the increase in the number of comments.</p></li>
+<p><figure class="highlight yml"><figcaption><span>NexT config file</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="comment"># changyan</span></span><br><span class="line"><span class="attr">changyan:</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">false</span></span><br><span class="line">  <span class="attr">appid:</span></span><br><span class="line">  <span class="attr">appkey:</span></span><br><span class="line">  <span class="attr">count:</span> <span class="literal">true</span></span><br></pre></td></tr></table></figure><br />
+Note: after you comment, it will take some time for you to see the
+increase in the number of comments.</p></li>
 </ol>
 <h3 id="livere">LiveRe</h3>
 <p>LiveRe is a content platform based on social networking site reviews
@@ -451,7 +453,7 @@ following:</p>
 <p><figure class="highlight yml"><figcaption><span>NexT config file</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="comment"># Gitalk</span></span><br><span class="line"><span class="comment"># For more information: https://gitalk.github.io</span></span><br><span class="line"><span class="attr">gitalk:</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">false</span></span><br><span class="line">  <span class="attr">github_id:</span> <span class="comment"># GitHub repo owner</span></span><br><span class="line">  <span class="attr">repo:</span> <span class="comment"># Repository name to store issues</span></span><br><span class="line">  <span class="attr">client_id:</span> <span class="comment"># GitHub Application Client ID</span></span><br><span class="line">  <span class="attr">client_secret:</span> <span class="comment"># GitHub Application Client Secret</span></span><br><span class="line">  <span class="attr">admin_user:</span> <span class="comment"># GitHub repo owner and collaborators, only these guys can initialize gitHub issues</span></span><br><span class="line">  <span class="attr">distraction_free_mode:</span> <span class="literal">true</span> <span class="comment"># Facebook-like distraction free mode</span></span><br><span class="line">  <span class="comment"># When the official proxy is not available, you can change it to your own proxy address</span></span><br><span class="line">  <span class="attr">proxy:</span> <span class="string">https://cors-anywhere.azm.workers.dev/https://github.com/login/oauth/access_token</span> <span class="comment"># This is official proxy address</span></span><br><span class="line">  <span class="comment"># Gitalk&#x27;s display language depends on user&#x27;s browser or system environment</span></span><br><span class="line">  <span class="comment"># If you want everyone visiting your site to see a uniform language, you can set a force language value</span></span><br><span class="line">  <span class="comment"># Available values: en | es-ES | fr | ru | zh-CN | zh-TW</span></span><br><span class="line">  <span class="attr">language:</span></span><br></pre></td></tr></table></figure></p></li>
 </ol>
 <div class="note warning"><p>Gitalk relies on the md5 value of the page path for tagging, the
-comments will not be loaded correctly if a page’s permalink is
+comments will not be loaded correctly if a page's permalink is
 changed.</p>
 </div>
 <div class="note warning"><p>If your GitHub username contains only numbers, YAML will parse it as

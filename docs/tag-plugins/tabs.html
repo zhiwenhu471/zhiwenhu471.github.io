@@ -346,20 +346,25 @@
 <figure class="highlight jinja"><table><tr><td class="code"><pre><span class="line"><span class="template-tag">&#123;% <span class="name">tabs</span> Unique name, [index] %&#125;</span><span class="language-xml"></span></span><br><span class="line"><span class="language-xml"><span class="comment">&lt;!-- tab [Tab caption] [@icon] --&gt;</span></span></span><br><span class="line"><span class="language-xml">Any content (support inline tags too).</span></span><br><span class="line"><span class="language-xml"><span class="comment">&lt;!-- endtab --&gt;</span></span></span><br><span class="line"><span class="language-xml"></span><span class="template-tag">&#123;% <span class="name">endtabs</span> %&#125;</span></span><br></pre></td></tr></table></figure>
 <ul>
 <li><code>Unique name</code> : Unique name of tabs block tag without
-comma. Will be used in #id’s as prefix for each tab with their index
-numbers. If there are whitespaces in name, for generate #id all
-whitespaces will replaced by dashes. Only for current url of post/page
-must be unique!</li>
-<li><code>[index]</code> : Index number of active tab. If not specified,
-first tab (1) will be selected. If index is -1, no tab will be selected.
-It’s will be something like spoiler. Optional parameter.</li>
-<li><code>[Tab caption]</code> : Caption of current tab. If not caption
-specified, unique name with tab index suffix will be used as caption of
-tab. If not caption specified, but specified icon, caption will empty.
+comma.<br />
+Will be used in #id's as prefix for each tab with their index
+numbers.<br />
+If there are whitespaces in name, for generate #id all whitespaces will
+replaced by dashes.<br />
+Only for current url of post/page must be unique!</li>
+<li><code>[index]</code> : Index number of active tab.<br />
+If not specified, first tab (1) will be selected.<br />
+If index is -1, no tab will be selected. It's will be something like
+spoiler.<br />
 Optional parameter.</li>
-<li><code>[@icon]</code> : Font Awesome icon name. Can be specified with
-or without space; e.g. ‘Tab caption <span class="citation"
-data-cites="icon">@icon</span>’ is the same as ‘Tab caption@icon’.
+<li><code>[Tab caption]</code> : Caption of current tab.<br />
+If not caption specified, unique name with tab index suffix will be used
+as caption of tab.<br />
+If not caption specified, but specified icon, caption will empty.<br />
+Optional parameter.</li>
+<li><code>[@icon]</code> : Font Awesome icon name.<br />
+Can be specified with or without space; e.g. 'Tab caption <span
+class="citation" data-cites="icon">@icon</span>' is the same as 'Tab <span class="exturl" data-url="bWFpbHRvOmNhcHRpb25AaWNvbg==">caption@icon<i class="fa fa-external-link-alt"></i></span>'.<br />
 Optional parameter.</li>
 </ul>
 <h3 id="examples">Examples</h3>
@@ -382,14 +387,14 @@ Optional parameter.</li>
 <div class="tabs" id="sixth-unique-name"><ul class="nav-tabs"><li class="tab active"><a href="#sixth-unique-name-1"><i class="fa fa-text-width"></i>Solution 1</a></li><li class="tab"><a href="#sixth-unique-name-2"><i class="fa fa-font"></i>Solution 2</a></li><li class="tab"><a href="#sixth-unique-name-3"><i class="fa fa-bold"></i>Solution 3</a></li></ul><div class="tab-content"><div class="tab-pane active" id="sixth-unique-name-1"><p><strong>This is Tab 1.</strong></p></div><div class="tab-pane" id="sixth-unique-name-2"><p><strong>This is Tab 2.</strong></p></div><div class="tab-pane" id="sixth-unique-name-3"><p><strong>This is Tab 3.</strong></p></div></div></div>
 <h4 id="tabs-permalinks-test">Tabs permalinks test</h4>
 <figure class="highlight jinja"><table><tr><td class="code"><pre><span class="line"><span class="language-xml">Permalink for &gt; [Tab one](#tab-one).</span></span><br><span class="line"><span class="language-xml">Permalink for &gt; [Tab one 1](#tab-one-1).</span></span><br><span class="line"><span class="language-xml">Permalink for &gt; [Tab one 2](#tab-one-2).</span></span><br><span class="line"><span class="language-xml">Permalink for &gt; [Tab one 3](#tab-one-3).</span></span><br><span class="line"><span class="language-xml"></span></span><br><span class="line"><span class="language-xml">Permalink for &gt; [Tab two](#tab-two).</span></span><br><span class="line"><span class="language-xml">Permalink for &gt; [Tab two 1](#tab-two-1).</span></span><br><span class="line"><span class="language-xml">Permalink for &gt; [Tab two 2](#tab-two-2).</span></span><br><span class="line"><span class="language-xml">Permalink for &gt; [Tab two 3](#tab-two-3).</span></span><br><span class="line"><span class="language-xml"></span></span><br><span class="line"><span class="language-xml"></span><span class="template-tag">&#123;% <span class="name">tabs</span> Tab one %&#125;</span><span class="language-xml"></span></span><br><span class="line"><span class="language-xml"><span class="comment">&lt;!-- tab --&gt;</span></span></span><br><span class="line"><span class="language-xml">**This is Tab 1.**</span></span><br><span class="line"><span class="language-xml"><span class="comment">&lt;!-- endtab --&gt;</span></span></span><br><span class="line"><span class="language-xml"></span></span><br><span class="line"><span class="language-xml"><span class="comment">&lt;!-- tab --&gt;</span></span></span><br><span class="line"><span class="language-xml">**This is Tab 2.**</span></span><br><span class="line"><span class="language-xml"><span class="comment">&lt;!-- endtab --&gt;</span></span></span><br><span class="line"><span class="language-xml"></span></span><br><span class="line"><span class="language-xml"><span class="comment">&lt;!-- tab --&gt;</span></span></span><br><span class="line"><span class="language-xml">**This is Tab 3.**</span></span><br><span class="line"><span class="language-xml"><span class="comment">&lt;!-- endtab --&gt;</span></span></span><br><span class="line"><span class="language-xml"></span><span class="template-tag">&#123;% <span class="name">endtabs</span> %&#125;</span><span class="language-xml"></span></span><br><span class="line"><span class="language-xml"></span></span><br><span class="line"><span class="language-xml"></span><span class="template-tag">&#123;% <span class="name">tabs</span> Tab two %&#125;</span><span class="language-xml"></span></span><br><span class="line"><span class="language-xml"><span class="comment">&lt;!-- tab --&gt;</span></span></span><br><span class="line"><span class="language-xml">**This is Tab 1.**</span></span><br><span class="line"><span class="language-xml"><span class="comment">&lt;!-- endtab --&gt;</span></span></span><br><span class="line"><span class="language-xml"></span></span><br><span class="line"><span class="language-xml"><span class="comment">&lt;!-- tab --&gt;</span></span></span><br><span class="line"><span class="language-xml">**This is Tab 2.**</span></span><br><span class="line"><span class="language-xml"><span class="comment">&lt;!-- endtab --&gt;</span></span></span><br><span class="line"><span class="language-xml"></span></span><br><span class="line"><span class="language-xml"><span class="comment">&lt;!-- tab --&gt;</span></span></span><br><span class="line"><span class="language-xml">**This is Tab 3.**</span></span><br><span class="line"><span class="language-xml"><span class="comment">&lt;!-- endtab --&gt;</span></span></span><br><span class="line"><span class="language-xml"></span><span class="template-tag">&#123;% <span class="name">endtabs</span> %&#125;</span></span><br></pre></td></tr></table></figure>
-<p>Permalink for &gt; <a href="#tab-one">Tab one</a>. Permalink for &gt;
-<a href="#tab-one-1">Tab one 1</a>. Permalink for &gt; <a
-href="#tab-one-2">Tab one 2</a>. Permalink for &gt; <a
-href="#tab-one-3">Tab one 3</a>.</p>
-<p>Permalink for &gt; <a href="#tab-two">Tab two</a>. Permalink for &gt;
-<a href="#tab-two-1">Tab two 1</a>. Permalink for &gt; <a
-href="#tab-two-2">Tab two 2</a>. Permalink for &gt; <a
-href="#tab-two-3">Tab two 3</a>.</p>
+<p>Permalink for &gt; <a href="#tab-one">Tab one</a>.<br />
+Permalink for &gt; <a href="#tab-one-1">Tab one 1</a>.<br />
+Permalink for &gt; <a href="#tab-one-2">Tab one 2</a>.<br />
+Permalink for &gt; <a href="#tab-one-3">Tab one 3</a>.</p>
+<p>Permalink for &gt; <a href="#tab-two">Tab two</a>.<br />
+Permalink for &gt; <a href="#tab-two-1">Tab two 1</a>.<br />
+Permalink for &gt; <a href="#tab-two-2">Tab two 2</a>.<br />
+Permalink for &gt; <a href="#tab-two-3">Tab two 3</a>.</p>
 <div class="tabs" id="tab-one"><ul class="nav-tabs"><li class="tab active"><a href="#tab-one-1">Tab one 1</a></li><li class="tab"><a href="#tab-one-2">Tab one 2</a></li><li class="tab"><a href="#tab-one-3">Tab one 3</a></li></ul><div class="tab-content"><div class="tab-pane active" id="tab-one-1"><p><strong>This is Tab 1.</strong></p></div><div class="tab-pane" id="tab-one-2"><p><strong>This is Tab 2.</strong></p></div><div class="tab-pane" id="tab-one-3"><p><strong>This is Tab 3.</strong></p></div></div></div>
 <div class="tabs" id="tab-two"><ul class="nav-tabs"><li class="tab active"><a href="#tab-two-1">Tab two 1</a></li><li class="tab"><a href="#tab-two-2">Tab two 2</a></li><li class="tab"><a href="#tab-two-3">Tab two 3</a></li></ul><div class="tab-content"><div class="tab-pane active" id="tab-two-1"><p><strong>This is Tab 1.</strong></p></div><div class="tab-pane" id="tab-two-2"><p><strong>This is Tab 2.</strong></p></div><div class="tab-pane" id="tab-two-3"><p><strong>This is Tab 3.</strong></p></div></div></div>
 <h4 id="tabs-with-other-tags">Tabs with other tags</h4>
@@ -442,66 +447,109 @@ Note default tag.
 </ul>
 <div class="tab-content">
 <div id="sub-tabs-1" class="tab-pane active">
-<strong>This is Sub Tab 1.</strong>
+<p><strong>This is Sub Tab 1.</strong><br /></p>
 <div class="note success">
 <p>
-Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus
-hendrerit. Pellentesque aliquet nibh nec urna. In nisi neque, aliquet
-vel, dapibus id, mattis vel, nisi. Sed pretium, ligula sollicitudin
-laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu
-nibh. Nullam mollis. Ut justo. Suspendisse potenti. Pellentesque
-fermentum dolor. Aliquam quam lectus, facilisis auctor, ultrices ut,
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit.<br />
+Phasellus<br /><br />
+hendrerit. Pellentesque aliquet nibh nec urna. In nisi neque,<br />
+aliquet<br /><br />
+vel, dapibus id, mattis vel, nisi. Sed pretium, ligula<br />
+sollicitudin<br /><br />
+laoreet viverra, tortor libero sodales leo, eget blandit nunc
+tortor<br />
+eu<br /><br />
+nibh. Nullam mollis. Ut justo. Suspendisse potenti.
+Pellentesque<br /><br />
+fermentum dolor. Aliquam quam lectus, facilisis auctor, ultrices<br />
+ut,<br /><br />
 elementum vulputate, nunc.
 </p>
 <div class="note warning">
 <p>
-Sed egestas, ante et vulputate volutpat, eros pede semper est, vitae
-luctus metus libero eu augue. Morbi purus libero, faucibus adipiscing,
-commodo quis, gravida id, est. Sed lectus. Praesent elementum hendrerit
-tortor. Sed semper lorem at felis. Vestibulum volutpat, lacus a ultrices
-sagittis, mi neque euismod dui, eu pulvinar nunc sapien ornare nisl.
+Sed egestas, ante et vulputate volutpat, eros pede semper
+est,<br /><br />
+vitae<br /><br /><br />
+luctus metus libero eu augue. Morbi purus libero, faucibus<br /><br />
+adipiscing,<br /><br /><br />
+commodo quis, gravida id, est. Sed lectus. Praesent
+elementum<br /><br />
+hendrerit<br /><br /><br />
+tortor. Sed semper lorem at felis. Vestibulum volutpat, lacus
+a<br /><br />
+ultrices<br /><br /><br />
+sagittis, mi neque euismod dui, eu pulvinar nunc sapien
+ornare<br /><br />
+nisl.<br /><br /><br />
 Phasellus pede arcu, dapibus eu, fermentum et, dapibus sed, urna.
 </p>
 </div>
 <p>
-Morbi interdum mollis sapien. Sed ac risus. Phasellus lacinia, magna a
-ullamcorper laoreet, lectus arcu pulvinar risus, vitae facilisis libero
-dolor a purus. Sed vel lacus. Mauris nibh felis, adipiscing varius,
-adipiscing in, lacinia vel, tellus. Suspendisse ac urna. Etiam
-pellentesque mauris ut lectus. Nunc tellus ante, mattis eget, gravida
-vitae, ultricies ac, leo. Integer leo pede, ornare a, lacinia eu,
+Morbi interdum mollis sapien. Sed ac risus. Phasellus lacinia,<br />
+magna<br /><br />
+a ullamcorper laoreet, lectus arcu pulvinar risus, vitae
+facilisis<br /><br />
+libero dolor a purus. Sed vel lacus. Mauris nibh felis,
+adipiscing<br /><br />
+varius, adipiscing in, lacinia vel, tellus. Suspendisse ac urna.<br />
+Etiam<br /><br />
+pellentesque mauris ut lectus. Nunc tellus ante, mattis eget,<br />
+gravida<br /><br />
+vitae, ultricies ac, leo. Integer leo pede, ornare a, lacinia
+eu,<br /><br />
 vulputate vel, nisl.
 </p>
 </div>
 </div>
 <div id="sub-tabs-2" class="tab-pane">
-<strong>This is Sub Tab 2.</strong>
+<p><strong>This is Sub Tab 2.</strong><br /></p>
 <div class="note success">
 <p>
-Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus
-hendrerit. Pellentesque aliquet nibh nec urna. In nisi neque, aliquet
-vel, dapibus id, mattis vel, nisi. Sed pretium, ligula sollicitudin
-laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu
-nibh. Nullam mollis. Ut justo. Suspendisse potenti. Pellentesque
-fermentum dolor. Aliquam quam lectus, facilisis auctor, ultrices ut,
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit.<br />
+Phasellus<br /><br />
+hendrerit. Pellentesque aliquet nibh nec urna. In nisi neque,<br />
+aliquet<br /><br />
+vel, dapibus id, mattis vel, nisi. Sed pretium, ligula<br />
+sollicitudin<br /><br />
+laoreet viverra, tortor libero sodales leo, eget blandit nunc
+tortor<br />
+eu<br /><br />
+nibh. Nullam mollis. Ut justo. Suspendisse potenti.
+Pellentesque<br /><br />
+fermentum dolor. Aliquam quam lectus, facilisis auctor, ultrices<br />
+ut,<br /><br />
 elementum vulputate, nunc.
 </p>
 <p>
-Sed egestas, ante et vulputate volutpat, eros pede semper est, vitae
-luctus metus libero eu augue. Morbi purus libero, faucibus adipiscing,
-commodo quis, gravida id, est. Sed lectus. Praesent elementum hendrerit
-tortor. Sed semper lorem at felis. Vestibulum volutpat, lacus a ultrices
-sagittis, mi neque euismod dui, eu pulvinar nunc sapien ornare nisl.
+Sed egestas, ante et vulputate volutpat, eros pede semper est,<br />
+vitae<br /><br />
+luctus metus libero eu augue. Morbi purus libero, faucibus<br />
+adipiscing,<br /><br />
+commodo quis, gravida id, est. Sed lectus. Praesent elementum<br />
+hendrerit<br /><br />
+tortor. Sed semper lorem at felis. Vestibulum volutpat, lacus a<br />
+ultrices<br /><br />
+sagittis, mi neque euismod dui, eu pulvinar nunc sapien ornare<br />
+nisl.<br /><br />
 Phasellus pede arcu, dapibus eu, fermentum et, dapibus sed, urna.
 </p>
 <div class="note danger">
 <p>
-Morbi interdum mollis sapien. Sed ac risus. Phasellus lacinia, magna a
-ullamcorper laoreet, lectus arcu pulvinar risus, vitae facilisis libero
-dolor a purus. Sed vel lacus. Mauris nibh felis, adipiscing varius,
-adipiscing in, lacinia vel, tellus. Suspendisse ac urna. Etiam
-pellentesque mauris ut lectus. Nunc tellus ante, mattis eget, gravida
-vitae, ultricies ac, leo. Integer leo pede, ornare a, lacinia eu,
+Morbi interdum mollis sapien. Sed ac risus. Phasellus
+lacinia,<br /><br />
+magna<br /><br /><br />
+a ullamcorper laoreet, lectus arcu pulvinar risus, vitae<br />
+facilisis<br /><br /><br />
+libero dolor a purus. Sed vel lacus. Mauris nibh felis,<br />
+adipiscing<br /><br /><br />
+varius, adipiscing in, lacinia vel, tellus. Suspendisse ac
+urna.<br /><br />
+Etiam<br /><br /><br />
+pellentesque mauris ut lectus. Nunc tellus ante, mattis
+eget,<br /><br />
+gravida<br /><br /><br />
+vitae, ultricies ac, leo. Integer leo pede, ornare a, lacinia<br />
+eu,<br /><br /><br />
 vulputate vel, nisl.
 </p>
 </div>
@@ -525,64 +573,124 @@ vulputate vel, nisl.
 </ul>
 <div class="tab-content">
 <div id="sub-sub-tabs-1" class="tab-pane active">
-<strong>This is Sub-Sub Tab 1 of Sub Tab 3.</strong>
+<p>
+<strong>This is Sub-Sub Tab 1 of Sub Tab 3.</strong><br />
+</p>
 <div class="note success">
 <p>
-Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus
-hendrerit. Pellentesque aliquet nibh nec urna. In nisi neque, aliquet
-vel, dapibus id, mattis vel, nisi. Sed pretium, ligula sollicitudin
-laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu
-nibh. Nullam mollis. Ut justo. Suspendisse potenti. Pellentesque
-fermentum dolor. Aliquam quam lectus, facilisis auctor, ultrices ut,
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit.<br /><br />
+Phasellus<br /><br /><br />
+hendrerit. Pellentesque aliquet nibh nec urna. In nisi
+neque,<br /><br />
+aliquet<br /><br /><br />
+vel, dapibus id, mattis vel, nisi. Sed pretium, ligula<br /><br />
+sollicitudin<br /><br /><br />
+laoreet viverra, tortor libero sodales leo, eget blandit nunc<br />
+tortor<br /><br />
+eu<br /><br /><br />
+nibh. Nullam mollis. Ut justo. Suspendisse potenti.<br />
+Pellentesque<br /><br /><br />
+fermentum dolor. Aliquam quam lectus, facilisis auctor,
+ultrices<br /><br />
+ut,<br /><br /><br />
 elementum vulputate, nunc.
 </p>
 <p>
-Sed egestas, ante et vulputate volutpat, eros pede semper est, vitae
-luctus metus libero eu augue. Morbi purus libero, faucibus adipiscing,
-commodo quis, gravida id, est. Sed lectus. Praesent elementum hendrerit
-tortor. Sed semper lorem at felis. Vestibulum volutpat, lacus a ultrices
-sagittis, mi neque euismod dui, eu pulvinar nunc sapien ornare nisl.
+Sed egestas, ante et vulputate volutpat, eros pede semper
+est,<br /><br />
+vitae<br /><br /><br />
+luctus metus libero eu augue. Morbi purus libero, faucibus<br /><br />
+adipiscing,<br /><br /><br />
+commodo quis, gravida id, est. Sed lectus. Praesent
+elementum<br /><br />
+hendrerit<br /><br /><br />
+tortor. Sed semper lorem at felis. Vestibulum volutpat, lacus
+a<br /><br />
+ultrices<br /><br /><br />
+sagittis, mi neque euismod dui, eu pulvinar nunc sapien
+ornare<br /><br />
+nisl.<br /><br /><br />
 Phasellus pede arcu, dapibus eu, fermentum et, dapibus sed, urna.
 </p>
 <p>
-Morbi interdum mollis sapien. Sed ac risus. Phasellus lacinia, magna a
-ullamcorper laoreet, lectus arcu pulvinar risus, vitae facilisis libero
-dolor a purus. Sed vel lacus. Mauris nibh felis, adipiscing varius,
-adipiscing in, lacinia vel, tellus. Suspendisse ac urna. Etiam
-pellentesque mauris ut lectus. Nunc tellus ante, mattis eget, gravida
-vitae, ultricies ac, leo. Integer leo pede, ornare a, lacinia eu,
+Morbi interdum mollis sapien. Sed ac risus. Phasellus
+lacinia,<br /><br />
+magna<br /><br /><br />
+a ullamcorper laoreet, lectus arcu pulvinar risus, vitae<br />
+facilisis<br /><br /><br />
+libero dolor a purus. Sed vel lacus. Mauris nibh felis,<br />
+adipiscing<br /><br /><br />
+varius, adipiscing in, lacinia vel, tellus. Suspendisse ac
+urna.<br /><br />
+Etiam<br /><br /><br />
+pellentesque mauris ut lectus. Nunc tellus ante, mattis
+eget,<br /><br />
+gravida<br /><br /><br />
+vitae, ultricies ac, leo. Integer leo pede, ornare a, lacinia<br />
+eu,<br /><br /><br />
 vulputate vel, nisl.
 </p>
 </div>
 </div>
 <div id="sub-sub-tabs-2" class="tab-pane">
-<strong>This is Sub-Sub Tab 2 of Sub Tab 3.</strong>
+<p>
+<strong>This is Sub-Sub Tab 2 of Sub Tab 3.</strong><br />
+</p>
 <div class="note success">
 <p>
-Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus
-hendrerit. Pellentesque aliquet nibh nec urna. In nisi neque, aliquet
-vel, dapibus id, mattis vel, nisi. Sed pretium, ligula sollicitudin
-laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu
-nibh. Nullam mollis. Ut justo. Suspendisse potenti. Pellentesque
-fermentum dolor. Aliquam quam lectus, facilisis auctor, ultrices ut,
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit.<br /><br />
+Phasellus<br /><br /><br />
+hendrerit. Pellentesque aliquet nibh nec urna. In nisi
+neque,<br /><br />
+aliquet<br /><br /><br />
+vel, dapibus id, mattis vel, nisi. Sed pretium, ligula<br /><br />
+sollicitudin<br /><br /><br />
+laoreet viverra, tortor libero sodales leo, eget blandit nunc<br />
+tortor<br /><br />
+eu<br /><br /><br />
+nibh. Nullam mollis. Ut justo. Suspendisse potenti.<br />
+Pellentesque<br /><br /><br />
+fermentum dolor. Aliquam quam lectus, facilisis auctor,
+ultrices<br /><br />
+ut,<br /><br /><br />
 elementum vulputate, nunc.
 </p>
 <div class="note warning">
 <p>
-Sed egestas, ante et vulputate volutpat, eros pede semper est, vitae
-luctus metus libero eu augue. Morbi purus libero, faucibus adipiscing,
-commodo quis, gravida id, est. Sed lectus. Praesent elementum hendrerit
-tortor. Sed semper lorem at felis. Vestibulum volutpat, lacus a ultrices
-sagittis, mi neque euismod dui, eu pulvinar nunc sapien ornare nisl.
+Sed egestas, ante et vulputate volutpat, eros pede semper<br />
+est,<br /><br /><br />
+vitae<br /><br /><br /><br />
+luctus metus libero eu augue. Morbi purus libero,
+faucibus<br /><br /><br />
+adipiscing,<br /><br /><br /><br />
+commodo quis, gravida id, est. Sed lectus. Praesent<br />
+elementum<br /><br /><br />
+hendrerit<br /><br /><br /><br />
+tortor. Sed semper lorem at felis. Vestibulum volutpat, lacus<br />
+a<br /><br /><br />
+ultrices<br /><br /><br /><br />
+sagittis, mi neque euismod dui, eu pulvinar nunc sapien<br />
+ornare<br /><br /><br />
+nisl.<br /><br /><br /><br />
 Phasellus pede arcu, dapibus eu, fermentum et, dapibus sed, urna.
 </p>
 <p>
-Morbi interdum mollis sapien. Sed ac risus. Phasellus lacinia, magna a
-ullamcorper laoreet, lectus arcu pulvinar risus, vitae facilisis libero
-dolor a purus. Sed vel lacus. Mauris nibh felis, adipiscing varius,
-adipiscing in, lacinia vel, tellus. Suspendisse ac urna. Etiam
-pellentesque mauris ut lectus. Nunc tellus ante, mattis eget, gravida
-vitae, ultricies ac, leo. Integer leo pede, ornare a, lacinia eu,
+Morbi interdum mollis sapien. Sed ac risus. Phasellus<br />
+lacinia,<br /><br /><br />
+magna<br /><br /><br /><br />
+a ullamcorper laoreet, lectus arcu pulvinar risus, vitae<br /><br />
+facilisis<br /><br /><br /><br />
+libero dolor a purus. Sed vel lacus. Mauris nibh felis,<br /><br />
+adipiscing<br /><br /><br /><br />
+varius, adipiscing in, lacinia vel, tellus. Suspendisse ac<br />
+urna.<br /><br /><br />
+Etiam<br /><br /><br /><br />
+pellentesque mauris ut lectus. Nunc tellus ante, mattis<br />
+eget,<br /><br /><br />
+gravida<br /><br /><br /><br />
+vitae, ultricies ac, leo. Integer leo pede, ornare a,
+lacinia<br /><br />
+eu,<br /><br /><br /><br />
 vulputate vel, nisl.
 </p>
 </div>
@@ -594,31 +702,62 @@ vulputate vel, nisl.
 </p>
 <div class="note success">
 <p>
-Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus
-hendrerit. Pellentesque aliquet nibh nec urna. In nisi neque, aliquet
-vel, dapibus id, mattis vel, nisi. Sed pretium, ligula sollicitudin
-laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu
-nibh. Nullam mollis. Ut justo. Suspendisse potenti. Pellentesque
-fermentum dolor. Aliquam quam lectus, facilisis auctor, ultrices ut,
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit.<br /><br />
+Phasellus<br /><br /><br />
+hendrerit. Pellentesque aliquet nibh nec urna. In nisi
+neque,<br /><br />
+aliquet<br /><br /><br />
+vel, dapibus id, mattis vel, nisi. Sed pretium, ligula<br /><br />
+sollicitudin<br /><br /><br />
+laoreet viverra, tortor libero sodales leo, eget blandit nunc<br />
+tortor<br /><br />
+eu<br /><br /><br />
+nibh. Nullam mollis. Ut justo. Suspendisse potenti.<br />
+Pellentesque<br /><br /><br />
+fermentum dolor. Aliquam quam lectus, facilisis auctor,
+ultrices<br /><br />
+ut,<br /><br /><br />
 elementum vulputate, nunc.
 </p>
 <div class="note warning">
 <p>
-Sed egestas, ante et vulputate volutpat, eros pede semper est, vitae
-luctus metus libero eu augue. Morbi purus libero, faucibus adipiscing,
-commodo quis, gravida id, est. Sed lectus. Praesent elementum hendrerit
-tortor. Sed semper lorem at felis. Vestibulum volutpat, lacus a ultrices
-sagittis, mi neque euismod dui, eu pulvinar nunc sapien ornare nisl.
+Sed egestas, ante et vulputate volutpat, eros pede semper<br />
+est,<br /><br /><br />
+vitae<br /><br /><br /><br />
+luctus metus libero eu augue. Morbi purus libero,
+faucibus<br /><br /><br />
+adipiscing,<br /><br /><br /><br />
+commodo quis, gravida id, est. Sed lectus. Praesent<br />
+elementum<br /><br /><br />
+hendrerit<br /><br /><br /><br />
+tortor. Sed semper lorem at felis. Vestibulum volutpat, lacus<br />
+a<br /><br /><br />
+ultrices<br /><br /><br /><br />
+sagittis, mi neque euismod dui, eu pulvinar nunc sapien<br />
+ornare<br /><br /><br />
+nisl.<br /><br /><br /><br />
 Phasellus pede arcu, dapibus eu, fermentum et, dapibus sed, urna.
 </p>
 <div class="note danger">
 <p>
-Morbi interdum mollis sapien. Sed ac risus. Phasellus lacinia, magna a
-ullamcorper laoreet, lectus arcu pulvinar risus, vitae facilisis libero
-dolor a purus. Sed vel lacus. Mauris nibh felis, adipiscing varius,
-adipiscing in, lacinia vel, tellus. Suspendisse ac urna. Etiam
-pellentesque mauris ut lectus. Nunc tellus ante, mattis eget, gravida
-vitae, ultricies ac, leo. Integer leo pede, ornare a, lacinia eu,
+Morbi interdum mollis sapien. Sed ac risus. Phasellus<br /><br />
+lacinia,<br /><br /><br /><br />
+magna<br /><br /><br /><br /><br />
+a ullamcorper laoreet, lectus arcu pulvinar risus,
+vitae<br /><br /><br />
+facilisis<br /><br /><br /><br /><br />
+libero dolor a purus. Sed vel lacus. Mauris nibh
+felis,<br /><br /><br />
+adipiscing<br /><br /><br /><br /><br />
+varius, adipiscing in, lacinia vel, tellus. Suspendisse ac<br /><br />
+urna.<br /><br /><br /><br />
+Etiam<br /><br /><br /><br /><br />
+pellentesque mauris ut lectus. Nunc tellus ante, mattis<br /><br />
+eget,<br /><br /><br /><br />
+gravida<br /><br /><br /><br /><br />
+vitae, ultricies ac, leo. Integer leo pede, ornare a,<br />
+lacinia<br /><br /><br />
+eu,<br /><br /><br /><br /><br />
 vulputate vel, nisl.
 </p>
 </div>

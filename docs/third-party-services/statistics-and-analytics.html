@@ -28,9 +28,12 @@
 <meta property="og:description" content="NexT User Docs – Third-party Plugins Integration – Statistics and Analytics">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="http://zhiwenhu471.github.io/images/analytics-baidu-id.png">
+<meta property="og:image" content="http://zhiwenhu471.github.io/images/valine-1.png">
 <meta property="og:image" content="http://zhiwenhu471.github.io/images/valine-2.png">
 <meta property="og:image" content="http://zhiwenhu471.github.io/images/firebase-1.png">
+<meta property="og:image" content="http://zhiwenhu471.github.io/images/firebase.png">
 <meta property="og:image" content="http://zhiwenhu471.github.io/images/firestore-1.png">
+<meta property="og:image" content="http://zhiwenhu471.github.io/images/firestore-2.png">
 <meta property="og:image" content="http://zhiwenhu471.github.io/images/firestore-3.png">
 <meta property="article:published_time" content="2025-12-10T14:41:38.080Z">
 <meta property="article:modified_time" content="2025-12-10T14:41:38.080Z">
@@ -338,7 +341,7 @@
       
       <div class="post-body">
           <div class="note warning"><p>NexT will not send record to analytics service provider as long as
-the page’s host name does not match <code>url</code> option set in
+the page's host name does not match <code>url</code> option set in
 <mark class="label info">Hexo config file</mark>. This will prevent
 local debugging from polluting analytics. Make sure you have configured
 <code>url</code> correctly, otherwise these statistics tools may not
@@ -354,31 +357,31 @@ section <code>google_analytics</code> with your Google track ID. Google
 track ID always starts with <code>UA-</code>.</p>
 <p><figure class="highlight yml"><figcaption><span>NexT config file</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="comment"># Google Analytics</span></span><br><span class="line"><span class="attr">google_analytics:</span></span><br><span class="line">  <span class="attr">tracking_id:</span> <span class="string">UA-XXXXXXXX-X</span></span><br><span class="line">  <span class="attr">only_pageview:</span> <span class="literal">false</span></span><br></pre></td></tr></table></figure></p></li>
 <li><p>When field <code>only_pageview</code> is set to true, NexT will
-only send <code>pageview</code> event to Google Analytics. The benefit
-of using this instead of <code>only_pageview: false</code> is reduce a
-external script on your site, which will give you better performance but
-no complete analytics function.</p></li>
+only send <code>pageview</code> event to Google Analytics.<br />
+The benefit of using this instead of <code>only_pageview: false</code>
+is reduce a external script on your site, which will give you better
+performance but no complete analytics function.</p></li>
 </ol>
 <h4 id="baidu-analytics-china">Baidu Analytics (China)</h4>
 <div class="tabs" id="baidu-analytics"><ul class="nav-tabs"><li class="tab active"><a href="#baidu-analytics-1">Login →</a></li><li class="tab"><a href="#baidu-analytics-2">Script ID →</a></li><li class="tab"><a href="#baidu-analytics-3">NexT Config</a></li></ul><div class="tab-content"><div class="tab-pane active" id="baidu-analytics-1"><p>Login to <span class="exturl" data-url="aHR0cHM6Ly90b25namkuYmFpZHUuY29t">Baidu Analytics<i class="fa fa-external-link-alt"></i></span> and
 locate to site code getting page.</p></div><div class="tab-pane" id="baidu-analytics-2"><p>Copy the script ID after <code>hm.js?</code>, like the following
-picture: <img src="/images/analytics-baidu-id.png"
+picture:<br />
+<img src="/images/analytics-baidu-id.png"
 alt="NexT Baidu Analytics" /></p></div><div class="tab-pane" id="baidu-analytics-3"><p>Edit <mark class="label primary">NexT config file</mark> and change
 the value of <code>baidu_analytics</code> to your script ID.</p>
 <figure class="highlight yml"><figcaption><span>NexT config file</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="comment"># Baidu Analytics ID</span></span><br><span class="line"><span class="attr">baidu_analytics:</span> <span class="string">your_id</span></span><br></pre></td></tr></table></figure></div></div></div>
 <h4 id="growingio-analytics">Growingio Analytics</h4>
-<p>Official documentation:
-https://docs.growingio.com/v3/developer-manual/sdkintegrated/web-js-sdk/latest-jssdk</p>
+<p>Official documentation: <span class="exturl" data-url="aHR0cHM6Ly9kb2NzLmdyb3dpbmdpby5jb20vdjMvZGV2ZWxvcGVyLW1hbnVhbC9zZGtpbnRlZ3JhdGVkL3dlYi1qcy1zZGsvbGF0ZXN0LWpzc2Rr">https://docs.growingio.com/v3/developer-manual/sdkintegrated/web-js-sdk/latest-jssdk<i class="fa fa-external-link-alt"></i></span></p>
 <p>Edit <mark class="label primary">NexT config file</mark> and change the value of
 <code>growingio_analytics</code> to your project ID.</p>
 <figure class="highlight yml"><figcaption><span>NexT config file</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="comment"># Growingio Analytics</span></span><br><span class="line"><span class="attr">growingio_analytics:</span> <span class="comment"># &lt;project_id&gt;</span></span><br></pre></td></tr></table></figure>
 <h4 id="cloudflare-web-analytics">Cloudflare Web Analytics</h4>
-<p>Official documentation: https://www.cloudflare.com/web-analytics/</p>
+<p>Official documentation: <span class="exturl" data-url="aHR0cHM6Ly93d3cuY2xvdWRmbGFyZS5jb20vd2ViLWFuYWx5dGljcy8=">https://www.cloudflare.com/web-analytics/<i class="fa fa-external-link-alt"></i></span></p>
 <p>Edit <mark class="label primary">NexT config file</mark> and change the value of
 <code>cloudflare_analytics</code> to your project ID.</p>
 <figure class="highlight yml"><figcaption><span>NexT config file</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="comment"># Cloudflare Web Analytics</span></span><br><span class="line"><span class="attr">cloudflare_analytics:</span></span><br></pre></td></tr></table></figure>
 <h4 id="microsoft-clarity-analytics">Microsoft Clarity Analytics</h4>
-<p>Official documentation: https://clarity.microsoft.com/</p>
+<p>Official documentation: <span class="exturl" data-url="aHR0cHM6Ly9jbGFyaXR5Lm1pY3Jvc29mdC5jb20v">https://clarity.microsoft.com/<i class="fa fa-external-link-alt"></i></span></p>
 <p>Edit <mark class="label primary">NexT config file</mark> and change the value of
 <code>clarity_analytics</code> to your project ID.</p>
 <figure class="highlight yml"><figcaption><span>NexT config file</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="comment"># Microsoft Clarity Analytics</span></span><br><span class="line"><span class="attr">clarity_analytics:</span> <span class="comment"># &lt;project_id&gt;</span></span><br></pre></td></tr></table></figure>
@@ -391,7 +394,7 @@ your backend server and your customized site ID.</p>
 <h4 id="umami-analytics-self-managed">Umami Analytics
 (Self-managed)</h4>
 <p>Umami is a self-hosted web analytics solution. Official
-documentation: https://umami.is/</p>
+documentation: <span class="exturl" data-url="aHR0cHM6Ly91bWFtaS5pcy8=">https://umami.is/<i class="fa fa-external-link-alt"></i></span></p>
 <p>Edit <mark class="label primary">NexT config file</mark>. Fill <code>script_url</code> under section
 <code>umami</code> with your tracking script URL, and change the value
 of <code>website_id</code> to your website ID.</p>
@@ -399,7 +402,7 @@ of <code>website_id</code> to your website ID.</p>
 <h4 id="plausible-analytics-self-managed">Plausible Analytics
 (Self-managed)</h4>
 <p>Opt for paid managed hosting or self-host it on your server. Official
-documentation: https://plausible.io/</p>
+documentation: <span class="exturl" data-url="aHR0cHM6Ly9wbGF1c2libGUuaW8v">https://plausible.io/<i class="fa fa-external-link-alt"></i></span></p>
 <p>Edit <mark class="label primary">NexT config file</mark>. Fill <code>script_url</code> under section
 <code>plausible</code> with your tracking script URL, and change the
 value of <code>site_domain</code> to your website domain.</p>
@@ -410,12 +413,12 @@ value of <code>site_domain</code> to your website domain.</p>
 how to set the counter up and running safely aviable in <span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by1sZWFuY2xvdWQtY291bnRlci1zZWN1cml0eQ==">hexo-leancloud-counter-security<i class="fa fa-external-link-alt"></i></span>.</p>
 <div class="tabs" id="leancloud-counter"><ul class="nav-tabs"><li class="tab active"><a href="#leancloud-counter-1">Get App Keys →</a></li><li class="tab"><a href="#leancloud-counter-2">Installation →</a></li><li class="tab"><a href="#leancloud-counter-3">Hexo Config →</a></li><li class="tab"><a href="#leancloud-counter-4">NexT Config</a></li></ul><div class="tab-content"><div class="tab-pane active" id="leancloud-counter-1"><ol type="1">
 <li>Create an account or log in to <span class="exturl" data-url="aHR0cHM6Ly9jb25zb2xlLmxlYW5jbG91ZC5hcHAvbG9naW4=">LeanCloud<i class="fa fa-external-link-alt"></i></span>, and then click
-the button to create an application in <span class="exturl" data-url="aHR0cHM6Ly9jb25zb2xlLmxlYW5jbG91ZC5hcHAvYXBwcw==">dashboard<i class="fa fa-external-link-alt"></i></span>. <img
-src="/images/valine-1.png" alt="LeanCloud" /></li>
+the button to create an application in <span class="exturl" data-url="aHR0cHM6Ly9jb25zb2xlLmxlYW5jbG91ZC5hcHAvYXBwcw==">dashboard<i class="fa fa-external-link-alt"></i></span>.<br />
+<img src="/images/valine-1.png" alt="LeanCloud" /></li>
 <li>Go to the application you just created, select
 <code>Settings → App Keys</code> in the lower left corner, and you will
-see your APP ID and APP Key. <img src="/images/valine-2.png"
-alt="LeanCloud" /></li>
+see your APP ID and APP Key.<br />
+<img src="/images/valine-2.png" alt="LeanCloud" /></li>
 </ol></div><div class="tab-pane" id="leancloud-counter-2"><p>Install <code>hexo-leancloud-counter-security</code> by executing the
 following command in <mark class="label info">site root dir</mark>:</p>
 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm install hexo-leancloud-counter-security</span><br></pre></td></tr></table></figure></div><div class="tab-pane" id="leancloud-counter-3"><p>Edit <mark class="label info">Hexo config file</mark> and add
@@ -428,35 +431,34 @@ options under <code>leancloud_visitors</code> section.</p>
 statistics.</p>
 <div class="tabs" id="firestore"><ul class="nav-tabs"><li class="tab active"><a href="#firestore-1">Get apiKey & projectId →</a></li><li class="tab"><a href="#firestore-2">Create Firestore Database →</a></li><li class="tab"><a href="#firestore-3">NexT Config</a></li></ul><div class="tab-content"><div class="tab-pane active" id="firestore-1"><p>Login to <span class="exturl" data-url="aHR0cHM6Ly9jb25zb2xlLmZpcmViYXNlLmdvb2dsZS5jb20vdS8wLw==">Firebase<i class="fa fa-external-link-alt"></i></span> to get
 apiKey and projectId. The Web API Key gets generated once you go into
-the “Authentication” section for the first time.</p>
-<p><img src="/images/firebase-1.png" alt="Firebase" /> <img
-src="/images/firebase.png" alt="Firebase" /></p>
+the "Authentication" section for the first time.</p>
+<p><img src="/images/firebase-1.png" alt="Firebase" /><br />
+<img src="/images/firebase.png" alt="Firebase" /></p>
 <p><span class="exturl" data-url="aHR0cHM6Ly9maXJlYmFzZS5nb29nbGUuY29tL2RvY3MvZmlyZXN0b3JlLw==">More detailed
 documentation<i class="fa fa-external-link-alt"></i></span></p></div><div class="tab-pane" id="firestore-2"><ol type="1">
 <li>Create a Firestore database in Firebase console.</li>
 </ol>
-<p><img src="/images/firestore-1.png" alt="Firestore" /> <img
-src="/images/firestore-2.png" alt="Firestore" /></p>
+<p><img src="/images/firestore-1.png" alt="Firestore" /><br />
+<img src="/images/firestore-2.png" alt="Firestore" /></p>
 <ol start="2" type="1">
 <li>Apply these rules in Firestore Database Rules:</li>
 </ol>
 <figure class="highlight js"><table><tr><td class="code"><pre><span class="line">rules_version = <span class="string">&#x27;2&#x27;</span>;</span><br><span class="line">service cloud.<span class="property">firestore</span> &#123;</span><br><span class="line">  match /databases/&#123;database&#125;/documents &#123;</span><br><span class="line">    match /articles/&#123;<span class="variable language_">document</span>=**&#125; &#123;</span><br><span class="line">      allow read, <span class="attr">create</span>: <span class="keyword">if</span> <span class="literal">true</span>;</span><br><span class="line">      allow <span class="attr">write</span>: <span class="keyword">if</span> request.<span class="property">resource</span>.<span class="property">data</span>.<span class="property">count</span>==resource.<span class="property">data</span>.<span class="property">count</span>+<span class="number">1</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    match /&#123;<span class="variable language_">document</span>=**&#125; &#123;</span><br><span class="line">      allow read, <span class="attr">write</span>: <span class="keyword">if</span> <span class="literal">false</span>;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p>This configuration allows anyone to read the visitor count but
 prevents unauthorized writes to the database.</p>
-<figure>
-<img src="/images/firestore-3.png" alt="Firestore" />
-<figcaption aria-hidden="true">Firestore</figcaption>
-</figure></div><div class="tab-pane" id="firestore-3"><p>Edit <mark class="label primary">NexT config file</mark> and add or
+<p><img src="/images/firestore-3.png" alt="Firestore" /></p></div><div class="tab-pane" id="firestore-3"><p>Edit <mark class="label primary">NexT config file</mark> and add or
 change <code>firestore</code> section:</p>
 <figure class="highlight yml"><figcaption><span>NexT config file</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="attr">firestore:</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">collection:</span> <span class="string">articles</span> <span class="comment">#required, a string collection name to access firestore database</span></span><br><span class="line">  <span class="attr">apiKey:</span> <span class="comment">#required</span></span><br><span class="line">  <span class="attr">projectId:</span> <span class="comment">#required</span></span><br></pre></td></tr></table></figure>
 <p>Note: Firestore visitor counting tracks unique visitors (UV) only.
-The count won’t increase on page refresh as it uses browser’s
-localStorage. To test the counter: - Clear localStorage in Developer
-Tools - Use incognito/private mode - Use different browsers</p></div></div></div>
+The count won't increase on page refresh as it uses browser's
+localStorage. To test the counter:<br />
+- Clear localStorage in Developer Tools<br />
+- Use incognito/private mode<br />
+- Use different browsers</p></div></div></div>
 <h4 id="busuanzi-counting-china">Busuanzi Counting (China)</h4>
 <div class="tabs" id="busuanzi-counting"><ul class="nav-tabs"><li class="tab active"><a href="#busuanzi-counting-1">Global Settings →</a></li><li class="tab"><a href="#busuanzi-counting-2">Site UV Settings →</a></li><li class="tab"><a href="#busuanzi-counting-3">Site PV Settings →</a></li><li class="tab"><a href="#busuanzi-counting-4">Per-page PV Settings</a></li></ul><div class="tab-content"><div class="tab-pane active" id="busuanzi-counting-1"><p>Edit <code>busuanzi_count</code> option in
-<mark class="label primary">NexT config file</mark>. When
-<code>enable: true</code>, global setting is enabled. If
+<mark class="label primary">NexT config file</mark>.<br />
+When <code>enable: true</code>, global setting is enabled. If
 <code>total_visitors</code>, <code>total_views</code>,
 <code>post_views</code> are all <code>false</code>, Busuanzi only counts
 but never shows.</p></div><div class="tab-pane" id="busuanzi-counting-2"><p>When <code>total_visitors: true</code>, it will show site UV in

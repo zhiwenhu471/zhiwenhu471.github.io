@@ -329,7 +329,7 @@
       
       <div class="post-body">
           <h3 id="preamble-text">Preamble Text</h3>
-<p>It’s a common need to show some part of article in home page and then
+<p>It's a common need to show some part of article in home page and then
 give a link to full article. NexT gives two ways to control how article
 is shown in home page. In other words, you can use following ways to
 show summary of articles and a <strong>Read More</strong> button.</p>
@@ -345,7 +345,7 @@ file</mark>.</p>
 <figure class="highlight yml"><figcaption><span>NexT config file</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="attr">excerpt_description:</span> <span class="literal">true</span></span><br></pre></td></tr></table></figure></div></div></div>
 <div class="note info"><p>It is recommended to use <code>&lt;!-- more --&gt;</code> (the first
 way) which can not only control what you want to show better, but also
-let Hexo’s plugins use it easily.</p>
+let Hexo's plugins use it easily.</p>
 </div>
 <h3 id="post-meta-display">Post Meta Display</h3>
 <p>NexT supports post created date, post updated date and post
@@ -360,11 +360,14 @@ created time in popup. You can disable it by setting value
 <mark class="label primary">NexT config file</mark>.</p>
 <figure class="highlight yml"><figcaption><span>NexT config file</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="attr">post_meta:</span></span><br><span class="line">  <span class="attr">created_at:</span> <span class="literal">true</span></span><br></pre></td></tr></table></figure></div><div class="tab-pane" id="postmeta-3"><div class="note warning">
 <p>
-Make sure you set <code>use_date_for_updated</code> and
-<code>updated_option</code> in <mark class="label info">Hexo config
-file</mark> correctly, otherwise this option will not take effect. See
-also <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlvL2RvY3MvY29uZmlndXJhdGlvbiNEYXRlLVRpbWUtZm9ybWF0">Date
-/ Time format<i class="fa fa-external-link-alt"></i></span>.
+Make sure you set <code>use_date_for_updated</code> and<br />
+<code>updated_option</code> in <mark class="label info">Hexo
+config<br />
+file</mark> correctly, otherwise this option will not take effect.
+See<br />
+also
+<a target="_blank" rel="noopener" href="https://hexo.io/docs/configuration#Date-Time-format">Date<br />
+/ Time format</a>.
 </p>
 </div>
 <div id="postmeta1" class="tabs">
@@ -379,34 +382,39 @@ also <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlvL2RvY3MvY29uZmlndXJhdGlv
 <div class="tab-content">
 <div id="postmeta1-1" class="tab-pane active">
 <p>
-By default NexT shows the post updated date in post meta section and
-updated time in popup. You can disable it by setting value
-<code>post_meta.updated_at.enable</code> to <code>false</code> in
+By default NexT shows the post updated date in post meta section
+and<br />
+updated time in popup. You can disable it by setting value<br />
+<code>post_meta.updated_at.enable</code> to <code>false</code> in<br />
 <mark class="label primary">NexT config file</mark>.
 </p>
 <figure class="highlight yml"><figcaption><span>NexT config file</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="attr">post_meta:</span></span><br><span class="line">  <span class="attr">updated_at:</span></span><br><span class="line">    <span class="attr">enable:</span> <span class="literal">true</span></span><br></pre></td></tr></table></figure>
 </div>
 <div id="postmeta1-2" class="tab-pane">
 <p>
-By default, if updated/edited date is the same as created date, edited
-time would be displayed in popup message. You can disable it by setting
-value <code>post_meta.updated_at.another_day</code> to
-<code>false</code> in <mark class="label primary">NexT config
-file</mark>. In other words:
+By default, if updated/edited date is the same as created date,<br />
+edited time would be displayed in popup message. You can disable it
+by<br />
+setting value <code>post_meta.updated_at.another_day</code> to<br />
+<code>false</code> in <mark class="label primary">NexT config<br />
+file</mark>.<br /><br />
+In other words:
 </p>
 <ul>
 <li>
-If true, show updated date label only if <code>updated date</code> is
-different from <code>created date</code> (post edited in another day
+If true, show updated date label only if <code>updated date</code><br />
+is different from <code>created date</code> (post edited in another
+day<br />
 than was created).
 </li>
 <li>
-And if post was edited in same day as created, edited time will show in
-popup title under created time label.
+And if post was edited in same day as created, edited time will
+show<br />
+in popup title under created time label.
 </li>
 <li>
-If false show anyway, but if post edited in same day, show only edited
-time.
+If false show anyway, but if post edited in same day, show only<br />
+edited time.
 </li>
 </ul>
 <figure class="highlight yml"><figcaption><span>NexT config file</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="attr">post_meta:</span></span><br><span class="line">  <span class="attr">updated_at:</span></span><br><span class="line">    <span class="attr">another_day:</span> <span class="literal">true</span></span><br></pre></td></tr></table></figure>
@@ -446,51 +454,56 @@ file</mark> by enabled any option:</p>
 <div class="tab-content">
 <div id="wordcount1-1" class="tab-pane active">
 <p>
-By default NexT shows the number of post words in post meta section. You
-can disable it by setting value <code>symbols_count_time.symbols</code>
-to <code>false</code> in <mark class="label info">Hexo config
-file</mark>.
+By default NexT shows the number of post words in post meta
+section.<br />
+You can disable it by setting value<br />
+<code>symbols_count_time.symbols</code> to <code>false</code> in<br />
+<mark class="label info">Hexo config file</mark>.
 </p>
 <figure class="highlight yml"><figcaption><span>Hexo config file</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="attr">symbols_count_time:</span></span><br><span class="line">  <span class="attr">symbols:</span> <span class="literal">true</span></span><br></pre></td></tr></table></figure>
 </div>
 <div id="wordcount1-2" class="tab-pane">
 <p>
-By default NexT shows the estimated reading time of post in post meta
-section. You can disable it by setting value
-<code>symbols_count_time.time</code> to <code>false</code> in
+By default NexT shows the estimated reading time of post in post
+meta<br />
+section. You can disable it by setting value<br />
+<code>symbols_count_time.time</code> to <code>false</code> in<br />
 <mark class="label info">Hexo config file</mark>.
 </p>
 <figure class="highlight yml"><figcaption><span>Hexo config file</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="attr">symbols_count_time:</span></span><br><span class="line">  <span class="attr">time:</span> <span class="literal">true</span></span><br></pre></td></tr></table></figure>
 </div>
 <div id="wordcount1-3" class="tab-pane">
 <p>
-By default NexT shows the number of all posts words in footer section.
-You can disable it by setting value
-<code>symbols_count_time.total_symbols</code> to <code>false</code> in
+By default NexT shows the number of all posts words in footer<br />
+section. You can disable it by setting value<br />
+<code>symbols_count_time.total_symbols</code> to <code>false</code>
+in<br />
 <mark class="label info">Hexo config file</mark>.
 </p>
 <figure class="highlight yml"><figcaption><span>Hexo config file</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="attr">symbols_count_time:</span></span><br><span class="line">  <span class="attr">total_symbols:</span> <span class="literal">true</span></span><br></pre></td></tr></table></figure>
 </div>
 <div id="wordcount1-4" class="tab-pane">
 <p>
-By default NexT shows the estimated reading time of all posts in footer
-section. You can disable it by setting value
-<code>symbols_count_time.total_time</code> to <code>false</code> in
+By default NexT shows the estimated reading time of all posts in<br />
+footer section. You can disable it by setting value<br />
+<code>symbols_count_time.total_time</code> to <code>false</code>
+in<br />
 <mark class="label info">Hexo config file</mark>.
 </p>
 <figure class="highlight yml"><figcaption><span>Hexo config file</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="attr">symbols_count_time:</span></span><br><span class="line">  <span class="attr">total_time:</span> <span class="literal">true</span></span><br></pre></td></tr></table></figure>
 </div>
 <div id="wordcount1-5" class="tab-pane">
 <p>
-<code>awl</code> means the average Word Length (chars count in word).
+<code>awl</code> means the average Word Length (chars count in
+word).<br />
 You can check this <span class="exturl" data-url="aHR0cHM6Ly9jaGFyYWN0ZXJjb3VudHRvb2wuY29tLw==">here<i class="fa fa-external-link-alt"></i></span>.
 </p>
 <figure class="highlight yml"><figcaption><span>NexT config file</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="attr">symbols_count_time:</span></span><br><span class="line">  <span class="attr">awl:</span> <span class="number">4</span></span><br></pre></td></tr></table></figure>
 </div>
 <div id="wordcount1-6" class="tab-pane">
 <p>
-<code>wpm</code> means the average words per minute. You can check this
-<span class="exturl" data-url="aHR0cHM6Ly93b3JkY291bnRlci5uZXQv">here<i class="fa fa-external-link-alt"></i></span>.
+<code>wpm</code> means the average words per minute. You can check<br />
+this <span class="exturl" data-url="aHR0cHM6Ly93b3JkY291bnRlci5uZXQv">here<i class="fa fa-external-link-alt"></i></span>.
 </p>
 <figure class="highlight yml"><figcaption><span>NexT config file</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="attr">symbols_count_time:</span></span><br><span class="line">  <span class="attr">wpm:</span> <span class="number">275</span></span><br></pre></td></tr></table></figure>
 </div>
@@ -510,19 +523,23 @@ You can check this <span class="exturl" data-url="aHR0cHM6Ly9jaGFyYWN0ZXJjb3VudH
 <div class="tab-content">
 <div id="wordcount2-1" class="tab-pane active">
 <p>
-By default NexT shows the words counts and estimated reading time in a
-separated line. You can add them into one line by setting value
-<code>symbols_count_time.separated_meta</code> to <code>false</code> in
+By default NexT shows the words counts and estimated reading time
+in<br />
+a separated line. You can add them into one line by setting value<br />
+<code>symbols_count_time.separated_meta</code> to <code>false</code>
+in<br />
 <mark class="label primary">NexT config file</mark>.
 </p>
 <figure class="highlight yml"><figcaption><span>NexT config file</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="attr">symbols_count_time:</span></span><br><span class="line">  <span class="attr">separated_meta:</span> <span class="literal">true</span></span><br></pre></td></tr></table></figure>
 </div>
 <div id="wordcount2-2" class="tab-pane">
 <p>
-By default NexT doesn’t shows the text description of the words counts
-and estimated reading time in footer section. You can enable it by
-setting value <code>symbols_count_time.item_text_total</code> to
-<code>false</code> in <mark class="label primary">NexT config
+By default NexT doesn't shows the text description of the words<br />
+counts and estimated reading time in footer section. You can enable
+it<br />
+by setting value <code>symbols_count_time.item_text_total</code>
+to<br />
+<code>false</code> in <mark class="label primary">NexT config<br />
 file</mark>.
 </p>
 <figure class="highlight yml"><figcaption><span>NexT config file</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="attr">symbols_count_time:</span></span><br><span class="line">  <span class="attr">item_text_total:</span> <span class="literal">true</span></span><br></pre></td></tr></table></figure>
@@ -552,7 +569,7 @@ address(es).</p></li>
 <p>You can also add QRcode of other platforms, e.g.</p>
 <figure class="highlight yml"><figcaption><span>NexT config file</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="attr">paypal:</span> <span class="string">/images/paypal.png</span></span><br><span class="line"><span class="attr">monero:</span> <span class="string">/images/monero.png</span></span><br></pre></td></tr></table></figure>
 <h3 id="follow-me">Follow Me</h3>
-<p>NexT theme offers a “Follow Me” feature that enables you to showcase
+<p>NexT theme offers a "Follow Me" feature that enables you to showcase
 your social media presence and other communication channels. This allows
 your readers to follow your content across various platforms, helping
 you build and maintain a stronger connection with your audience. You can
@@ -564,12 +581,12 @@ recognition.</p>
 example:</p>
 <figure class="highlight yml"><figcaption><span>NexT config file</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="attr">follow_me:</span></span><br><span class="line">  <span class="attr">Zhihu:</span> <span class="string">https://www.zhihu.com/people/username</span> <span class="string">||</span> <span class="string">fab</span> <span class="string">fa-zhihu</span></span><br></pre></td></tr></table></figure>
 <h3 id="related-popular-posts">Related Popular Posts</h3>
-<p>The “Related Popular Posts” feature helps you increase reader
+<p>The "Related Popular Posts" feature helps you increase reader
 engagement by displaying a list of related articles in the sidebar. This
 encourages visitors to explore more of your content that matches their
 interests, potentially increasing page views and create a better user
 experience.</p>
-<p>To utilize this feature, you’ll need to install a third-party plugin
+<p>To utilize this feature, you'll need to install a third-party plugin
 <span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3NlcmdleXp3ZXpkaW4vaGV4by1yZWxhdGVkLXBvc3Rz">hexo-related-posts<i class="fa fa-external-link-alt"></i></span>
 first, as NexT relies on its functionality to analyze and determine
 content relationships.</p>
@@ -579,8 +596,8 @@ command in <mark class="label info">site root dir</mark>:</p>
 <p>Enable this plugin in <mark class="label info">Hexo config
 file</mark> by adding the following line:</p>
 <figure class="highlight yml"><figcaption><span>Hexo config file</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="attr">related_posts:</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">true</span></span><br></pre></td></tr></table></figure>
-<p>For more configuration options, please refer to the plugin’s
-documentation.</p></div><div class="tab-pane" id="related_posts-2"><p>You can enable the “Related Popular Posts” feature by setting value
+<p>For more configuration options, please refer to the plugin's
+documentation.</p></div><div class="tab-pane" id="related_posts-2"><p>You can enable the "Related Popular Posts" feature by setting value
 <code>related_posts.enable</code> to <code>true</code> in
 <mark class="label primary">NexT config file</mark>.</p>
 <figure class="highlight yml"><figcaption><span>NexT config file</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="attr">related_posts:</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">true</span></span><br></pre></td></tr></table></figure>
@@ -595,7 +612,7 @@ section in <mark class="label primary">NexT config file</mark>.</p>
 <figure class="highlight yml"><figcaption><span>NexT config file</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="attr">related_posts:</span></span><br><span class="line">  <span class="attr">icon:</span> <span class="string">fa</span> <span class="string">fa-signs-post</span></span><br></pre></td></tr></table></figure></div></div></div>
 <h3 id="post-edit">Post Edit</h3>
 <p>NexT supports the edit functionality of your posts. By enabling this
-feature, users can quickly browse and modify the blog’s source code on
+feature, users can quickly browse and modify the blog's source code on
 GitHub.</p>
 <div class="tabs" id="post_edit"><ul class="nav-tabs"><li class="tab active"><a href="#post_edit-1"><code>enable</code></a></li><li class="tab"><a href="#post_edit-2"><code>url</code></a></li></ul><div class="tab-content"><div class="tab-pane active" id="post_edit-1"><p>You can enable it by setting value <code>post_edit.enable</code> to
 <code>true</code> in <mark class="label primary">NexT config

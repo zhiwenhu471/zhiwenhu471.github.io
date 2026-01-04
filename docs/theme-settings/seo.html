@@ -352,11 +352,12 @@ for search engines to <code>&lt;a&gt;</code> tags.</p>
 You may add <code>external</code> / <code>nofollow</code> /
 <code>noopener</code> / <code>noreferrer</code> or any similar tricks,
 in any case all external links from your site will be indexed on your
-site. But here exists another trick: crawlers doesn’t reproduce any
-javascript – this do clients on their local devices. That tag give the
-way to set any external link without <code>&lt;a&gt;</code> tag. So,
-some crawlers like Yandex will not give away links weight from your site
-and this very useful for SEO. This tag perform:</p>
+site. But here exists another trick: crawlers doesn't reproduce any
+javascript – this do clients on their local devices.<br />
+That tag give the way to set any external link without
+<code>&lt;a&gt;</code> tag. So, some crawlers like Yandex will not give
+away links weight from your site and this very useful for SEO. This tag
+perform:</p>
 <ul>
 <li>Replaces <code>a</code> HTML tag with <code>span</code> HTML
 tag.</li>
@@ -364,7 +365,7 @@ tag.</li>
 in browser src for this link, but he will see tooltip where this URL
 pointed to or will be shown custom title which can be specified in
 <code>title</code> tag parameter.</li>
-<li>Backlinks by this tag will not be scanned by any monitoring. It’s
+<li>Backlinks by this tag will not be scanned by any monitoring. It's
 like you open new link with javascript at new tab.</li>
 <li>Works on mobile devices too, yep.</li>
 </ul>
@@ -378,7 +379,7 @@ attempts to confuse end-user by phishing links not allowed!</p>
 <p>You can also enable the icon for it:</p>
 <figure class="highlight yml"><figcaption><span>NexT config file</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="attr">exturl_icon:</span> <span class="literal">true</span></span><br></pre></td></tr></table></figure>
 <p>Then run the following command in <mark class="label info">site root dir</mark> to ensure that
-<code>exturl</code> can be enabled or disabled correctly:
+<code>exturl</code> can be enabled or disabled correctly:<br />
 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">hexo clean</span><br></pre></td></tr></table></figure></p>
 <h3 id="webmaster-tools">Webmaster Tools</h3>
 <h4 id="google-webmaster-tools">Google Webmaster Tools</h4>
@@ -387,9 +388,9 @@ which is used in submitting sitemap.</p>
 <div class="tabs" id="google-webmaster-tools"><ul class="nav-tabs"><li class="tab active"><a href="#google-webmaster-tools-1">Get Verification Code →</a></li><li class="tab"><a href="#google-webmaster-tools-2">NexT Config</a></li></ul><div class="tab-content"><div class="tab-pane active" id="google-webmaster-tools-1"><p>Login to Google Webmaster Tools and go to verification methods and
 choose <code>HTML Tag</code>, you will get some code:</p>
 <figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">meta</span> <span class="attr">name</span>=<span class="string">&quot;google-site-verification&quot;</span> <span class="attr">content</span>=<span class="string">&quot;XXXXXXXXXXXXXXXXXXXXXXX&quot;</span>&gt;</span></span><br></pre></td></tr></table></figure></div><div class="tab-pane" id="google-webmaster-tools-2"><p>Copy <code>XXXXXXXXXXXXXXXXXXXXXXX</code> value of
-<code>content</code> key. Edit <mark class="label primary">NexT config
-file</mark> and add or change the value of
-<code>google_site_verification</code>:</p>
+<code>content</code> key.<br />
+Edit <mark class="label primary">NexT config file</mark> and add or
+change the value of <code>google_site_verification</code>:</p>
 <figure class="highlight yml"><figcaption><span>NexT config file</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="attr">google_site_verification:</span> <span class="string">XXXXXXXXXXXXXXXXXXXXXXX</span></span><br></pre></td></tr></table></figure></div></div></div>
 <h4 id="bing-webmaster-tools">Bing Webmaster Tools</h4>
 <p>Set the verification string of <span class="exturl" data-url="aHR0cHM6Ly93d3cuYmluZy5jb20vd2VibWFzdGVycw==">Bing Webmaster Tools<i class="fa fa-external-link-alt"></i></span> which is
@@ -397,9 +398,9 @@ used in submitting sitemap.</p>
 <div class="tabs" id="bing-webmaster-tools"><ul class="nav-tabs"><li class="tab active"><a href="#bing-webmaster-tools-1">Get Verification Code →</a></li><li class="tab"><a href="#bing-webmaster-tools-2">NexT Config</a></li></ul><div class="tab-content"><div class="tab-pane active" id="bing-webmaster-tools-1"><p>Login to Bing Webmaster Tools and go to verification methods and
 choose <code>HTML Tag</code>, you will get some code:</p>
 <figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">meta</span> <span class="attr">name</span>=<span class="string">&quot;msvalidate.01&quot;</span> <span class="attr">content</span>=<span class="string">&quot;XXXXXXXXXXXXXXXXXXXXXXX&quot;</span>&gt;</span></span><br></pre></td></tr></table></figure></div><div class="tab-pane" id="bing-webmaster-tools-2"><p>Copy <code>XXXXXXXXXXXXXXXXXXXXXXX</code> value of
-<code>content</code> key. Edit <mark class="label primary">NexT config
-file</mark> and add or change the value of
-<code>bing_site_verification</code>:</p>
+<code>content</code> key.<br />
+Edit <mark class="label primary">NexT config file</mark> and add or
+change the value of <code>bing_site_verification</code>:</p>
 <figure class="highlight yml"><figcaption><span>NexT config file</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="attr">bing_site_verification:</span> <span class="string">XXXXXXXXXXXXXXXXXXXXXXX</span></span><br></pre></td></tr></table></figure></div></div></div>
 <h4 id="yandex-webmaster-tools">Yandex Webmaster Tools</h4>
 <p>Set the verification string of <span class="exturl" data-url="aHR0cHM6Ly93ZWJtYXN0ZXIueWFuZGV4LnJ1Lw==">Yandex Webmaster Tools<i class="fa fa-external-link-alt"></i></span> which is
@@ -407,26 +408,24 @@ used in submitting sitemap.</p>
 <div class="tabs" id="yandex-webmaster-tools"><ul class="nav-tabs"><li class="tab active"><a href="#yandex-webmaster-tools-1">Get Verification Code →</a></li><li class="tab"><a href="#yandex-webmaster-tools-2">NexT Config</a></li></ul><div class="tab-content"><div class="tab-pane active" id="yandex-webmaster-tools-1"><p>Login to Yandex Webmaster Tools and go to verification methods and
 choose <code>Meta Tag</code>, you will get some code:</p>
 <figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">meta</span> <span class="attr">name</span>=<span class="string">&quot;yandex-verification&quot;</span> <span class="attr">content</span>=<span class="string">&quot;XXXXXXXXXXXXXXXXXXXXXXX&quot;</span>&gt;</span></span><br></pre></td></tr></table></figure></div><div class="tab-pane" id="yandex-webmaster-tools-2"><p>Copy <code>XXXXXXXXXXXXXXXXXXXXXXX</code> value of
-<code>content</code> key. Edit <mark class="label primary">NexT config
-file</mark> and add or change the value of
-<code>yandex_site_verification</code>:</p>
+<code>content</code> key.<br />
+Edit <mark class="label primary">NexT config file</mark> and add or
+change the value of <code>yandex_site_verification</code>:</p>
 <figure class="highlight yml"><figcaption><span>NexT config file</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="attr">yandex_site_verification:</span> <span class="string">XXXXXXXXXXXXXXXXXXXXXXX</span></span><br></pre></td></tr></table></figure></div></div></div>
 <h4 id="baidu-webmaster-tools">Baidu Webmaster Tools</h4>
 <p>Set the verification string of <span class="exturl" data-url="aHR0cHM6Ly96aXl1YW4uYmFpZHUuY29tL3NpdGUv">Baidu Webmaster Tools<i class="fa fa-external-link-alt"></i></span> which is
 used in submitting sitemap.</p>
 <div class="tabs" id="baidu-webmaster-tools"><ul class="nav-tabs"><li class="tab active"><a href="#baidu-webmaster-tools-1">Get Verification Code →</a></li><li class="tab"><a href="#baidu-webmaster-tools-2">NexT Config</a></li></ul><div class="tab-content"><div class="tab-pane active" id="baidu-webmaster-tools-1"><p>Login to Baidu Webmaster Tools and go to verification methods and
 choose <code>HTML Tag</code>, you will get some code:</p>
-<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">meta</span> <span class="attr">name</span>=<span class="string">&quot;baidu-site-verification&quot;</span> <span class="attr">content</span>=<span class="string">&quot;code-XXXXXXXXXX&quot;</span>&gt;</span></span><br></pre></td></tr></table></figure></div><div class="tab-pane" id="baidu-webmaster-tools-2"><p>Copy <code>code-XXXXXXXXXX</code> value of <code>content</code> key.
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">meta</span> <span class="attr">name</span>=<span class="string">&quot;baidu-site-verification&quot;</span> <span class="attr">content</span>=<span class="string">&quot;code-XXXXXXXXXX&quot;</span>&gt;</span></span><br></pre></td></tr></table></figure></div><div class="tab-pane" id="baidu-webmaster-tools-2"><p>Copy <code>code-XXXXXXXXXX</code> value of <code>content</code>
+key.<br />
 Edit <mark class="label primary">NexT config file</mark> and add or
 change the value of <code>baidu_site_verification</code>:</p>
 <figure class="highlight yml"><figcaption><span>NexT config file</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="attr">baidu_site_verification:</span> <span class="string">code-XXXXXXXXXX</span></span><br></pre></td></tr></table></figure></div></div></div>
 <div class="note info"><p>By default Baidu will cache and rewrite your site to provide a
 webpage snapshot for mobile users. You can disable this by setting the
 site type.</p>
-<figure>
-<img src="/images/baidu.png" alt="Baidu Webmaster Tools" />
-<figcaption aria-hidden="true">Baidu Webmaster Tools</figcaption>
-</figure>
+<p><img src="/images/baidu.png" alt="Baidu Webmaster Tools" /></p>
 </div>
 
       </div>

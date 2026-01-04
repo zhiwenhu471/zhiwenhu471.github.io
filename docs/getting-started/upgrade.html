@@ -340,17 +340,17 @@ it is not recommended to actually install these versions.</p>
 <tr>
 <td>2014 ~ 2017</td>
 <td>v5</td>
-<td>https://github.com/iissnan/hexo-theme-next</td>
+<td><span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL2lpc3NuYW4vaGV4by10aGVtZS1uZXh0">https://github.com/iissnan/hexo-theme-next<i class="fa fa-external-link-alt"></i></span></td>
 </tr>
 <tr>
 <td>2018 ~ 2019</td>
 <td>v6 ~ v7</td>
-<td>https://github.com/theme-next/hexo-theme-next</td>
+<td><span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0">https://github.com/theme-next/hexo-theme-next<i class="fa fa-external-link-alt"></i></span></td>
 </tr>
 <tr>
 <td>Since 2020</td>
 <td>v8</td>
-<td>https://github.com/next-theme/hexo-theme-next</td>
+<td><span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL25leHQtdGhlbWUvaGV4by10aGVtZS1uZXh0">https://github.com/next-theme/hexo-theme-next<i class="fa fa-external-link-alt"></i></span></td>
 </tr>
 </tbody>
 </table>
@@ -363,16 +363,16 @@ refer to the <span class="exturl" data-url="aHR0cHM6Ly90aGVtZS1uZXh0LmpzLm9yZy9k
 documentation<i class="fa fa-external-link-alt"></i></span> (includes essential operations like npm update and
 configuration checks).</p>
 <h3 id="upgrade-from-legacy-version">Upgrade from Legacy Version</h3>
-<p>It’s recommended to upgrade NexT to version 8 to get the latest
+<p>It's recommended to upgrade NexT to version 8 to get the latest
 features and supports in the new <span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL25leHQtdGhlbWUvaGV4by10aGVtZS1uZXh0">Theme-Next<i class="fa fa-external-link-alt"></i></span>
 repository.</p>
 <h4 id="breaking-changes">Breaking Changes</h4>
 <p>There are some breaking changes that need attention when upgrading
 across versions.</p>
 <ol type="1">
-<li><p>Update language configuration (for Simplified Chinese) Since
-v6.0.3, <code>zh-Hans</code> has been renamed to <code>zh-CN</code>:
-https://github.com/theme-next/hexo-theme-next/releases/tag/v6.0.3</p>
+<li><p>Update language configuration (for Simplified Chinese)<br />
+Since v6.0.3, <code>zh-Hans</code> has been renamed to
+<code>zh-CN</code>: <span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3JlbGVhc2VzL3RhZy92Ni4wLjM=">https://github.com/theme-next/hexo-theme-next/releases/tag/v6.0.3<i class="fa fa-external-link-alt"></i></span></p>
 <p>Users upgrading to v6.0.3 and later need to explicitly modify the
 <code>language</code> configuration in <mark class="label info">Hexo config file</mark>, otherwise the
 language display is incorrect.</p></li>
@@ -388,27 +388,29 @@ Plugins</a>.</p></li>
 <p>So, NexT suggest to upgrade from version 5 or 7 to version 8 in this
 way:</p>
 <ol type="1">
-<li>You need to do some copies of old NexT files: 1.1.
-<code>_config.yml</code> or <code>next.yml</code> (if you used <a
+<li>You need to do some copies of old NexT files:<br />
+1.1. <code>_config.yml</code> or <code>next.yml</code> (if you used <a
 href="/docs/getting-started/configuration.html">Alternate Theme
-Config</a>). 1.2. Custom CSS files placed in
-<code>next/source/css/_custom/*</code> and
-<code>next/source/css/_variables/*</code> directories. 1.3. Custom
-layout files placed in <code>next/layout/_custom/*</code>. 1.4. Any
-another possible custom additions which can be found by compare tools
-between repositories.</li>
+Config</a>).<br />
+1.2. Custom CSS files placed in <code>next/source/css/_custom/*</code>
+and <code>next/source/css/_variables/*</code> directories.<br />
+1.3. Custom layout files placed in
+<code>next/layout/_custom/*</code>.<br />
+1.4. Any another possible custom additions which can be found by compare
+tools between repositories.</li>
 <li>Then rename the old NexT folder, for example, rename
 <code>next</code> to <code>next-old</code>.</li>
 <li>Install the new version according to the method provided in this
 article: <a href="/docs/getting-started/installation.html">installation
 instructions</a>. Run <code>hexo clean</code> and <code>hexo s</code> to
 check whether the site works correctly.</li>
-<li>Update Hexo and Hexo plugin If after completing the above steps, an
-error occurs when executing <code>hexo s</code> or <code>hexo g</code>,
-it means that there may be a conflict between the old version of Hexo /
-Hexo plugin and the new version of the theme NexT. We recommend
-upgrading Hexo and Hexo plugins to the latest version. You can run
-<code>npm outdated</code> to see all the upgradeable plugins.</li>
+<li>Update Hexo and Hexo plugin<br />
+If after completing the above steps, an error occurs when executing
+<code>hexo s</code> or <code>hexo g</code>, it means that there may be a
+conflict between the old version of Hexo / Hexo plugin and the new
+version of the theme NexT. We recommend upgrading Hexo and Hexo plugins
+to the latest version. You can run <code>npm outdated</code> to see all
+the upgradeable plugins.</li>
 <li>If you see any bugs or you simply does not like this version, you
 can switch back to the old version at any time.</li>
 </ol>

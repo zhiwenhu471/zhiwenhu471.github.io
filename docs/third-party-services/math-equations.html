@@ -89,7 +89,6 @@
   <noscript>
     <link rel="stylesheet" href="/css/noscript.css">
   </noscript>
-<link rel="alternate" href="/atom.xml" title="Joyboy" type="application/atom+xml">
 <style>mjx-container[jax="SVG"] {
   direction: ltr;
 }
@@ -202,7 +201,8 @@ mjx-container[display="true"] {
 mjx-container[display="true"] + br {
   display: none;
 }
-</style></head>
+</style><link rel="alternate" href="/atom.xml" title="Joyboy" type="application/atom+xml">
+</head>
 
 <body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
   <div class="headband"></div>
@@ -494,11 +494,15 @@ as the Markdown renderer. It is recommended because it can handle
 mathematical formulas in markdown documents perfectly.</p>
 <div class="note warning">
 <p>
-If you are using other renderers, such as <span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL2hleG9qcy9oZXhvLXJlbmRlcmVyLW1hcmtlZA==">hexo-renderer-marked<i class="fa fa-external-link-alt"></i></span>,
-you need to be aware of the conflict between LaTeX and Markdown syntax.
-For example, an underscore (<code>_</code>) may be interpreted as the
-start of italic text in Markdown, or subscripted mark in TeX. To avoid
-syntax errors, please use escape characters (<code>_</code>) instead:
+If you are using other renderers, such as <span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL2hleG9qcy9oZXhvLXJlbmRlcmVyLW1hcmtlZA==">hexo-renderer-marked<i class="fa fa-external-link-alt"></i></span>,<br>
+you need to be aware of the conflict between LaTeX and Markdown
+syntax.<br>
+For example, an underscore (<code>_</code>) may be interpreted as
+the<br>
+start of italic text in Markdown, or subscripted mark in TeX. To
+avoid<br>
+syntax errors, please use escape characters (<code>_</code>)<br>
+instead:
 </p>
 <figure class="highlight diff"><table><tr><td class="code"><pre><span class="line"><span class="deletion">-$\epsilon_0$</span></span><br><span class="line"><span class="addition">+$\epsilon\_0$</span></span><br><span class="line"><span class="deletion">-\begin{eqnarray*}</span></span><br><span class="line"><span class="addition">+\begin{eqnarray\*}</span></span><br><span class="line"><span class="deletion">-\\</span></span><br><span class="line"><span class="addition">+\\\\</span></span><br></pre></td></tr></table></figure>
 </div>
@@ -516,7 +520,7 @@ greater than 5.0.0, you need to set <code>pandoc.args</code> in
 <mark class="label info">Hexo config file</mark>:</p>
 <p><figure class="highlight yml"><figcaption><span>Hexo config file</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="comment"># config of hexo-renderer-pandoc</span></span><br><span class="line"><span class="attr">pandoc:</span></span><br><span class="line">  <span class="attr">args:</span></span><br><span class="line">    <span class="bullet">-</span> <span class="string">--mathjax</span></span><br></pre></td></tr></table></figure></p></li>
 <li><p><code>hexo-renderer-pandoc</code> requires <span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL2pnbS9wYW5kb2M=">pandoc<i class="fa fa-external-link-alt"></i></span> to be installed,
-otherwise it will throw an error. Here’s <span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL2pnbS9wYW5kb2MvYmxvYi9tYXN0ZXIvSU5TVEFMTC5tZA==">how to
+otherwise it will throw an error. Here's <span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL2pnbS9wYW5kb2MvYmxvYi9tYXN0ZXIvSU5TVEFMTC5tZA==">how to
 install pandoc<i class="fa fa-external-link-alt"></i></span>.</p></li>
 </ol>
 <p><strong>Plugins</strong></p>
@@ -556,13 +560,15 @@ plugins:</p></li>
 <div id="katex-renderer-2" class="tab-pane">
 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm un hexo-renderer-marked</span><br><span class="line">npm i hexo-renderer-markdown-it</span><br></pre></td></tr></table></figure>
 <p>
-If you use <code>hexo-renderer-markdown-it</code>, you also need to
+If you use <code>hexo-renderer-markdown-it</code>, you also need
+to<br>
 install <code>markdown-it-katex</code>:
 </p>
 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm i markdown-it-katex</span><br></pre></td></tr></table></figure>
 <p>
-And then in <mark class="label info">Hexo config file</mark> you need to
-add <code>markdown-it-katex</code> as a plugin for
+And then in <mark class="label info">Hexo config file</mark> you
+need<br>
+to add <code>markdown-it-katex</code> as a plugin for<br>
 <code>hexo-renderer-markdown-it</code>:
 </p>
 <figure class="highlight yml"><figcaption><span>Hexo config file</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="comment"># config of hexo-renderer-markdown-it</span></span><br><span class="line"><span class="attr">markdown:</span></span><br><span class="line">  <span class="attr">render:</span></span><br><span class="line">    <span class="attr">html:</span> <span class="literal">true</span></span><br><span class="line">    <span class="attr">xhtmlOut:</span> <span class="literal">false</span></span><br><span class="line">    <span class="attr">breaks:</span> <span class="literal">true</span></span><br><span class="line">    <span class="attr">linkify:</span> <span class="literal">true</span></span><br><span class="line">    <span class="attr">typographer:</span> <span class="literal">true</span></span><br><span class="line">    <span class="attr">quotes:</span> <span class="string">'“”‘’'</span></span><br><span class="line">  <span class="attr">plugins:</span></span><br><span class="line">    <span class="bullet">-</span> <span class="string">markdown-it-katex</span></span><br></pre></td></tr></table></figure>
@@ -583,34 +589,40 @@ extension<i class="fa fa-external-link-alt"></i></span>.</p>
 </p>
 <ol type="1">
 <li>
-Firstly, please check <span class="exturl" data-url="aHR0cHM6Ly9rYXRleC5vcmcvZG9jcy9pc3N1ZXMuaHRtbA==">Common Issues<i class="fa fa-external-link-alt"></i></span> of KaTeX.
+Firstly, please check <span class="exturl" data-url="aHR0cHM6Ly9rYXRleC5vcmcvZG9jcy9pc3N1ZXMuaHRtbA==">Common Issues<i class="fa fa-external-link-alt"></i></span> of<br>
+KaTeX.
 </li>
 <li>
-Displayed Math (i.e. <code><span class="math display">...</span></code>)
-needs to started with new clear line. In other words: you must not have
-any characters (except of whitespaces) <strong>before the opening
-<code><span class="math display"> &lt; /<em>c</em><em>o</em><em>d</em><em>e</em> &gt; <em>a</em><em>n</em><em>d</em><em>a</em><em>f</em><em>t</em><em>e</em><em>r</em><em>t</em><em>h</em><em>e</em><em>e</em><em>n</em><em>d</em><em>i</em><em>n</em><em>g</em> &lt; <em>c</em><em>o</em><em>d</em><em>e</em>&gt;</span></code></strong>
-(<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvMzIjaXNzdWVjb21tZW50LTM1NzQ4OTUwOQ==">comment
-#32<i class="fa fa-external-link-alt"></i></span>).
+Displayed Math (i.e. <code><span class="math display">\[...\]</span></code>) needs to started with
+new<br>
+clear line.<br><br>
+In other words: you must not have any characters (except of
+whitespaces)<br>
+<strong>before the opening <code><span class="math display">\[&lt;/code&gt; and after the ending
+&lt;code&gt;\]</span></code></strong> (<a target="_blank" rel="noopener" href="https://github.com/theme-next/hexo-theme-next/pull/32#issuecomment-357489509">comment<br>
+#32</a>).
 </li>
 <li>
-Don’t support Unicode (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvMzIjaXNzdWVjb21tZW50LTM1NzQ4OTUwOQ==">comment
-#32<i class="fa fa-external-link-alt"></i></span>).
+Don't support Unicode (<a target="_blank" rel="noopener" href="https://github.com/theme-next/hexo-theme-next/pull/32#issuecomment-357489509">comment<br>
+#32</a>).
 </li>
 <li>
-Inline Math (..<code><span class="math inline">...</span></code>) must
-not have white spaces <strong>after the opening <code><span class="math inline"> &lt; /<em>c</em><em>o</em><em>d</em><em>e</em> &gt; <em>a</em><em>n</em><em>d</em><em>b</em><em>e</em><em>f</em><em>o</em><em>r</em><em>e</em><em>t</em><em>h</em><em>e</em><em>e</em><em>n</em><em>d</em><em>i</em><em>n</em><em>g</em> &lt; <em>c</em><em>o</em><em>d</em><em>e</em>&gt;</span></code></strong>
-(<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvMzIjaXNzdWVjb21tZW50LTM1NzQ4OTUwOQ==">comment
-#32<i class="fa fa-external-link-alt"></i></span>).
+Inline Math (..<code><span class="math inline">\(...\)</span></code>)
+must not have white spaces<br>
+<strong>after the opening <code><span class="math inline">\(&lt;/code&gt; and before the ending
+&lt;code&gt;\)</span></code></strong> (<a target="_blank" rel="noopener" href="https://github.com/theme-next/hexo-theme-next/pull/32#issuecomment-357489509">comment<br>
+#32</a>).
 </li>
 <li>
-If you use math in Heading (i.e. <code>## Heading</code>). Then in
-corresponding TOC item it will show the related LaTeX code 3 times (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvMzIjaXNzdWVjb21tZW50LTM1OTAxODY5NA==">comment
-#32<i class="fa fa-external-link-alt"></i></span>).
+If you use math in Heading (i.e. <code>## Heading</code>).<br><br>
+Then in corresponding TOC item it will show the related LaTeX code
+3<br>
+times (<a target="_blank" rel="noopener" href="https://github.com/theme-next/hexo-theme-next/pull/32#issuecomment-359018694">comment<br>
+#32</a>).
 </li>
 <li>
-If you use math in your post’s title, it will not be rendered (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvMzIjaXNzdWVjb21tZW50LTM1OTE0Mjg3OQ==">comment
-#32<i class="fa fa-external-link-alt"></i></span>).
+If you use math in your post's title, it will not be rendered (<a target="_blank" rel="noopener" href="https://github.com/theme-next/hexo-theme-next/pull/32#issuecomment-359142879">comment<br>
+#32</a>).
 </li>
 </ol>
 </div></div></div></div>
@@ -650,11 +662,11 @@ the common scenarios for equation numbering.</p>
 <h4 id="simple-equations">Simple Equations</h4>
 <p>For simple equations, use the following form to give a tag,</p>
 <figure class="highlight latex"><table><tr><td class="code"><pre><span class="line"><span class="built_in">$</span><span class="built_in">$</span><span class="keyword">\begin</span>{equation} <span class="keyword">\label</span>{eq1}</span><br><span class="line">e=mc<span class="built_in">^</span>2</span><br><span class="line"><span class="keyword">\end</span>{equation}<span class="built_in">$</span><span class="built_in">$</span></span><br></pre></td></tr></table></figure>
-<p><span class="math display"><em>e</em> = <em>m</em><em>c</em><sup>2</sup></span></p>
+<p><span class="math display"><mjx-container class="MathJax" jax="SVG" display="true"><svg style="vertical-align: -0.186ex;" xmlns="http://www.w3.org/2000/svg" width="8.025ex" height="2.185ex" role="img" focusable="false" viewBox="0 -883.9 3547.1 965.9"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mi"><path data-c="1D452" d="M39 168Q39 225 58 272T107 350T174 402T244 433T307 442H310Q355 442 388 420T421 355Q421 265 310 237Q261 224 176 223Q139 223 138 221Q138 219 132 186T125 128Q125 81 146 54T209 26T302 45T394 111Q403 121 406 121Q410 121 419 112T429 98T420 82T390 55T344 24T281 -1T205 -11Q126 -11 83 42T39 168ZM373 353Q367 405 305 405Q272 405 244 391T199 357T170 316T154 280T149 261Q149 260 169 260Q282 260 327 284T373 353Z"></path></g><g data-mml-node="mo" transform="translate(743.8,0)"><path data-c="3D" d="M56 347Q56 360 70 367H707Q722 359 722 347Q722 336 708 328L390 327H72Q56 332 56 347ZM56 153Q56 168 72 173H708Q722 163 722 153Q722 140 707 133H70Q56 140 56 153Z"></path></g><g data-mml-node="mi" transform="translate(1799.6,0)"><path data-c="1D45A" d="M21 287Q22 293 24 303T36 341T56 388T88 425T132 442T175 435T205 417T221 395T229 376L231 369Q231 367 232 367L243 378Q303 442 384 442Q401 442 415 440T441 433T460 423T475 411T485 398T493 385T497 373T500 364T502 357L510 367Q573 442 659 442Q713 442 746 415T780 336Q780 285 742 178T704 50Q705 36 709 31T724 26Q752 26 776 56T815 138Q818 149 821 151T837 153Q857 153 857 145Q857 144 853 130Q845 101 831 73T785 17T716 -10Q669 -10 648 17T627 73Q627 92 663 193T700 345Q700 404 656 404H651Q565 404 506 303L499 291L466 157Q433 26 428 16Q415 -11 385 -11Q372 -11 364 -4T353 8T350 18Q350 29 384 161L420 307Q423 322 423 345Q423 404 379 404H374Q288 404 229 303L222 291L189 157Q156 26 151 16Q138 -11 108 -11Q95 -11 87 -5T76 7T74 17Q74 30 112 181Q151 335 151 342Q154 357 154 369Q154 405 129 405Q107 405 92 377T69 316T57 280Q55 278 41 278H27Q21 284 21 287Z"></path></g><g data-mml-node="msup" transform="translate(2677.6,0)"><g data-mml-node="mi"><path data-c="1D450" d="M34 159Q34 268 120 355T306 442Q362 442 394 418T427 355Q427 326 408 306T360 285Q341 285 330 295T319 325T330 359T352 380T366 386H367Q367 388 361 392T340 400T306 404Q276 404 249 390Q228 381 206 359Q162 315 142 235T121 119Q121 73 147 50Q169 26 205 26H209Q321 26 394 111Q403 121 406 121Q410 121 419 112T429 98T420 83T391 55T346 25T282 0T202 -11Q127 -11 81 37T34 159Z"></path></g><g data-mml-node="mn" transform="translate(466,413) scale(0.707)"><path data-c="32" d="M109 429Q82 429 66 447T50 491Q50 562 103 614T235 666Q326 666 387 610T449 465Q449 422 429 383T381 315T301 241Q265 210 201 149L142 93L218 92Q375 92 385 97Q392 99 409 186V189H449V186Q448 183 436 95T421 3V0H50V19V31Q50 38 56 46T86 81Q115 113 136 137Q145 147 170 174T204 211T233 244T261 278T284 308T305 340T320 369T333 401T340 431T343 464Q343 527 309 573T212 619Q179 619 154 602T119 569T109 550Q109 549 114 549Q132 549 151 535T170 489Q170 464 154 447T109 429Z"></path></g></g></g></g></svg></mjx-container></span></p>
 <p>Then, you can refer to this equation in your text easily by using
 something like:</p>
 <figure class="highlight latex"><table><tr><td class="code"><pre><span class="line">The famous matter-energy equation <span class="built_in">$</span><span class="keyword">\eqref</span>{eq1}<span class="built_in">$</span> proposed by Einstein...</span><br></pre></td></tr></table></figure>
-<p>The famous matter-energy equation <span class="math inline"><mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.566ex;" xmlns="http://www.w3.org/2000/svg" width="4.964ex" height="2.262ex" role="img" focusable="false" viewBox="0 -750 2194 1000"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><a href="#"><g data-mml-node="mrow" class=" MathJax_ref"><rect data-hitbox="true" fill="none" stroke="none" pointer-events="all" width="2194" height="1000" y="-250"></rect><g data-mml-node="mtext"><path data-c="28" d="M94 250Q94 319 104 381T127 488T164 576T202 643T244 695T277 729T302 750H315H319Q333 750 333 741Q333 738 316 720T275 667T226 581T184 443T167 250T184 58T225 -81T274 -167T316 -220T333 -241Q333 -250 318 -250H315H302L274 -226Q180 -141 137 -14T94 250Z"></path><path data-c="3F" d="M226 668Q190 668 162 656T124 632L114 621Q116 621 119 620T130 616T145 607T157 591T162 567Q162 544 147 529T109 514T71 528T55 566Q55 625 100 661T199 704Q201 704 210 704T224 705H228Q281 705 320 692T378 656T407 612T416 567Q416 503 361 462Q267 395 247 303Q242 279 242 241V224Q242 205 239 202T222 198T205 201T202 218V249Q204 320 220 371T255 445T292 491T315 537Q317 546 317 574V587Q317 604 315 615T304 640T277 661T226 668ZM162 61Q162 89 180 105T224 121Q247 119 264 104T281 61Q281 31 264 16T222 1Q197 1 180 16T162 61Z" transform="translate(389,0)"></path><path data-c="3F" d="M226 668Q190 668 162 656T124 632L114 621Q116 621 119 620T130 616T145 607T157 591T162 567Q162 544 147 529T109 514T71 528T55 566Q55 625 100 661T199 704Q201 704 210 704T224 705H228Q281 705 320 692T378 656T407 612T416 567Q416 503 361 462Q267 395 247 303Q242 279 242 241V224Q242 205 239 202T222 198T205 201T202 218V249Q204 320 220 371T255 445T292 491T315 537Q317 546 317 574V587Q317 604 315 615T304 640T277 661T226 668ZM162 61Q162 89 180 105T224 121Q247 119 264 104T281 61Q281 31 264 16T222 1Q197 1 180 16T162 61Z" transform="translate(861,0)"></path><path data-c="3F" d="M226 668Q190 668 162 656T124 632L114 621Q116 621 119 620T130 616T145 607T157 591T162 567Q162 544 147 529T109 514T71 528T55 566Q55 625 100 661T199 704Q201 704 210 704T224 705H228Q281 705 320 692T378 656T407 612T416 567Q416 503 361 462Q267 395 247 303Q242 279 242 241V224Q242 205 239 202T222 198T205 201T202 218V249Q204 320 220 371T255 445T292 491T315 537Q317 546 317 574V587Q317 604 315 615T304 640T277 661T226 668ZM162 61Q162 89 180 105T224 121Q247 119 264 104T281 61Q281 31 264 16T222 1Q197 1 180 16T162 61Z" transform="translate(1333,0)"></path><path data-c="29" d="M60 749L64 750Q69 750 74 750H86L114 726Q208 641 251 514T294 250Q294 182 284 119T261 12T224 -76T186 -143T145 -194T113 -227T90 -246Q87 -249 86 -250H74Q66 -250 63 -250T58 -247T55 -238Q56 -237 66 -225Q221 -64 221 250T66 725Q56 737 55 738Q55 746 60 749Z" transform="translate(1805,0)"></path></g></g></a></g></g></svg></mjx-container></span> proposed by Einstein…</p>
+<p>The famous matter-energy equation <span class="math inline"><mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.566ex;" xmlns="http://www.w3.org/2000/svg" width="4.964ex" height="2.262ex" role="img" focusable="false" viewBox="0 -750 2194 1000"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><a href="#"><g data-mml-node="mrow" class=" MathJax_ref"><rect data-hitbox="true" fill="none" stroke="none" pointer-events="all" width="2194" height="1000" y="-250"></rect><g data-mml-node="mtext"><path data-c="28" d="M94 250Q94 319 104 381T127 488T164 576T202 643T244 695T277 729T302 750H315H319Q333 750 333 741Q333 738 316 720T275 667T226 581T184 443T167 250T184 58T225 -81T274 -167T316 -220T333 -241Q333 -250 318 -250H315H302L274 -226Q180 -141 137 -14T94 250Z"></path><path data-c="3F" d="M226 668Q190 668 162 656T124 632L114 621Q116 621 119 620T130 616T145 607T157 591T162 567Q162 544 147 529T109 514T71 528T55 566Q55 625 100 661T199 704Q201 704 210 704T224 705H228Q281 705 320 692T378 656T407 612T416 567Q416 503 361 462Q267 395 247 303Q242 279 242 241V224Q242 205 239 202T222 198T205 201T202 218V249Q204 320 220 371T255 445T292 491T315 537Q317 546 317 574V587Q317 604 315 615T304 640T277 661T226 668ZM162 61Q162 89 180 105T224 121Q247 119 264 104T281 61Q281 31 264 16T222 1Q197 1 180 16T162 61Z" transform="translate(389,0)"></path><path data-c="3F" d="M226 668Q190 668 162 656T124 632L114 621Q116 621 119 620T130 616T145 607T157 591T162 567Q162 544 147 529T109 514T71 528T55 566Q55 625 100 661T199 704Q201 704 210 704T224 705H228Q281 705 320 692T378 656T407 612T416 567Q416 503 361 462Q267 395 247 303Q242 279 242 241V224Q242 205 239 202T222 198T205 201T202 218V249Q204 320 220 371T255 445T292 491T315 537Q317 546 317 574V587Q317 604 315 615T304 640T277 661T226 668ZM162 61Q162 89 180 105T224 121Q247 119 264 104T281 61Q281 31 264 16T222 1Q197 1 180 16T162 61Z" transform="translate(861,0)"></path><path data-c="3F" d="M226 668Q190 668 162 656T124 632L114 621Q116 621 119 620T130 616T145 607T157 591T162 567Q162 544 147 529T109 514T71 528T55 566Q55 625 100 661T199 704Q201 704 210 704T224 705H228Q281 705 320 692T378 656T407 612T416 567Q416 503 361 462Q267 395 247 303Q242 279 242 241V224Q242 205 239 202T222 198T205 201T202 218V249Q204 320 220 371T255 445T292 491T315 537Q317 546 317 574V587Q317 604 315 615T304 640T277 661T226 668ZM162 61Q162 89 180 105T224 121Q247 119 264 104T281 61Q281 31 264 16T222 1Q197 1 180 16T162 61Z" transform="translate(1333,0)"></path><path data-c="29" d="M60 749L64 750Q69 750 74 750H86L114 726Q208 641 251 514T294 250Q294 182 284 119T261 12T224 -76T186 -143T145 -194T113 -227T90 -246Q87 -249 86 -250H74Q66 -250 63 -250T58 -247T55 -238Q56 -237 66 -225Q221 -64 221 250T66 725Q56 737 55 738Q55 746 60 749Z" transform="translate(1805,0)"></path></g></g></a></g></g></svg></mjx-container></span> proposed by Einstein...</p>
 <h4 id="multi-line-equations">Multi-line Equations</h4>
 <p>For multi-line equations, inside the <code>equation</code>
 environment, you can use the <code>aligned</code> environment to split

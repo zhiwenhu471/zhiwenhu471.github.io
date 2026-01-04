@@ -177,7 +177,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
-            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#custom-file-support"><span class="nav-number">1.</span> <span class="nav-text">Custom File Support</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#examples-of-modifying-layout"><span class="nav-number">2.</span> <span class="nav-text">Examples of Modifying Layout</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#live2d-widget"><span class="nav-number">2.1.</span> <span class="nav-text">Live2d Widget</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#netlify-logo-in-sidebar"><span class="nav-number">2.2.</span> <span class="nav-text">Netlify Logo in Sidebar</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#examples-of-modifying-style"><span class="nav-number">3.</span> <span class="nav-text">Examples of Modifying Style</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#tagcloud-color"><span class="nav-number">3.1.</span> <span class="nav-text">Tagcloud Color</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#how-to-change-content-width"><span class="nav-number">3.2.</span> <span class="nav-text">How to Change Content Width</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#hide-sidebar-on-mobile"><span class="nav-number">3.3.</span> <span class="nav-text">Hide Sidebar on Mobile</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#hide-keep-on-posting-in-archive-page"><span class="nav-number">3.4.</span> <span class="nav-text">Hide “Keep on posting” in
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#custom-file-support"><span class="nav-number">1.</span> <span class="nav-text">Custom File Support</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#examples-of-modifying-layout"><span class="nav-number">2.</span> <span class="nav-text">Examples of Modifying Layout</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#live2d-widget"><span class="nav-number">2.1.</span> <span class="nav-text">Live2d Widget</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#netlify-logo-in-sidebar"><span class="nav-number">2.2.</span> <span class="nav-text">Netlify Logo in Sidebar</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#examples-of-modifying-style"><span class="nav-number">3.</span> <span class="nav-text">Examples of Modifying Style</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#tagcloud-color"><span class="nav-number">3.1.</span> <span class="nav-text">Tagcloud Color</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#how-to-change-content-width"><span class="nav-number">3.2.</span> <span class="nav-text">How to Change Content Width</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#hide-sidebar-on-mobile"><span class="nav-number">3.3.</span> <span class="nav-text">Hide Sidebar on Mobile</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#hide-keep-on-posting-in-archive-page"><span class="nav-number">3.4.</span> <span class="nav-text">Hide &quot;Keep on posting&quot; in
 Archive Page</span></a></li></ol></li></ol></div>
         </div>
         <!--/noindex-->
@@ -387,19 +387,22 @@ variables:</p>
 <figure class="highlight styl"><figcaption><span>hexo/source/_data/variables.styl</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="variable">$content</span>-desktop         = <span class="number">90%</span></span><br><span class="line"><span class="variable">$content</span>-desktop-large   = <span class="number">90%</span></span><br><span class="line"><span class="variable">$content</span>-desktop-largest = <span class="number">90%</span></span><br></pre></td></tr></table></figure>
 <div class="note warning">
 <p>
-If values will in percents, during opening sidebar will dynamically
-decrease content width to defined by you percent. But in standard
-behaviour, sidebar must displace content from yourself. To around it,
-you can specify content width in <code>em</code>:
+If values will in percents, during opening sidebar will
+dynamically<br />
+decrease content width to defined by you percent.<br /><br />
+But in standard behaviour, sidebar must displace content from<br />
+yourself.<br /><br />
+To around it, you can specify content width in <code>em</code>:
 </p>
 <figure class="highlight styl"><figcaption><span>hexo/source/_data/variables.styl</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="variable">$content</span>-desktop         = <span class="number">50em</span></span><br><span class="line"><span class="variable">$content</span>-desktop-large   = <span class="number">55em</span></span><br><span class="line"><span class="variable">$content</span>-desktop-largest = <span class="number">60em</span></span><br></pre></td></tr></table></figure>
 </div></div><div class="tab-pane" id="change-content-width-2"><p>Default variables for Pisces (and Gemini) scheme are defined as:</p>
 <figure class="highlight styl"><figcaption><span>next/source/css/_variables/Pisces.styl</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="variable">$content</span>-desktop         = <span class="string">&#x27;calc(100% - %s)&#x27;</span> % <span class="built_in">unit</span>(<span class="variable">$content</span>-desktop-<span class="attribute">padding</span> / <span class="number">2</span>, <span class="string">&#x27;px&#x27;</span>)</span><br><span class="line"><span class="variable">$content</span>-desktop-large   = <span class="number">1160px</span></span><br><span class="line"><span class="variable">$content</span>-desktop-largest = <span class="number">73%</span></span><br></pre></td></tr></table></figure>
 <div class="note warning">
 <p>
-<code>$content-desktop</code> value in this schemes is auto-responsive
-by default. It can be changed to any value too, but for better content
-visibility recommended to stay it as is.
+<code>$content-desktop</code> value in this schemes is<br />
+auto-responsive by default. It can be changed to any value too, but
+for<br />
+better content visibility recommended to stay it as is.
 </p>
 </div>
 <p>In this schemes content width was defined on maximum and already
@@ -412,10 +415,15 @@ variables:</p>
 <figure class="highlight styl"><figcaption><span>hexo/source/_data/variables.styl</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="variable">$content</span>-desktop-large   = <span class="number">65em</span></span><br><span class="line"><span class="variable">$content</span>-desktop-largest = <span class="number">65%</span></span><br></pre></td></tr></table></figure>
 <div class="note info">
 <p>
-In fact, Gemini scheme is just fork of Pisces scheme with some style
-improvements. Therefore, almost all part of variables from Pisces scheme
-are imported to Gemini scheme too. So, the changes of these variables or
-styles will be applied to both Pisces and Gemini schemes.
+In fact, Gemini scheme is just fork of Pisces scheme with some
+style<br />
+improvements.<br /><br />
+Therefore, almost all part of variables from Pisces scheme are
+imported<br />
+to Gemini scheme too.<br /><br />
+So, the changes of these variables or styles will be applied to
+both<br />
+Pisces and Gemini schemes.
 </p>
 </div></div></div></div>
 <p>Then uncomment <code>variable</code> under the
@@ -428,7 +436,7 @@ styles will be applied to both Pisces and Gemini schemes.
 <p>Then uncomment <code>style</code> under the
 <code>custom_file_path</code> section in <mark class="label primary">NexT config file</mark>.</p>
 <figure class="highlight yml"><figcaption><span>NexT config file</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="attr">custom_file_path:</span></span><br><span class="line">  <span class="attr">style:</span> <span class="string">source/_data/styles.styl</span></span><br></pre></td></tr></table></figure>
-<h4 id="hide-keep-on-posting-in-archive-page">Hide “Keep on posting” in
+<h4 id="hide-keep-on-posting-in-archive-page">Hide "Keep on posting" in
 Archive Page</h4>
 <p>Create and edit <code>source/_data/styles.styl</code> in
 <mark class="label info">site root directory</mark> and add styles:</p>

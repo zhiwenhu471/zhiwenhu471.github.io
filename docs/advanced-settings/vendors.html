@@ -323,7 +323,7 @@ load faster.</p>
 <figure class="highlight yml"><figcaption><span>NexT config file</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="attr">vendors:</span></span><br><span class="line">  <span class="comment"># The CDN provider of NexT internal scripts.</span></span><br><span class="line">  <span class="comment"># Available values: local | jsdelivr | unpkg | cdnjs | custom</span></span><br><span class="line">  <span class="comment"># Warning: If you are using the latest master branch of NexT, please set `internal: local`</span></span><br><span class="line">  <span class="attr">internal:</span> <span class="string">local</span></span><br><span class="line">  <span class="comment"># The default CDN provider of third-party plugins.</span></span><br><span class="line">  <span class="comment"># Available values: local | jsdelivr | unpkg | cdnjs | custom</span></span><br><span class="line">  <span class="comment"># Dependencies for `plugins: local`: https://github.com/next-theme/plugins</span></span><br><span class="line">  <span class="attr">plugins:</span> <span class="string">cdnjs</span></span><br><span class="line">  <span class="comment"># Custom CDN URL</span></span><br><span class="line">  <span class="comment"># For example:</span></span><br><span class="line">  <span class="comment"># custom_cdn_url: https://cdn.jsdelivr.net/npm/$&#123;npm_name&#125;@$&#123;version&#125;/$&#123;minified&#125;</span></span><br><span class="line">  <span class="comment"># custom_cdn_url: https://cdnjs.cloudflare.com/ajax/libs/$&#123;cdnjs_name&#125;/$&#123;version&#125;/$&#123;cdnjs_file&#125;</span></span><br><span class="line">  <span class="attr">custom_cdn_url:</span></span><br></pre></td></tr></table></figure>
 <h4 id="internal-scripts">Internal Scripts</h4>
 <p><code>internal: local</code> is used to set how to load the internal
-scripts, e.g. <code>source/js/utils.js</code>. These libraries are
+scripts, e.g. <code>source/js/utils.js</code>. These libraries are
 loaded from your site by default, they are required by the basic
 functions of NexT. Set <code>internal</code> to <code>jsdelivr</code>,
 <code>unpkg</code> or <code>cdnjs</code> to load them from the
@@ -337,7 +337,7 @@ faster speeds and no traffic restrictions.</p>
 </div>
 <h4 id="third-party-plugins">Third-party Plugins</h4>
 <p><code>plugins: cdnjs</code> is used to set how to load the
-third-party plugins, e.g. <code>anime.js</code>. Third-party plugins are
+third-party plugins, e.g. <code>anime.js</code>. Third-party plugins are
 loaded from <span class="exturl" data-url="aHR0cHM6Ly9jZG5qcy5jb20=">CDNJS<i class="fa fa-external-link-alt"></i></span> CDN by default.</p>
 <p>And we also provide other optional CDNs, including the famous <span class="exturl" data-url="aHR0cHM6Ly91bnBrZy5jb20=">UNPKG<i class="fa fa-external-link-alt"></i></span> and <span class="exturl" data-url="aHR0cHM6Ly93d3cuanNkZWxpdnIuY29tLw==">jsDelivr<i class="fa fa-external-link-alt"></i></span>. These CDN providers are
 chosen to deliver our third-party plugins because they are fast and
@@ -345,14 +345,13 @@ reliable. Set <code>plugins</code> to <code>unpkg</code> or
 <code>cdnjs</code> to load them from different CDN provider.</p>
 <div class="note warning"><p>Particularly, if you are a Chinese blogger or most of your visits
 come from China, please note that <strong>the CDNJS is blocked in some
-parts of China</strong>, don’t use it as your CDN provider.</p>
+parts of China</strong>, don't use it as your CDN provider.</p>
 </div>
 <div class="note info"><p>If your would like to load all third-party plugins from your site,
 please set <code>plugins</code> to <code>local</code> and install the
-<code>@next-theme/plugins</code> package:
-https://github.com/next-theme/plugins If your website is deployed in the
-local area network, then this will have a faster loading speed than CDN
-services.</p>
+<code>@next-theme/plugins</code> package: <span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL25leHQtdGhlbWUvcGx1Z2lucw==">https://github.com/next-theme/plugins<i class="fa fa-external-link-alt"></i></span><br />
+If your website is deployed in the local area network, then this will
+have a faster loading speed than CDN services.</p>
 </div>
 <h4 id="custom-cdn-urls">Custom CDN URLs</h4>
 <p>Sometimes you may need to use CDNs other than <code>jsdelivr</code>,
@@ -367,10 +366,9 @@ the <code>vendors</code> section, and then specify a CDN URL with the
 on your site.</p>
 <h5 id="jsdelivr-mirrors">jsDelivr Mirrors</h5>
 <p>jsDelivr could automatically minify the JS and CSS files, even if the
-package owner doesn’t publish the minified version on npm. You just need
+package owner doesn't publish the minified version on npm. You just need
 to access <code>*.min.js</code> and <code>*.min.css</code>, instead of
-<code>*.js</code> and <code>*.css</code>. For more information:
-https://www.jsdelivr.com/features</p>
+<code>*.js</code> and <code>*.css</code>. For more information: <span class="exturl" data-url="aHR0cHM6Ly93d3cuanNkZWxpdnIuY29tL2ZlYXR1cmVz">https://www.jsdelivr.com/features<i class="fa fa-external-link-alt"></i></span></p>
 <p>In theme NexT, you can simply use the variable
 <code>$&#123;minified&#125;</code> in <code>custom_cdn_url</code> to serve the
 minified version if you are using a mirror site of jsDelivr. NexT will
@@ -390,7 +388,7 @@ go to <mark class="label primary">NexT config file</mark> and add a key named <c
 <code>vendors</code> section, and set its value to the CDN URL of
 anime.js:</p>
 <figure class="highlight yml"><figcaption><span>NexT config file</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="attr">vendors:</span></span><br><span class="line">  <span class="comment"># ...</span></span><br><span class="line">  <span class="comment"># Some contents...</span></span><br><span class="line">  <span class="comment"># ...</span></span><br><span class="line">  <span class="attr">anime:</span> <span class="string">//fastly.jsdelivr.net/gh/juliangarnier/anime@latest/lib/anime.min.js</span></span><br></pre></td></tr></table></figure>
-<p>It’s recommended to use the same version of the library as in
+<p>It's recommended to use the same version of the library as in
 <code>_vendors.yml</code> to avoid potential problems.</p>
 
       </div>
