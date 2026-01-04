@@ -46,12 +46,13 @@
     <published>2025-12-28T05:54:36.000Z</published>
     <updated>2025-12-28T05:55:31.985Z</updated>
     
-    <content type="html"><![CDATA[<p>$z^2 &#x3D; x^2 + y^2$</p>]]></content>
+    <content type="html"><![CDATA[<p><spanclass="math inline"><em>z</em><sup>2</sup> = <em>x</em><sup>2</sup> + <em>y</em><sup>2</sup></span></p>]]></content>
     
     
       
       
-    <summary type="html">&lt;p&gt;$z^2 &amp;#x3D; x^2 + y^2$&lt;/p&gt;
+    <summary type="html">&lt;p&gt;&lt;span
+class=&quot;math inline&quot;&gt;&lt;em&gt;z&lt;/em&gt;&lt;sup&gt;2&lt;/sup&gt; = &lt;em&gt;x&lt;/em&gt;&lt;sup&gt;2&lt;/sup&gt; + &lt;em&gt;y&lt;/em&gt;&lt;sup&gt;2&lt;/sup&gt;&lt;/span&gt;&lt;/p&gt;
 </summary>
       
     
@@ -132,17 +133,17 @@
     <published>2025-12-15T13:49:23.000Z</published>
     <updated>2025-12-15T14:24:14.679Z</updated>
     
-    <content type="html"><![CDATA[<p>林纳斯·托瓦兹（Linus Benedict Torvalds）</p><blockquote><p>&quot;Talk is cheap. Show me the code.&quot;</p></blockquote><ol><li>Linux 内核的创建者</li><li>Git 版本控制系统的发明者</li></ol><p>This ted talk was unlike any other</p><ol><li>Not a man with vision</li><li>Not a man with big dreams</li><li>Not a man who is successful by selling products.</li></ol><p>One of the things I really like about open source is it allows different people to work together. We don&#39;t have to like each other, and sometimes we really don’t like each other. There are very, very heated arguments. You don&#39;t even agree to disagree – it&#39;s just that you&#39;re interested in different things.</p><p>Coming back to the point that I said earlier, that I was afraid of commercial people taking advantage of your work – It very quickly turned out that those commercial people were lovely people. And they did all the things that I was not at all interested in doing and they had completely different goals. And they used open source in ways that I just did not want to go. But because it was open source they could do it and it actually works really beautifully together.</p><p>In the debate about who was the better inventor, Thomas Edison or Nikola Tesla, Tovalds sees himself in the category of Edison, who is sometimes seen as the more plodding genius. Edison famously said, &quot;Genius is 1 percent inspiration and 99 percent perspiration,&quot; and this appeals to Tovalds. &quot;Edison may not have been a nice person, he did a lot of things—he was maybe not so intellectual, not so visionary. But I think I&#39;m more of an Edison than a Tesla.&quot;</p><p>我并非计算机专业，今年暑假才开始学习 Python，而后了解到 github，以及 git 分布式版本控制系统，进而了解到 Linux，并且利用 wsl 安装了 Ubuntu，今天晚上打开Youtube， 出于好奇点开了这个视频，才认识到这位伟大人物。</p><p>原来 Git 的发明者正是 Linux 内核的创建者 Linus Torvalds，刚开始接触 git，感觉它就像是一种魔法，后面觉得 Linux也是一种魔法，没想到他们的创造者竟然是同一个人。</p><p>看完这场采访，我觉得 Linus Torvalds 不像是一个格格不入的天才，反而是一个非常有趣的人，他并不追求名利，他只是单纯地想要创造一些东西，并且通过开源的方式让更多人参与进来，一起完善它们。</p><p><code>open source</code> 让我想起了我之前读过的一句话：</p><blockquote><p>&quot;If you want to go fast, go alone. If you want to go far, go together.&quot;</p></blockquote><p>这是编程特别吸引我的地方——它不仅仅是技术，更是一种协作的艺术。</p><p>上一个让我深受震撼的人，还是特斯拉，而这一次，是 Linus Torvalds。</p>]]></content>
+    <content type="html"><![CDATA[<p>林纳斯·托瓦兹（Linus Benedict Torvalds）</p><blockquote><p>“Talk is cheap. Show me the code.”</p></blockquote><ol type="1"><li>Linux 内核的创建者</li><li>Git 版本控制系统的发明者</li></ol><p>This ted talk was unlike any other 1. Not a man with vision 2. Not aman with big dreams 3. Not a man who is successful by sellingproducts.</p><p>One of the things I really like about open source is it allowsdifferent people to work together. We don’t have to like each other, andsometimes we really don’t like each other. There are very, very heatedarguments. You don’t even agree to disagree – it’s just that you’reinterested in different things.</p><p>Coming back to the point that I said earlier, that I was afraid ofcommercial people taking advantage of your work – It very quickly turnedout that those commercial people were lovely people. And they did allthe things that I was not at all interested in doing and they hadcompletely different goals. And they used open source in ways that Ijust did not want to go. But because it was open source they could do itand it actually works really beautifully together.</p><p>In the debate about who was the better inventor, Thomas Edison orNikola Tesla, Tovalds sees himself in the category of Edison, who issometimes seen as the more plodding genius. Edison famously said,“Genius is 1 percent inspiration and 99 percent perspiration,” and thisappeals to Tovalds. “Edison may not have been a nice person, he did alot of things—he was maybe not so intellectual, not so visionary. But Ithink I’m more of an Edison than a Tesla.”</p><p>我并非计算机专业，今年暑假才开始学习 Python，而后了解到 github，以及git 分布式版本控制系统，进而了解到 Linux，并且利用 wsl 安装了Ubuntu，今天晚上打开Youtube，出于好奇点开了这个视频，才认识到这位伟大人物。</p><p>原来 Git 的发明者正是 Linux 内核的创建者 Linus Torvalds，刚开始接触git，感觉它就像是一种魔法，后面觉得Linux也是一种魔法，没想到他们的创造者竟然是同一个人。</p><p>看完这场采访，我觉得 Linus Torvalds不像是一个格格不入的天才，反而是一个非常有趣的人，他并不追求名利，他只是单纯地想要创造一些东西，并且通过开源的方式让更多人参与进来，一起完善它们。</p><p><code>open source</code> 让我想起了我之前读过的一句话： &gt; “If youwant to go fast, go alone. If you want to go far, go together.”</p><p>这是编程特别吸引我的地方——它不仅仅是技术，更是一种协作的艺术。</p><p>上一个让我深受震撼的人，还是特斯拉，而这一次，是 Linus Torvalds。</p>]]></content>
     
     
       
       
     <summary type="html">&lt;p&gt;林纳斯·托瓦兹（Linus Benedict Torvalds）&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;&amp;quot;Talk is cheap. Show me the code.&amp;quot;&lt;/p&gt;
+&lt;p&gt;“Talk is cheap. Show me the code.”&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;ol&gt;
-&lt;li&gt;Linux 内核的创建者</summary>
+&lt;ol type=&quot;1&quot;&gt;
+&lt;li&gt;Linux 内核</summary>
       
     
     
@@ -159,18 +160,16 @@
     <published>2025-12-15T09:58:39.000Z</published>
     <updated>2025-12-15T10:06:58.029Z</updated>
     
-    <content type="html"><![CDATA[<p style = "text-align: center;">    <strong>浮生若梦</strong><br>    李白</p><p style = "text-indent: 2em;">夫天地者，万物之逆旅也；光阴者，百代之过客也。而浮生若梦，为欢几何？古人秉烛夜游，良有以也。况阳春召我以烟景，大块假我以文章。会桃花之芳园，序天伦之乐事。群季俊秀，皆为惠连；吾人咏歌，独惭康乐。幽赏未已，高谈转清。开琼筵以坐花，飞羽觞而醉月。不有佳咏，何伸雅怀？如诗不成，罚依金谷酒数。</p><br><p>珍惜眼前人，做好当下事。</p>]]></content>
+    <content type="html"><![CDATA[<p style="text-align: center;"><strong>浮生若梦</strong><br> 李白</p><p style="text-indent: 2em;">夫天地者，万物之逆旅也；光阴者，百代之过客也。而浮生若梦，为欢几何？古人秉烛夜游，良有以也。况阳春召我以烟景，大块假我以文章。会桃花之芳园，序天伦之乐事。群季俊秀，皆为惠连；吾人咏歌，独惭康乐。幽赏未已，高谈转清。开琼筵以坐花，飞羽觞而醉月。不有佳咏，何伸雅怀？如诗不成，罚依金谷酒数。</p><p><br></p><p>珍惜眼前人，做好当下事。</p>]]></content>
     
     
       
       
-    <summary type="html">&lt;p style = &quot;text-align: center;&quot;&gt;
-    &lt;strong&gt;浮生若梦&lt;/strong&gt;&lt;br&gt;
-    李白
+    <summary type="html">&lt;p style=&quot;text-align: center;&quot;&gt;
+&lt;strong&gt;浮生若梦&lt;/strong&gt;&lt;br&gt; 李白
 &lt;/p&gt;
-
-&lt;p style = &quot;text-indent: 2em;&quot;&gt;
-夫天地者，万物之逆旅也；光阴者，百代之过客也。而浮生若梦，为欢</summary>
+&lt;p style=&quot;text-indent: 2em;&quot;&gt;
+夫天地者，万物之逆旅也；光阴者，百代之过客也。而浮生若梦，为欢几何？古人秉烛夜游</summary>
       
     
     
@@ -185,17 +184,16 @@
     <published>2025-12-11T17:05:00.000Z</published>
     <updated>2025-12-16T02:52:48.111Z</updated>
     
-    <content type="html"><![CDATA[<p>还是走进了 Ubuntu 的世界</p><p style="text-align: center;">  <img src="/images/Ubuntu.png" alt="Ubuntu Logo_1" /></p><p style="text-align: center;">  <img src="/images/screenfetch.png" alt="Ubuntu Logo_2" /></p>]]></content>
+    <content type="html"><![CDATA[<p>还是走进了 Ubuntu 的世界</p><p style="text-align: center;"><img src="/images/Ubuntu.png" alt="Ubuntu Logo_1" /></p><p style="text-align: center;"><img src="/images/screenfetch.png" alt="Ubuntu Logo_2" /></p>]]></content>
     
     
       
       
     <summary type="html">&lt;p&gt;还是走进了 Ubuntu 的世界&lt;/p&gt;
 &lt;p style=&quot;text-align: center;&quot;&gt;
-  &lt;img src=&quot;/images/Ubuntu.png&quot; alt=&quot;Ubuntu Logo_1&quot; /&gt;
+&lt;img src=&quot;/images/Ubuntu.png&quot; alt=&quot;Ubuntu Logo_1&quot; /&gt;
 &lt;/p&gt;
-
-&lt;p style=&quot;text-align: c</summary>
+&lt;p style=&quot;text-align: </summary>
       
     
     
@@ -210,19 +208,22 @@
     <published>2025-12-11T06:14:55.000Z</published>
     <updated>2025-12-11T06:20:38.563Z</updated>
     
-    <content type="html"><![CDATA[<p align = 'center'> 庐州月</p><p align = 'center'>许嵩</p><p>儿时凿壁偷了谁家的光</p><p>宿昔不梳 一苦十年寒窗</p><p>如今灯下闲读 红袖添香</p><p>半生浮名只是虚妄</p><p>三月 一路烟霞 莺飞草长</p><p>柳絮纷飞里看见了故乡</p><p>不知心上的你是否还在庐阳</p><p>一缕青丝一生珍藏</p><p>桥上的恋人入对出双</p><p>桥边红药叹夜太漫长</p><p>月也摇晃 人也彷徨</p><p>乌蓬里传来了一曲离殇</p><p>庐州月光 洒在心上</p><p>月下的你不复当年模样</p><p>太多的伤 难诉衷肠</p><p>叹一句当时只道是寻常</p><p>庐州月光 梨花雨凉</p><p>如今的你又在谁的身旁</p><p>家乡月光 深深烙在我心上</p><p>却流不出当年泪光</p><p>三月 一路烟霞 莺飞草长</p><p>柳絮纷飞里看见了故乡</p><p>不知心上的你是否还在庐阳</p><p>一缕青丝一生珍藏</p><p>桥上的恋人入对出双</p><p>桥边红药叹夜太漫长</p><p>月也摇晃 人也彷徨</p><p>乌蓬里传来了一曲离殇</p><p>庐州月光 洒在心上</p><p>月下的你不复当年模样</p><p>太多的伤 难诉衷肠</p><p>叹一句当时只道是寻常</p><p>庐州月光 梨花雨凉</p><p>如今的你又在谁的身旁</p><p>家乡月光 深深烙在我心上</p><p>却流不出当年泪光</p><p>庐州的月光 在我心上</p><p>太多的伤 难诉衷肠</p><p>如今的你又在谁的身旁</p><p>我却流不出当年泪光</p><p>庐州月光 洒在心上</p><p>月下的你不复当年模样</p><p>太多的伤 难诉衷肠</p><p>叹一句当时只道是寻常</p><p>庐州月光 梨花雨凉</p><p>如今的你又在谁的身旁</p><p>家乡月光 深深烙在我心上</p><p>却流不出当年泪光</p>]]></content>
+    <content type="html"><![CDATA[<p align="center">庐州月</p><p align="center">许嵩</p><p>儿时凿壁偷了谁家的光</p><p>宿昔不梳 一苦十年寒窗</p><p>如今灯下闲读 红袖添香</p><p>半生浮名只是虚妄</p><p>三月 一路烟霞 莺飞草长</p><p>柳絮纷飞里看见了故乡</p><p>不知心上的你是否还在庐阳</p><p>一缕青丝一生珍藏</p><p>桥上的恋人入对出双</p><p>桥边红药叹夜太漫长</p><p>月也摇晃 人也彷徨</p><p>乌蓬里传来了一曲离殇</p><p>庐州月光 洒在心上</p><p>月下的你不复当年模样</p><p>太多的伤 难诉衷肠</p><p>叹一句当时只道是寻常</p><p>庐州月光 梨花雨凉</p><p>如今的你又在谁的身旁</p><p>家乡月光 深深烙在我心上</p><p>却流不出当年泪光</p><p>三月 一路烟霞 莺飞草长</p><p>柳絮纷飞里看见了故乡</p><p>不知心上的你是否还在庐阳</p><p>一缕青丝一生珍藏</p><p>桥上的恋人入对出双</p><p>桥边红药叹夜太漫长</p><p>月也摇晃 人也彷徨</p><p>乌蓬里传来了一曲离殇</p><p>庐州月光 洒在心上</p><p>月下的你不复当年模样</p><p>太多的伤 难诉衷肠</p><p>叹一句当时只道是寻常</p><p>庐州月光 梨花雨凉</p><p>如今的你又在谁的身旁</p><p>家乡月光 深深烙在我心上</p><p>却流不出当年泪光</p><p>庐州的月光 在我心上</p><p>太多的伤 难诉衷肠</p><p>如今的你又在谁的身旁</p><p>我却流不出当年泪光</p><p>庐州月光 洒在心上</p><p>月下的你不复当年模样</p><p>太多的伤 难诉衷肠</p><p>叹一句当时只道是寻常</p><p>庐州月光 梨花雨凉</p><p>如今的你又在谁的身旁</p><p>家乡月光 深深烙在我心上</p><p>却流不出当年泪光</p>]]></content>
     
     
       
       
-    <summary type="html">&lt;p align = &#39;center&#39;&gt; 庐州月&lt;/p&gt;
-&lt;p align = &#39;center&#39;&gt;许嵩&lt;/p&gt;
-
+    <summary type="html">&lt;p align=&quot;center&quot;&gt;
+庐州月
+&lt;/p&gt;
+&lt;p align=&quot;center&quot;&gt;
+许嵩
+&lt;/p&gt;
 &lt;p&gt;儿时凿壁偷了谁家的光&lt;/p&gt;
 &lt;p&gt;宿昔不梳 一苦十年寒窗&lt;/p&gt;
 &lt;p&gt;如今灯下闲读 红袖添香&lt;/p&gt;
 &lt;p&gt;半生浮名只是虚妄&lt;/p&gt;
-&lt;p&gt;三月 一路烟霞 </summary>
+&lt;p&gt;</summary>
       
     
     
@@ -250,7 +251,7 @@
 &lt;p&gt;将永远存在于心中&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;孙子兵法 军争篇第七&lt;/p&gt;
-&lt;p&gt;孙子曰：凡用兵之法，将受命于君，合军聚众，交和而舍，莫难于军争。军争之难者，以迂为直，以患</summary>
+&lt;p&gt;孙子曰：凡用兵之法，将受命于君，合军聚众，交和而舍，莫难于军争。军争之难者，以</summary>
       
     
     
@@ -267,13 +268,13 @@
     <published>2025-12-10T12:15:05.000Z</published>
     <updated>2025-12-10T13:21:14.155Z</updated>
     
-    <content type="html"><![CDATA[<p>收集蝴蝶标本这项爱好还是女朋友启发的。她很喜欢蝴蝶，觉得它们色彩斑斓，非常美丽。我也被她的热情感染，决定尝试一下。结果就一发不可收拾。</p><p>我买了一套专业的蝴蝶捕捉和标本制作工具，包括捕蝶网、标本盒、针和标签等。捕捉蝴蝶需要一定的技巧和耐心，制作标本也是，需要细心和恒心的工作。每当我成功捕捉到一只蝴蝶，并将它制作成标本时，都会感到一种成就感和满足感。</p><p>目前已经收集的蝴蝶有：</p><ol><li>大蓝闪蝶</li><li>爱神凤蝶</li><li>天堂凤蝶</li><li>敏芷凤蝶</li><li>太阳蛾</li><li>月亮蛾</li><li>玉带凤蝶</li><li>宽带凤蝶</li><li>青斑蝶</li><li>新月带蛱蝶</li><li>翠蓝眼蛱蝶</li><li>灵奇尖粉蝶</li><li>网丝蛱蝶</li><li>绿尾大蚕蛾</li><li>孔雀蛱蝶</li><li>枯叶蛱蝶</li><li>白斑迷蛱蝶</li><li>红涡蛱蝶</li><li>巴黎翠凤蝶</li><li>钮灰蝶</li><li>彩蛱蝶</li><li>红绶绿凤蝶</li><li>迁粉蝶</li><li>红珠凤蝶</li><li>黄钩蛱蝶</li><li>云粉蝶</li><li>银灰蝶</li><li>玉斑凤蝶</li><li>斐豹蛱蝶</li><li>纹凤蝶</li><li>豹尺蛾</li><li>文蛱蝶</li><li>青凤蝶</li><li>窄斑翠凤蝶</li><li>碧凤蝶</li><li>猫头鹰环蝶</li><li>王氏樗蚕蛾</li><li>绿带翠凤蝶</li><li>古靴蛱蝶</li></ol><p>期待未来的继续补充！</p>]]></content>
+    <content type="html"><![CDATA[<p>收集蝴蝶标本这项爱好还是女朋友启发的。她很喜欢蝴蝶，觉得它们色彩斑斓，非常美丽。我也被她的热情感染，决定尝试一下。结果就一发不可收拾。</p><p>我买了一套专业的蝴蝶捕捉和标本制作工具，包括捕蝶网、标本盒、针和标签等。捕捉蝴蝶需要一定的技巧和耐心，制作标本也是，需要细心和恒心的工作。每当我成功捕捉到一只蝴蝶，并将它制作成标本时，都会感到一种成就感和满足感。</p><p>目前已经收集的蝴蝶有：</p><ol type="1"><li>大蓝闪蝶</li><li>爱神凤蝶</li><li>天堂凤蝶</li><li>敏芷凤蝶</li><li>太阳蛾</li><li>月亮蛾</li><li>玉带凤蝶</li><li>宽带凤蝶</li><li>青斑蝶</li><li>新月带蛱蝶</li><li>翠蓝眼蛱蝶</li><li>灵奇尖粉蝶</li><li>网丝蛱蝶</li><li>绿尾大蚕蛾</li><li>孔雀蛱蝶</li><li>枯叶蛱蝶</li><li>白斑迷蛱蝶</li><li>红涡蛱蝶</li><li>巴黎翠凤蝶</li><li>钮灰蝶</li><li>彩蛱蝶</li><li>红绶绿凤蝶</li><li>迁粉蝶</li><li>红珠凤蝶</li><li>黄钩蛱蝶</li><li>云粉蝶</li><li>银灰蝶</li><li>玉斑凤蝶</li><li>斐豹蛱蝶</li><li>纹凤蝶</li><li>豹尺蛾</li><li>文蛱蝶</li><li>青凤蝶</li><li>窄斑翠凤蝶</li><li>碧凤蝶</li><li>猫头鹰环蝶</li><li>王氏樗蚕蛾</li><li>绿带翠凤蝶</li><li>古靴蛱蝶</li></ol><p>期待未来的继续补充！</p>]]></content>
     
     
       
       
     <summary type="html">&lt;p&gt;收集蝴蝶标本这项爱好还是女朋友启发的。她很喜欢蝴蝶，觉得它们色彩斑斓，非常美丽。我也被她的热情感染，决定尝试一下。结果就一发不可收拾。&lt;/p&gt;
-&lt;p&gt;我买了一套专业的蝴蝶捕捉和标本制作工具，包括捕蝶网、标本盒、针和标签等。捕捉蝴蝶需要一定的技巧和耐心，制作标本也是，需要细心</summary>
+&lt;p&gt;我买了一套专业的蝴蝶捕捉和标本制作工具，包括捕蝶网、标本盒、针和标签等。捕捉蝴蝶需要一定的技巧和耐心，制作标本也是，需要细</summary>
       
     
     
@@ -313,16 +314,19 @@
     <published>2025-12-09T15:16:20.000Z</published>
     <updated>2025-12-15T10:03:56.813Z</updated>
     
-    <content type="html"><![CDATA[<div style="text-align: center;">《水调歌头·和马叔度游月波楼》</div><div style="text-align: center;">辛弃疾</div><p style = "text-indent: 2em;">客子久不到，好景为君留。西楼着意吟赏，何必问更筹？<b>唤起一天明月，照我满怀冰雪，浩荡百川流。</b>鲸饮未吞海，剑气已横秋。</p><p style = "text-indent: 2em;">野光浮，天宇迥，物华幽。中州遗恨，不知今夜几人愁？谁念英雄老矣？不道功名蕞尔，决策尚悠悠。此事费分说，来日且扶头！</p>]]></content>
+    <content type="html"><![CDATA[<div style="text-align: center;">《水调歌头·和马叔度游月波楼》</div><div style="text-align: center;">辛弃疾</div><p style="text-indent: 2em;">客子久不到，好景为君留。西楼着意吟赏，何必问更筹？<b>唤起一天明月，照我满怀冰雪，浩荡百川流。</b>鲸饮未吞海，剑气已横秋。</p><p style="text-indent: 2em;">野光浮，天宇迥，物华幽。中州遗恨，不知今夜几人愁？谁念英雄老矣？不道功名蕞尔，决策尚悠悠。此事费分说，来日且扶头！</p>]]></content>
     
     
       
       
-    <summary type="html">&lt;div style=&quot;text-align: center;&quot;&gt;《水调歌头·和马叔度游月波楼》&lt;/div&gt;
-&lt;div style=&quot;text-align: center;&quot;&gt;辛弃疾&lt;/div&gt;
-
-&lt;p style = &quot;text-indent: 2em;&quot;&gt;
-客子久不到，好景为</summary>
+    <summary type="html">&lt;div style=&quot;text-align: center;&quot;&gt;
+《水调歌头·和马叔度游月波楼》
+&lt;/div&gt;
+&lt;div style=&quot;text-align: center;&quot;&gt;
+辛弃疾
+&lt;/div&gt;
+&lt;p style=&quot;text-indent: 2em;&quot;&gt;
+客</summary>
       
     
     
@@ -419,7 +423,7 @@
     <published>2025-12-09T11:53:55.000Z</published>
     <updated>2025-12-26T05:04:36.180Z</updated>
     
-    <content type="html"><![CDATA[<blockquote><p>自今年暑假以来，所看过的电影</p></blockquote><ol><li>血观音</li><li>失眠</li><li>燕交</li><li>黑色直播</li><li>童话世界</li><li>目击者之追凶</li><li>破浪男女</li><li>小蓝</li><li>破墓</li><li>面纱（书+影）</li><li>不能说的游戏</li><li>咒怨</li><li>人皮客栈</li><li>昆池岩</li><li>蛇舌</li><li>白色·诅咒的旋律</li><li>鬼妓回忆录</li><li>粽邪</li><li>恶女</li><li>恶人传</li><li>涉过愤怒的海</li><li>心迷宫</li><li>无声</li><li>金福南杀人事件</li><li>周处除三害</li><li>白日之下</li><li>走走停停</li><li>保你平安</li><li>因果报应</li><li>出走的决心</li><li>首尔之春</li><li>年少日记</li><li>我们的荆轲</li><li>大开眼界</li><li>伊甸湖</li><li>恶魔的艺术</li><li>恐怖故事</li><li>双瞳</li><li>僵尸</li><li>狗十三</li><li>踏血寻梅</li><li>调音师</li><li>同意</li><li>坏蛋联盟2</li><li>摇曳的心</li><li>下海</li><li>意外来客</li><li>色戒</li><li>夜枭</li><li>娑婆诃</li><li>小姐</li><li>记得我</li><li>我能说</li><li>一一</li><li>暗杀</li><li>超脱</li><li>悲伤逆流成河</li><li>还有明天</li><li>杀死比尔</li><li>致命玩偶</li><li>从宫本到你</li><li>奸臣</li><li>不可饶恕</li><li>夜关门·欲望之花</li><li>杀人优越者</li><li>杀人者的记忆法</li><li>恐怖直播</li><li>我是杀人犯</li><li>祭屋出租</li><li>枕刀歌2·将军卸印</li><li>寄生虫</li><li>寂静岭</li><li>唐伯虎点秋香</li><li>我们与恶的距离 1</li><li>长夜难明</li><li>余罪1&#x2F;2</li><li>伊甸</li><li>恐怖蜡像馆</li><li>尸忆</li><li>直到黎明</li><li>南京照相馆</li><li>卢丹的恶魔</li><li>聊斋·兰若寺</li><li>七宗罪</li><li>赎梦</li><li>工作女郎</li><li>美人图</li><li>莫比乌斯</li><li>情事</li><li>弓</li><li>东极岛</li><li>宿主</li><li>猎金游戏</li><li>花漾杀人事件</li><li>毕正毕的证明</li><li>戏台</li><li>长安的荔枝</li><li>黑箱日记</li><li>捕风捉影</li><li>惊天魔盗团</li><li>浪浪山小妖怪</li><li>婚纱</li><li>死神来了 1-6</li><li>人偶之家</li><li>奇遇</li><li>误判</li><li>超兽武装</li><li>大明王朝</li><li>神探</li><li>冰冷热带鱼</li><li>千金肉奴隶</li><li>致命弯道 1-7</li><li>死神的十字路口</li><li>侵犯</li><li>干脆杀了他算了</li><li>午夜凶铃 1</li><li>七号房的礼物</li><li>罗小黑战记 1&#x2F;2</li><li>731</li><li>鬼灭之刃：无限城篇 第一章</li><li>秦时明月之诸子百家&#x2F;百步飞剑&#x2F;夜尽天明&#x2F;万里长城&#x2F;君临天下</li><li>画江湖之不良人1-7</li><li>铠甲勇士之刑天</li><li>遗传厄运</li><li>枕刀歌3·孤城闭雪</li></ol>]]></content>
+    <content type="html"><![CDATA[<blockquote><p>自今年暑假以来，所看过的电影</p></blockquote><ol type="1"><li>血观音</li><li>失眠</li><li>燕交</li><li>黑色直播</li><li>童话世界</li><li>目击者之追凶</li><li>破浪男女</li><li>小蓝</li><li>破墓</li><li>面纱（书+影）</li><li>不能说的游戏</li><li>咒怨</li><li>人皮客栈</li><li>昆池岩</li><li>蛇舌</li><li>白色·诅咒的旋律</li><li>鬼妓回忆录</li><li>粽邪</li><li>恶女</li><li>恶人传</li><li>涉过愤怒的海</li><li>心迷宫</li><li>无声</li><li>金福南杀人事件</li><li>周处除三害</li><li>白日之下</li><li>走走停停</li><li>保你平安</li><li>因果报应</li><li>出走的决心</li><li>首尔之春</li><li>年少日记</li><li>我们的荆轲</li><li>大开眼界</li><li>伊甸湖</li><li>恶魔的艺术</li><li>恐怖故事</li><li>双瞳</li><li>僵尸</li><li>狗十三</li><li>踏血寻梅</li><li>调音师</li><li>同意</li><li>坏蛋联盟2</li><li>摇曳的心</li><li>下海</li><li>意外来客</li><li>色戒</li><li>夜枭</li><li>娑婆诃</li><li>小姐</li><li>记得我</li><li>我能说</li><li>一一</li><li>暗杀</li><li>超脱</li><li>悲伤逆流成河</li><li>还有明天</li><li>杀死比尔</li><li>致命玩偶</li><li>从宫本到你</li><li>奸臣</li><li>不可饶恕</li><li>夜关门·欲望之花</li><li>杀人优越者</li><li>杀人者的记忆法</li><li>恐怖直播</li><li>我是杀人犯</li><li>祭屋出租</li><li>枕刀歌2·将军卸印</li><li>寄生虫</li><li>寂静岭</li><li>唐伯虎点秋香</li><li>我们与恶的距离 1</li><li>长夜难明</li><li>余罪1/2</li><li>伊甸</li><li>恐怖蜡像馆</li><li>尸忆</li><li>直到黎明</li><li>南京照相馆</li><li>卢丹的恶魔</li><li>聊斋·兰若寺</li><li>七宗罪</li><li>赎梦</li><li>工作女郎</li><li>美人图</li><li>莫比乌斯</li><li>情事</li><li>弓</li><li>东极岛</li><li>宿主</li><li>猎金游戏</li><li>花漾杀人事件</li><li>毕正毕的证明</li><li>戏台</li><li>长安的荔枝</li><li>黑箱日记</li><li>捕风捉影</li><li>惊天魔盗团</li><li>浪浪山小妖怪</li><li>婚纱</li><li>死神来了 1-6</li><li>人偶之家</li><li>奇遇</li><li>误判</li><li>超兽武装</li><li>大明王朝</li><li>神探</li><li>冰冷热带鱼</li><li>千金肉奴隶</li><li>致命弯道 1-7</li><li>死神的十字路口</li><li>侵犯</li><li>干脆杀了他算了</li><li>午夜凶铃 1</li><li>七号房的礼物</li><li>罗小黑战记 1/2</li><li>731</li><li>鬼灭之刃：无限城篇 第一章</li><li>秦时明月之诸子百家/百步飞剑/夜尽天明/万里长城/君临天下</li><li>画江湖之不良人1-7</li><li>铠甲勇士之刑天</li><li>遗传厄运</li><li>枕刀歌3·孤城闭雪</li></ol>]]></content>
     
     
       
@@ -427,14 +431,13 @@
     <summary type="html">&lt;blockquote&gt;
 &lt;p&gt;自今年暑假以来，所看过的电影&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;ol&gt;
+&lt;ol type=&quot;1&quot;&gt;
 &lt;li&gt;血观音&lt;/li&gt;
 &lt;li&gt;失眠&lt;/li&gt;
 &lt;li&gt;燕交&lt;/li&gt;
 &lt;li&gt;黑色直播&lt;/li&gt;
 &lt;li&gt;童话世界&lt;/li&gt;
-&lt;li&gt;目击者之追凶&lt;/li&gt;
-&lt;li&gt;破</summary>
+&lt;li</summary>
       
     
     
@@ -453,15 +456,16 @@
     <published>2025-12-09T05:17:11.000Z</published>
     <updated>2025-12-09T07:10:55.001Z</updated>
     
-    <content type="html"><![CDATA[<blockquote><p>What a sunny day! Perfect for a walk in the park and enjoying the fresh air.</p></blockquote><p>The sun is shining brightly, casting a warm glow over everything. The sky is a clear blue, with just a few fluffy white clouds drifting lazily by. Birds are chirping happily, and there&#39;s a gentle breeze that rustles the leaves of the trees.</p><p>It&#39;s the kind of day that makes you want to soak up every moment, whether it&#39;s sitting on a bench with a good book, having a picnic with friends, or simply strolling along a sun-dappled path. The warmth of the sun on your skin and the vibrant colors of nature all around create a sense of joy and tranquility.</p><p>As the day goes on, the golden light of the late afternoon adds a magical touch to the scenery. It&#39;s a reminder to appreciate the simple pleasures in life and to take time to enjoy the beauty of the world around us.</p><p>So, let&#39;s make the most of this sunny day and create some wonderful memories!</p><center><img src = '/images/sleeping_dog.jpg' alt='Sunny Day' style = "zoom:25%;" /></center>]]></content>
+    <content type="html"><![CDATA[<blockquote><p>What a sunny day! Perfect for a walk in the park and enjoying thefresh air.</p></blockquote><p>The sun is shining brightly, casting a warm glow over everything. Thesky is a clear blue, with just a few fluffy white clouds drifting lazilyby. Birds are chirping happily, and there’s a gentle breeze that rustlesthe leaves of the trees.</p><p>It’s the kind of day that makes you want to soak up every moment,whether it’s sitting on a bench with a good book, having a picnic withfriends, or simply strolling along a sun-dappled path. The warmth of thesun on your skin and the vibrant colors of nature all around create asense of joy and tranquility.</p><p>As the day goes on, the golden light of the late afternoon adds amagical touch to the scenery. It’s a reminder to appreciate the simplepleasures in life and to take time to enjoy the beauty of the worldaround us.</p><p>So, let’s make the most of this sunny day and create some wonderfulmemories!</p><center><img src = '/images/sleeping_dog.jpg' alt='Sunny Day' style = "zoom:25%;" /></center>]]></content>
     
     
       
       
     <summary type="html">&lt;blockquote&gt;
-&lt;p&gt;What a sunny day! Perfect for a walk in the park and enjoying the fresh air.&lt;/p&gt;
+&lt;p&gt;What a sunny day! Perfect for a walk in the park and enjoying the
+fresh air.&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;The sun is shining brightl</summary>
+&lt;p&gt;The sun is shining bri</summary>
       
     
     

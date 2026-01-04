@@ -177,7 +177,9 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
-            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#Settings-Their-Default-Values"><span class="nav-number">1.</span> <span class="nav-text">Settings &amp; Their Default Values</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Undocumented-Front-matter-Variables"><span class="nav-number">2.</span> <span class="nav-text">Undocumented Front-matter Variables</span></a></li></ol></div>
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#settings-their-default-values"><span class="nav-number">1.</span> <span class="nav-text">Settings &amp; Their Default
+Values</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undocumented-front-matter-variables"><span class="nav-number">2.</span> <span class="nav-text">Undocumented Front-matter
+Variables</span></a></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -317,16 +319,27 @@
       
       <div class="post-body">
           <blockquote>
-<p>Front-matter is a block of YAML or JSON at the beginning of the file that is used to configure settings for your writings. Front-matter is terminated by three dashes when written in YAML or three semicolons when written in JSON.<br>— from <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlvL2RvY3MvZnJvbnQtbWF0dGVy">Hexo site<i class="fa fa-external-link-alt"></i></span>.</p>
+<p>Front-matter is a block of YAML or JSON at the beginning of the file
+that is used to configure settings for your writings. Front-matter is
+terminated by three dashes when written in YAML or three semicolons when
+written in JSON.<br />
+— from <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlvL2RvY3MvZnJvbnQtbWF0dGVy">Hexo site<i class="fa fa-external-link-alt"></i></span>.</p>
 </blockquote>
 <p><strong>YAML</strong></p>
 <figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="meta">---</span></span><br><span class="line"><span class="attr">title:</span> <span class="string">Hello</span> <span class="string">World</span></span><br><span class="line"><span class="attr">date:</span> <span class="number">2013</span><span class="string">/7/13</span> <span class="number">20</span><span class="string">:46:25</span></span><br><span class="line"><span class="meta">---</span></span><br></pre></td></tr></table></figure>
-
 <p><strong>JSON</strong></p>
 <figure class="highlight json"><table><tr><td class="code"><pre><span class="line"><span class="attr">&quot;title&quot;</span><span class="punctuation">:</span> <span class="string">&quot;Hello World&quot;</span><span class="punctuation">,</span></span><br><span class="line"><span class="attr">&quot;date&quot;</span><span class="punctuation">:</span> <span class="string">&quot;2013/7/13 20:46:25&quot;</span></span><br><span class="line">;;;</span><br></pre></td></tr></table></figure>
-
-<p>Next extends and provide more variables. It allows users to configure a single page.</p>
-<h3 id="Settings-Their-Default-Values"><a href="#Settings-Their-Default-Values" class="headerlink" title="Settings &amp; Their Default Values"></a>Settings &amp; Their Default Values</h3><table>
+<p>Next extends and provide more variables. It allows users to configure
+a single page.</p>
+<h3 id="settings-their-default-values">Settings &amp; Their Default
+Values</h3>
+<table>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
 <thead>
 <tr>
 <th>Setting</th>
@@ -335,7 +348,8 @@
 <th>Default</th>
 </tr>
 </thead>
-<tbody><tr>
+<tbody>
+<tr>
 <td><code>author</code></td>
 <td><code>string</code></td>
 <td>Author name for post copyright</td>
@@ -350,19 +364,22 @@
 <tr>
 <td><code>copyright_reprint</code></td>
 <td><code>bool</code></td>
-<td>It shows that the article is a reprint article and needs to enter <code>author</code> and <code>post_link</code> together.</td>
+<td>It shows that the article is a reprint article and needs to enter
+<code>author</code> and <code>post_link</code> together.</td>
 <td><code>false</code></td>
 </tr>
 <tr>
 <td><code>link</code></td>
 <td><code>string</code></td>
-<td>Clicking on the post title on the index or archive page will redirect to the set external link</td>
+<td>Clicking on the post title on the index or archive page will
+redirect to the set external link</td>
 <td>None</td>
 </tr>
 <tr>
 <td><code>description</code></td>
 <td><code>string</code></td>
-<td>Docs <a href="/docs/theme-settings/posts.html#Preamble-Text">here</a></td>
+<td>Docs <a
+href="/docs/theme-settings/posts.html#Preamble-Text">here</a></td>
 <td>None</td>
 </tr>
 <tr>
@@ -392,13 +409,16 @@
 <tr>
 <td><code>copyright</code></td>
 <td><code>boolean</code></td>
-<td>Whether to display copyright notices below the post with <code>creative_commons.license</code> and <code>creative_commons.post</code> enabled</td>
+<td>Whether to display copyright notices below the post with
+<code>creative_commons.license</code> and
+<code>creative_commons.post</code> enabled</td>
 <td><code>true</code></td>
 </tr>
 <tr>
 <td><code>sticky</code></td>
 <td><code>number</code></td>
-<td>Pin the post to the top of the index page. <span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL2hleG9qcy9oZXhvLWdlbmVyYXRvci1pbmRleA==">hexo-generator-index<i class="fa fa-external-link-alt"></i></span> plugin required</td>
+<td>Pin the post to the top of the index page. <span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL2hleG9qcy9oZXhvLWdlbmVyYXRvci1pbmRleA==">hexo-generator-index<i class="fa fa-external-link-alt"></i></span>
+plugin required</td>
 <td>0</td>
 </tr>
 <tr>
@@ -422,16 +442,26 @@
 <tr>
 <td><code>noindex</code></td>
 <td><code>boolean</code></td>
-<td>Whether to add <code>noindex</code> in meta to disallow robots index.<span class="exturl" data-url="aHR0cHM6Ly9kZXZlbG9wZXJzLmdvb2dsZS5jb20vc2VhcmNoL2RvY3MvY3Jhd2xpbmctaW5kZXhpbmcvYmxvY2staW5kZXhpbmc/dmlzaXRfaWQ9NjM4NjQ1NTY3ODE5Mzg5ODEzLTk3MDU2OTE4NiZyZD0xJmhsPXpoLWNu">block-indexing<i class="fa fa-external-link-alt"></i></span></td>
+<td>Whether to add <code>noindex</code> in meta to disallow robots
+index.<span class="exturl" data-url="aHR0cHM6Ly9kZXZlbG9wZXJzLmdvb2dsZS5jb20vc2VhcmNoL2RvY3MvY3Jhd2xpbmctaW5kZXhpbmcvYmxvY2staW5kZXhpbmc/dmlzaXRfaWQ9NjM4NjQ1NTY3ODE5Mzg5ODEzLTk3MDU2OTE4NiZyZD0xJmhsPXpoLWNu">block-indexing<i class="fa fa-external-link-alt"></i></span></td>
 <td><code>false</code></td>
 </tr>
-</tbody></table>
-<p>(1): They have the same structure as the options in <mark class="label primary">NexT config file</mark>.</p>
+</tbody>
+</table>
+<p>(1): They have the same structure as the options in
+<mark class="label primary">NexT config file</mark>.</p>
 <p><strong>Example</strong></p>
 <figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="attr">toc:</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">number:</span> <span class="literal">false</span></span><br><span class="line">  <span class="attr">max_depth:</span> <span class="number">3</span></span><br><span class="line"><span class="attr">reward_settings:</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">comment:</span> <span class="string">Buy</span> <span class="string">me</span> <span class="string">a</span> <span class="string">coffee</span></span><br><span class="line"><span class="attr">quicklink:</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">delay:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">timeout:</span> <span class="number">3000</span></span><br><span class="line">  <span class="attr">priority:</span> <span class="literal">true</span></span><br></pre></td></tr></table></figure>
-
-<h3 id="Undocumented-Front-matter-Variables"><a href="#Undocumented-Front-matter-Variables" class="headerlink" title="Undocumented Front-matter Variables"></a>Undocumented Front-matter Variables</h3><p>The following variables are not mentioned in the Hexo documentation, but are required by <span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL2hleG9qcy9oZXhvLXRoZW1lLXVuaXQtdGVzdA==">hexo-theme-unit-test<i class="fa fa-external-link-alt"></i></span>.</p>
+<h3 id="undocumented-front-matter-variables">Undocumented Front-matter
+Variables</h3>
+<p>The following variables are not mentioned in the Hexo documentation,
+but are required by <span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL2hleG9qcy9oZXhvLXRoZW1lLXVuaXQtdGVzdA==">hexo-theme-unit-test<i class="fa fa-external-link-alt"></i></span>.</p>
 <table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
 <thead>
 <tr>
 <th>Setting</th>
@@ -439,7 +469,8 @@
 <th>Example</th>
 </tr>
 </thead>
-<tbody><tr>
+<tbody>
+<tr>
 <td><code>link</code></td>
 <td><code>string</code></td>
 <td><span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL2hleG9qcy9oZXhvLXRoZW1lLXVuaXQtdGVzdC9ibG9iL21hc3Rlci9zb3VyY2UvX3Bvc3RzL2xpbmstcG9zdC5tZA==">link-post<i class="fa fa-external-link-alt"></i></span></td>
@@ -449,7 +480,8 @@
 <td><code>array</code></td>
 <td><span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL2hleG9qcy9oZXhvLXRoZW1lLXVuaXQtdGVzdC9ibG9iL21hc3Rlci9zb3VyY2UvX3Bvc3RzL2dhbGxlcnktcG9zdC5tZA==">gallery-post<i class="fa fa-external-link-alt"></i></span></td>
 </tr>
-</tbody></table>
+</tbody>
+</table>
 
       </div>
       

@@ -177,7 +177,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
-            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#Settings"><span class="nav-number">1.</span> <span class="nav-text">Settings</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Usage"><span class="nav-number">2.</span> <span class="nav-text">Usage</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Examples"><span class="nav-number">3.</span> <span class="nav-text">Examples</span></a></li></ol></div>
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#settings"><span class="nav-number">1.</span> <span class="nav-text">Settings</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#usage"><span class="nav-number">2.</span> <span class="nav-text">Usage</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#examples"><span class="nav-number">3.</span> <span class="nav-text">Examples</span></a></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -340,23 +340,21 @@
       
       
       <div class="post-body">
-          <h3 id="Settings"><a href="#Settings" class="headerlink" title="Settings"></a>Settings</h3><figure class="highlight yml"><figcaption><span>NexT config file</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="comment"># Mermaid tag</span></span><br><span class="line"><span class="attr">mermaid:</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">true</span></span><br><span class="line">  <span class="comment"># Available themes: default | dark | forest | neutral</span></span><br><span class="line">  <span class="attr">theme:</span></span><br><span class="line">    <span class="attr">light:</span> <span class="string">default</span></span><br><span class="line">    <span class="attr">dark:</span> <span class="string">dark</span></span><br></pre></td></tr></table></figure>
-
+          <h3 id="settings">Settings</h3>
+<figure class="highlight yml"><figcaption><span>NexT config file</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="comment"># Mermaid tag</span></span><br><span class="line"><span class="attr">mermaid:</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">true</span></span><br><span class="line">  <span class="comment"># Available themes: default | dark | forest | neutral</span></span><br><span class="line">  <span class="attr">theme:</span></span><br><span class="line">    <span class="attr">light:</span> <span class="string">default</span></span><br><span class="line">    <span class="attr">dark:</span> <span class="string">dark</span></span><br></pre></td></tr></table></figure>
 <figure class="highlight yml"><figcaption><span>Hexo config file</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="attr">highlight:</span></span><br><span class="line">  <span class="attr">exclude_languages:</span></span><br><span class="line">    <span class="bullet">-</span> <span class="string">mermaid</span></span><br></pre></td></tr></table></figure>
-
-<h3 id="Usage"><a href="#Usage" class="headerlink" title="Usage"></a>Usage</h3><figure class="highlight jinja"><table><tr><td class="code"><pre><span class="line"><span class="template-tag">&#123;% <span class="name">mermaid</span> type %&#125;</span><span class="language-xml"></span></span><br><span class="line"><span class="language-xml"></span><span class="template-tag">&#123;% <span class="name">endmermaid</span> %&#125;</span></span><br></pre></td></tr></table></figure>
-
+<h3 id="usage">Usage</h3>
+<figure class="highlight jinja"><table><tr><td class="code"><pre><span class="line"><span class="template-tag">&#123;% <span class="name">mermaid</span> type %&#125;</span><span class="language-xml"></span></span><br><span class="line"><span class="language-xml"></span><span class="template-tag">&#123;% <span class="name">endmermaid</span> %&#125;</span></span><br></pre></td></tr></table></figure>
 <p>or</p>
 <figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line"><span class="code">```mermaid</span></span><br><span class="line"><span class="code">type</span></span><br><span class="line"><span class="code"></span></span><br><span class="line"><span class="code">```</span></span><br></pre></td></tr></table></figure>
-
 <ul>
-<li><code>type</code> : type of the mermaid chart, visit <span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL21lcm1haWQtanMvbWVybWFpZA==">https://github.com/mermaid-js/mermaid<i class="fa fa-external-link-alt"></i></span> for more information.</li>
+<li><code>type</code> : type of the mermaid chart, visit
+https://github.com/mermaid-js/mermaid for more information.</li>
 </ul>
-<h3 id="Examples"><a href="#Examples" class="headerlink" title="Examples"></a>Examples</h3><figure class="highlight jinja"><table><tr><td class="code"><pre><span class="line"><span class="template-tag">&#123;% <span class="name">mermaid</span> graph TD %&#125;</span><span class="language-xml"></span></span><br><span class="line"><span class="language-xml">A[Hard] --&gt;|Text| B(Round)</span></span><br><span class="line"><span class="language-xml">B --&gt; C&#123;Decision&#125;</span></span><br><span class="line"><span class="language-xml">C --&gt;|One| D[Result 1]</span></span><br><span class="line"><span class="language-xml">C --&gt;|Two| E[Result 2]</span></span><br><span class="line"><span class="language-xml"></span><span class="template-tag">&#123;% <span class="name">endmermaid</span> %&#125;</span></span><br></pre></td></tr></table></figure>
-
+<h3 id="examples">Examples</h3>
+<figure class="highlight jinja"><table><tr><td class="code"><pre><span class="line"><span class="template-tag">&#123;% <span class="name">mermaid</span> graph TD %&#125;</span><span class="language-xml"></span></span><br><span class="line"><span class="language-xml">A[Hard] --&gt;|Text| B(Round)</span></span><br><span class="line"><span class="language-xml">B --&gt; C&#123;Decision&#125;</span></span><br><span class="line"><span class="language-xml">C --&gt;|One| D[Result 1]</span></span><br><span class="line"><span class="language-xml">C --&gt;|Two| E[Result 2]</span></span><br><span class="line"><span class="language-xml"></span><span class="template-tag">&#123;% <span class="name">endmermaid</span> %&#125;</span></span><br></pre></td></tr></table></figure>
 <p>or</p>
 <figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line"><span class="code">```mermaid</span></span><br><span class="line"><span class="code">graph TD</span></span><br><span class="line"><span class="code">A[Hard] --&gt;|Text| B(Round)</span></span><br><span class="line"><span class="code">B --&gt; C&#123;Decision&#125;</span></span><br><span class="line"><span class="code">C --&gt;|One| D[Result 1]</span></span><br><span class="line"><span class="code">C --&gt;|Two| E[Result 2]</span></span><br><span class="line"><span class="code">```</span></span><br></pre></td></tr></table></figure>
-
 <pre>
 <code class="mermaid">
 graph TD
@@ -366,9 +364,7 @@ C --&gt;|One| D[Result 1]
 C --&gt;|Two| E[Result 2]
 </code>
 </pre>
-
 <figure class="highlight jinja"><table><tr><td class="code"><pre><span class="line"><span class="template-tag">&#123;% <span class="name">mermaid</span> sequenceDiagram %&#125;</span><span class="language-xml"></span></span><br><span class="line"><span class="language-xml">Alice-&gt;&gt;John: Hello John, how are you?</span></span><br><span class="line"><span class="language-xml">loop Healthcheck</span></span><br><span class="line"><span class="language-xml">    John-&gt;&gt;John: Fight against hypochondria</span></span><br><span class="line"><span class="language-xml">end</span></span><br><span class="line"><span class="language-xml">Note right of John: Rational thoughts!</span></span><br><span class="line"><span class="language-xml">John--&gt;&gt;Alice: Great!</span></span><br><span class="line"><span class="language-xml">John-&gt;&gt;Bob: How about you?</span></span><br><span class="line"><span class="language-xml">Bob--&gt;&gt;John: Jolly good!</span></span><br><span class="line"><span class="language-xml"></span><span class="template-tag">&#123;% <span class="name">endmermaid</span> %&#125;</span></span><br></pre></td></tr></table></figure>
-
 <pre>
 <code class="mermaid">
 sequenceDiagram
@@ -382,9 +378,7 @@ John-&gt;&gt;Bob: How about you?
 Bob--&gt;&gt;John: Jolly good!
 </code>
 </pre>
-
 <figure class="highlight jinja"><table><tr><td class="code"><pre><span class="line"><span class="template-tag">&#123;% <span class="name">mermaid</span> gantt %&#125;</span><span class="language-xml"></span></span><br><span class="line"><span class="language-xml">dateFormat  YYYY-MM-DD</span></span><br><span class="line"><span class="language-xml">section Section</span></span><br><span class="line"><span class="language-xml">Completed :done,    des1, 2014-01-06,2014-01-08</span></span><br><span class="line"><span class="language-xml">Active        :active,  des2, 2014-01-07, 3d</span></span><br><span class="line"><span class="language-xml">Parallel 1   :         des3, after des1, 1d</span></span><br><span class="line"><span class="language-xml">Parallel 2   :         des4, after des1, 1d</span></span><br><span class="line"><span class="language-xml">Parallel 3   :         des5, after des3, 1d</span></span><br><span class="line"><span class="language-xml">Parallel 4   :         des6, after des4, 1d</span></span><br><span class="line"><span class="language-xml"></span><span class="template-tag">&#123;% <span class="name">endmermaid</span> %&#125;</span></span><br></pre></td></tr></table></figure>
-
 <pre>
 <code class="mermaid">
 gantt
@@ -398,9 +392,7 @@ Parallel 3   :         des5, after des3, 1d
 Parallel 4   :         des6, after des4, 1d
 </code>
 </pre>
-
 <figure class="highlight jinja"><table><tr><td class="code"><pre><span class="line"><span class="template-tag">&#123;% <span class="name">mermaid</span> classDiagram %&#125;</span><span class="language-xml"></span></span><br><span class="line"><span class="language-xml">Class01 &lt;|-- AveryLongClass : Cool</span></span><br><span class="line"><span class="language-xml">&lt;<span class="tag">&lt;<span class="name">interface</span>&gt;</span>&gt; Class01</span></span><br><span class="line"><span class="language-xml">Class09 --&gt; C2 : Where am i?</span></span><br><span class="line"><span class="language-xml">Class09 --* C3</span></span><br><span class="line"><span class="language-xml">Class09 --|&gt; Class07</span></span><br><span class="line"><span class="language-xml">Class07 : equals()</span></span><br><span class="line"><span class="language-xml">Class07 : Object[] elementData</span></span><br><span class="line"><span class="language-xml">Class01 : size()</span></span><br><span class="line"><span class="language-xml">Class01 : int chimp</span></span><br><span class="line"><span class="language-xml">Class01 : int gorilla</span></span><br><span class="line"><span class="language-xml">class Class10 &#123;</span></span><br><span class="line"><span class="language-xml">  &lt;<span class="tag">&lt;<span class="name">service</span>&gt;</span>&gt;</span></span><br><span class="line"><span class="language-xml">  int id</span></span><br><span class="line"><span class="language-xml">  size()</span></span><br><span class="line"><span class="language-xml">&#125;</span></span><br><span class="line"><span class="language-xml"></span><span class="template-tag">&#123;% <span class="name">endmermaid</span> %&#125;</span></span><br></pre></td></tr></table></figure>
-
 <pre>
 <code class="mermaid">
 classDiagram
@@ -421,9 +413,7 @@ class Class10 {
 }
 </code>
 </pre>
-
 <figure class="highlight jinja"><table><tr><td class="code"><pre><span class="line"><span class="template-tag">&#123;% <span class="name">mermaid</span> stateDiagram %&#125;</span><span class="language-xml"></span></span><br><span class="line"><span class="language-xml">[*] --&gt; Still</span></span><br><span class="line"><span class="language-xml">Still --&gt; [*]</span></span><br><span class="line"><span class="language-xml">Still --&gt; Moving</span></span><br><span class="line"><span class="language-xml">Moving --&gt; Still</span></span><br><span class="line"><span class="language-xml">Moving --&gt; Crash</span></span><br><span class="line"><span class="language-xml">Crash --&gt; [*]</span></span><br><span class="line"><span class="language-xml"></span><span class="template-tag">&#123;% <span class="name">endmermaid</span> %&#125;</span></span><br></pre></td></tr></table></figure>
-
 <pre>
 <code class="mermaid">
 stateDiagram
@@ -435,9 +425,7 @@ Moving --&gt; Crash
 Crash --&gt; [*]
 </code>
 </pre>
-
 <figure class="highlight jinja"><table><tr><td class="code"><pre><span class="line"><span class="template-tag">&#123;% <span class="name">mermaid</span> pie %&#125;</span><span class="language-xml"></span></span><br><span class="line"><span class="language-xml">&quot;Dogs&quot; : 386</span></span><br><span class="line"><span class="language-xml">&quot;Cats&quot; : 85</span></span><br><span class="line"><span class="language-xml">&quot;Rats&quot; : 15</span></span><br><span class="line"><span class="language-xml"></span><span class="template-tag">&#123;% <span class="name">endmermaid</span> %&#125;</span></span><br></pre></td></tr></table></figure>
-
 <pre>
 <code class="mermaid">
 pie
