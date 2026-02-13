@@ -6,7 +6,7 @@
   <link href="http://zhiwenhu471.github.io/atom.xml" rel="self"/>
   
   <link href="http://zhiwenhu471.github.io/"/>
-  <updated>2026-02-12T16:02:04.075Z</updated>
+  <updated>2026-02-13T15:08:04.488Z</updated>
   <id>http://zhiwenhu471.github.io/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>2026 寒假（其四）</title>
+    <link href="http://zhiwenhu471.github.io/2026/02/13/2026-02-13-holiday-04/"/>
+    <id>http://zhiwenhu471.github.io/2026/02/13/2026-02-13-holiday-04/</id>
+    <published>2026-02-13T15:01:00.000Z</published>
+    <updated>2026-02-13T15:08:04.488Z</updated>
+    
+    <content type="html"><![CDATA[<p>本来了解着 <code>Latex</code>，无意中看到了<code>Typst</code>，它很像<code>Latex</code>，但是语法更加简洁，该有的功能也都有，慢慢学习了一下，发现确实如此，甚至语法上和<code>Markdown</code>也有相似之处，趁热学习，记好笔记，日后复习，不失为一种编写 pdf的好方法。</p><p>类似 <em>overleaf</em>，<code>Typst</code>也有在线编辑器，可以直接在浏览器编辑，编译，下载，我感叹其之神奇哉。</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;本来了解着 &lt;code&gt;Latex&lt;/code&gt;，无意中看到了
+&lt;code&gt;Typst&lt;/code&gt;，它很像
+&lt;code&gt;Latex&lt;/code&gt;，但是语法更加简洁，该有的功能也都有，慢慢学习了一下，发现确实如此，甚至语法上和
+&lt;code&gt;Markdown&lt;/code</summary>
+      
+    
+    
+    
+    
+    <category term="2026 寒假" scheme="http://zhiwenhu471.github.io/tags/2026-%E5%AF%92%E5%81%87/"/>
+    
+  </entry>
   
   <entry>
     <title>2026 寒假（其三）</title>
@@ -479,30 +504,6 @@ four thrilling seasons. The show has captivated audiences with its </summary>
     
     
     <category term="自然" scheme="http://zhiwenhu471.github.io/tags/%E8%87%AA%E7%84%B6/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>枕刀歌</title>
-    <link href="http://zhiwenhu471.github.io/2025/12/24/zhen-dao-ge/"/>
-    <id>http://zhiwenhu471.github.io/2025/12/24/zhen-dao-ge/</id>
-    <published>2025-12-24T12:25:32.000Z</published>
-    <updated>2026-02-02T08:31:47.290Z</updated>
-    
-    <content type="html"><![CDATA[<p>我有平时事</p><p>只与明月听</p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;p&gt;我有平时事&lt;/p&gt;
-&lt;p&gt;只与明月听&lt;/p&gt;
-</summary>
-      
-    
-    
-    
-    
-    <category term="动漫" scheme="http://zhiwenhu471.github.io/tags/%E5%8A%A8%E6%BC%AB/"/>
     
   </entry>
   
