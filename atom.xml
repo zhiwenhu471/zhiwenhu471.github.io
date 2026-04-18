@@ -6,7 +6,7 @@
   <link href="http://zhiwenhu471.github.io/atom.xml" rel="self"/>
   
   <link href="http://zhiwenhu471.github.io/"/>
-  <updated>2026-04-11T16:32:34.710Z</updated>
+  <updated>2026-04-18T17:12:39.637Z</updated>
   <id>http://zhiwenhu471.github.io/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>这些天的阅读</title>
+    <link href="http://zhiwenhu471.github.io/2026/04/19/2026-04-19-read-these-days/"/>
+    <id>http://zhiwenhu471.github.io/2026/04/19/2026-04-19-read-these-days/</id>
+    <published>2026-04-19T12:00:00.000Z</published>
+    <updated>2026-04-18T17:12:39.637Z</updated>
+    
+    <content type="html"><![CDATA[<p>这些天看了很多书，其中，终于把《明朝那些事儿》看完了，算得上一部很长的作品，原本以为看完以后我会有很多感慨的，但实际上却没啥特别想说的，更别说写一篇浩浩荡荡的读书笔记。</p><p>读了41个小时，除了网文，这算得上是我读的最久的文学作品，我特地还发了一个朋友圈哈哈，纪念一下：</p><p>“千年暗室，一灯即明，用自己的方式，去度过这一生，就是成功。”</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;这些天看了很多书，其中，终于把《明朝那些事儿》看完了，算得上一部很长的作品，原本以为看完以后我会有很多感慨的，但实际上却没啥特别想说的，更别说写一篇浩浩荡荡的读书笔记。&lt;/p&gt;
+&lt;p&gt;读了41个小时，除了网文，这算得上是我读的最久的文学作品，我特地还发了一个朋友圈哈哈，纪</summary>
+      
+    
+    
+    
+    
+    <category term="阅读" scheme="http://zhiwenhu471.github.io/tags/%E9%98%85%E8%AF%BB/"/>
+    
+  </entry>
   
   <entry>
     <title>再游毛泽东故居</title>
@@ -478,30 +501,6 @@
     <category term="杂谈" scheme="http://zhiwenhu471.github.io/tags/%E6%9D%82%E8%B0%88/"/>
     
     <category term="运动" scheme="http://zhiwenhu471.github.io/tags/%E8%BF%90%E5%8A%A8/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Git stars</title>
-    <link href="http://zhiwenhu471.github.io/2026/02/05/git-stars/"/>
-    <id>http://zhiwenhu471.github.io/2026/02/05/git-stars/</id>
-    <published>2026-02-04T17:25:51.000Z</published>
-    <updated>2026-02-04T18:00:56.367Z</updated>
-    
-    <content type="html"><![CDATA[<p><imgsrc="https://img.shields.io/github/stars/zhiwenhu471/R-medical-data-analysis?style=for-the-badge&amp;label=Stars&amp;color=red"alt="Stars" /><br /><imgsrc="https://img.shields.io/github/forks/zhiwenhu471/R-medical-data-analysis?style=for-the-badge&amp;label=Forks&amp;color=green"alt="Forks" /><br /><imgsrc="https://img.shields.io/github/issues/zhiwenhu471/R-medical-data-analysis?style=for-the-badge&amp;label=ISSUES&amp;color=blue"alt="Issues" /></p><center><img src="/images/git_stars.jpg" alt="GitHub Stars" style="zoom:100%;" /></center><p>it is useful for me to see the stars history, because it makes meexcited haha~</p><p><img src="https://img.shields.io/github/license/user/repo"alt="GitHub license" /></p><p><img src="https://img.shields.io/npm/v/package-name"alt="npm version" /></p><p><img src="https://img.shields.io/badge/build-passing-brightgreen"alt="Build Status" /></p><p><img src="https://img.shields.io/badge/version-1.0.0-blue"alt="Version" /></p><p><img src="https://img.shields.io/badge/license-MIT-green"alt="License" /></p><p><imgsrc="https://img.shields.io/badge/微信公众号-07C160.svg?logo=wechat&amp;logoColor=white"alt="WeChat" /></p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;p&gt;&lt;img
-src=&quot;https://img.shields.io/github/stars/zhiwenhu471/R-medical-data-analysis?style=for-the-badge&amp;amp;label=Stars&amp;amp;color=red&quot;
-al</summary>
-      
-    
-    
-    
-    
-    <category term="github" scheme="http://zhiwenhu471.github.io/tags/github/"/>
     
   </entry>
   
