@@ -27,8 +27,8 @@
 <meta property="og:site_name" content="Joyboy">
 <meta property="og:description" content="NexT User Docs – Third-party Plugins Integration – External Libraries">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2025-12-10T14:41:38.078Z">
-<meta property="article:modified_time" content="2025-12-10T14:41:38.078Z">
+<meta property="article:published_time" content="2026-04-19T15:54:26.502Z">
+<meta property="article:modified_time" content="2026-04-19T15:54:26.502Z">
 <meta property="article:author" content="Joyboy">
 <meta property="article:tag" content="Hexo, NexT">
 <meta name="twitter:card" content="summary">
@@ -126,7 +126,7 @@
 
 
 <nav class="site-nav">
-  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-bell fa-fw"></i>首页</a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签<span class="badge">29</span></a></li><li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a></li><li class="menu-item menu-item-docs"><a href="/docs/" rel="section"><i class="fa fa-book fa-fw"></i>Docs</a></li><li class="menu-item menu-item-plugins"><a href="/plugins/" rel="section"><i class="fa fa-flask fa-fw"></i>Plugins</a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档<span class="badge">65</span></a></li>
+  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-bell fa-fw"></i>首页</a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签<span class="badge">29</span></a></li><li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a></li><li class="menu-item menu-item-docs"><a href="/docs/" rel="section"><i class="fa fa-book fa-fw"></i>Docs</a></li><li class="menu-item menu-item-plugins"><a href="/plugins/" rel="section"><i class="fa fa-flask fa-fw"></i>Plugins</a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档<span class="badge">68</span></a></li>
       <li class="menu-item menu-item-search">
         <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
         </a>
@@ -192,7 +192,7 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
         <a href="/archives/">
-          <span class="site-state-item-count">65</span>
+          <span class="site-state-item-count">68</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -393,7 +393,7 @@ If you need speed you can set the value of <code>motion.enable</code> to
 <code>motion</code> to fit your demand. You can preview all Transition
 variants here: <span class="exturl" data-url="aHR0cHM6Ly90aGVtZS1uZXh0LmpzLm9yZy9hbmltYXRlLw==">NexT
 Animation Effect Preview<i class="fa fa-external-link-alt"></i></span>.</p>
-<figure class="highlight yml"><figcaption><span>NexT config file</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="comment"># Use Animate.css to animate everything.</span></span><br><span class="line"><span class="comment"># For more information: https://animate.style</span></span><br><span class="line"><span class="attr">motion:</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">async:</span> <span class="literal">false</span></span><br><span class="line">  <span class="attr">transition:</span></span><br><span class="line">    <span class="comment"># All available Transition variants: https://theme-next.js.org/animate/</span></span><br><span class="line">    <span class="attr">menu_item:</span> <span class="string">fadeInDown</span></span><br><span class="line">    <span class="attr">post_block:</span> <span class="string">fadeIn</span></span><br><span class="line">    <span class="attr">post_header:</span> <span class="string">fadeInDown</span></span><br><span class="line">    <span class="attr">post_body:</span> <span class="string">fadeInDown</span></span><br><span class="line">    <span class="attr">coll_header:</span> <span class="string">fadeInLeft</span></span><br><span class="line">    <span class="comment"># Only for Pisces | Gemini.</span></span><br><span class="line">    <span class="attr">sidebar:</span> <span class="string">fadeInUp</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight yml"><figcaption><span>NexT config file</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="comment"># Use Animate.css to animate everything.</span></span><br><span class="line"><span class="comment"># For more information: https://animate.style</span></span><br><span class="line"><span class="attr">motion:</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">async:</span> <span class="literal">false</span></span><br><span class="line">  <span class="attr">duration:</span> <span class="number">200</span></span><br><span class="line">  <span class="attr">transition:</span></span><br><span class="line">    <span class="comment"># All available Transition variants: https://theme-next.js.org/animate/</span></span><br><span class="line">    <span class="attr">menu_item:</span> <span class="string">fadeInDown</span></span><br><span class="line">    <span class="attr">post_block:</span> <span class="string">fadeIn</span></span><br><span class="line">    <span class="attr">post_header:</span> <span class="string">fadeInDown</span></span><br><span class="line">    <span class="attr">post_body:</span> <span class="string">fadeInDown</span></span><br><span class="line">    <span class="attr">coll_header:</span> <span class="string">fadeInLeft</span></span><br><span class="line">    <span class="comment"># Only for Pisces | Gemini.</span></span><br><span class="line">    <span class="attr">sidebar:</span> <span class="string">fadeInUp</span></span><br></pre></td></tr></table></figure>
 <h3 id="progress-bar">Progress Bar</h3>
 <p><span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL0NvZGVCeVphY2gvcGFjZQ==">Pace<i class="fa fa-external-link-alt"></i></span> will
 automatically monitor your Ajax requests, event loop lag, document ready
@@ -457,14 +457,14 @@ setting by editing values in <code>canvas_ribbon</code> section:</p>
       <i class="fa fa-chart-line"></i>
     </span>
       <span>站点总字数：</span>
-    <span title="站点总字数">36k</span>
+    <span title="站点总字数">39k</span>
   </span>
   <span class="post-meta-item">
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
       <span>站点阅读时长 &asymp;</span>
-    <span title="站点阅读时长">33 分钟</span>
+    <span title="站点阅读时长">35 分钟</span>
   </span>
 </div>
   <div class="powered-by">由 <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> & <span class="exturl" data-url="aHR0cHM6Ly90aGVtZS1uZXh0LmpzLm9yZw==">NexT.Gemini</span> 强力驱动
